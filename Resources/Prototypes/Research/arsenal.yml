@@ -25,10 +25,16 @@
   cost: 10000
   recipeUnlocks:
   - ShellShotgunIncendiary
+  - BoxShotgunIncendiary
   - CartridgePistolIncendiary
   - CartridgeMagnumIncendiary
   - CartridgeLightRifleIncendiary
   - CartridgeRifleIncendiary
+  - MagazineRifleIncendiary
+  - MagazinePistolIncendiary
+  - MagazineLightRifleIncendiary
+  - SpeedLoaderMagnumIncendiary
+  - MagazineShotgunIncendiary
   - MagazineBoxPistolIncendiary
   - MagazineBoxMagnumIncendiary
   - MagazineBoxLightRifleIncendiary
@@ -57,14 +63,21 @@
   cost: 5000
   recipeUnlocks:
   - ShellShotgunBeanbag
+  - ShellTranquilizer 
   - CartridgePistolRubber
   - CartridgeMagnumRubber
   - CartridgeLightRifleRubber
   - CartridgeRifleRubber
+  - MagazineRifleRubber
+  - MagazinePistolRubber
+  - MagazineLightRifleRubber
+  - SpeedLoaderMagnumRubber
+  - MagazineShotgunBeanbag
   - MagazineBoxPistolRubber
   - MagazineBoxMagnumRubber
   - MagazineBoxLightRifleRubber
   - MagazineBoxRifleRubber
+  - BoxBeanbag
 
 - type: technology
   id: UraniumMunitions
@@ -81,10 +94,15 @@
   - CartridgeMagnumUranium
   - CartridgeLightRifleUranium
   - CartridgeRifleUranium
+  - MagazineRifleUranium
+  - MagazinePistolUranium
+  - MagazineLightRifleUranium
+  - SpeedLoaderMagnumUranium
   - MagazineBoxPistolUranium
   - MagazineBoxMagnumUranium
   - MagazineBoxLightRifleUranium
   - MagazineBoxRifleUranium
+  - BoxShotgunUranium
 
 - type: technology
   id: AdvancedRiotControl
