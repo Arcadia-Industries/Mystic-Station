@@ -1,4 +1,5 @@
-﻿using System.Numerics;
+﻿using System.Diagnostics.CodeAnalysis;
+using System.Numerics;
 using Content.Client.Buckle;
 using Content.Client.Gravity;
 using Content.Shared.ActionBlocker;
@@ -24,46 +25,29 @@ public sealed class ClientWaddleAnimationSystem : SharedWaddleAnimationSystem
         base.Initialize();
 
         // Start waddling
-        SubscribeAllEvent<StartedWaddlingEvent>((msg, args) =>
-        {
-            if (TryComp<WaddleAnimationComponent>(GetEntity(msg.Entity), out var comp))
-                StartWaddling(GetEntity(msg.Entity), comp);
-        });
+        SubscribeAllEvent<StartedWaddlingEvent>((msg, args) => StartWaddling(args.SenderSession.AttachedEntity));
 
         // Handle concluding animations
         SubscribeLocalEvent<WaddleAnimationComponent, AnimationCompletedEvent>(OnAnimationCompleted);
 
         // Stop waddling
-        SubscribeAllEvent<StoppedWaddlingEvent>((msg, args) =>
-        {
-            if (TryComp<WaddleAnimationComponent>(GetEntity(msg.Entity), out var comp))
-                StopWaddling(GetEntity(msg.Entity), comp);
-        });
+        SubscribeAllEvent<StoppedWaddlingEvent>((msg, args) => StopWaddling(args.SenderSession.AttachedEntity));
     }
 
-    private void StartWaddling(EntityUid uid, WaddleAnimationComponent component)
+    private void StartWaddling(EntityUid? uid)
     {
-        if (_animation.HasRunningAnimation(uid, component.KeyName))
+        if (
+            !EntityIsValid(uid, out var entity, out var component) ||
+            _animation.HasRunningAnimation(entity.Value, component.KeyName) ||
+            _gravity.IsWeightless(entity.Value) ||
+            _buckle.IsBuckled(entity.Value) ||
+            _mobState.IsIncapacitated(entity.Value) ||
+            !TryComp<InputMoverComponent>(entity, out var mover) ||
+            !_actionBlocker.CanMove(entity.Value, mover)
+        )
             return;
 
-        if (!TryComp<InputMoverComponent>(uid, out var mover))
-            return;
-
-        if (_gravity.IsWeightless(uid))
-            return;
-
-        if (!_actionBlocker.CanMove(uid, mover))
-            return;
-
-        // Do nothing if buckled in
-        if (_buckle.IsBuckled(uid))
-            return;
-
-        // Do nothing if crit or dead (for obvious reasons)
-        if (_mobState.IsIncapacitated(uid))
-            return;
-
-        PlayWaddleAnimationUsing(uid, component, CalculateAnimationLength(component, mover), CalculateTumbleIntensity(component));
+        PlayWaddleAnimationUsing(entity.Value, component, CalculateAnimationLength(component, mover), CalculateTumbleIntensity(component));
     }
 
     private static float CalculateTumbleIntensity(WaddleAnimationComponent component)
@@ -87,20 +71,36 @@ public sealed class ClientWaddleAnimationSystem : SharedWaddleAnimationSystem
         PlayWaddleAnimationUsing(uid, component, CalculateAnimationLength(component, mover), CalculateTumbleIntensity(component));
     }
 
-    private void StopWaddling(EntityUid uid, WaddleAnimationComponent component)
+    private void StopWaddling(EntityUid? uid)
     {
-        if (!_animation.HasRunningAnimation(uid, component.KeyName))
+        if (
+            !EntityIsValid(uid, out var entity, out var component) ||
+            !_animation.HasRunningAnimation(entity.Value, component.KeyName)
+        )
             return;
 
-        _animation.Stop(uid, component.KeyName);
+        _animation.Stop(entity.Value, component.KeyName);
 
-        if (!TryComp<SpriteComponent>(uid, out var sprite))
-        {
+        if (!TryComp<SpriteComponent>(entity.Value, out var sprite))
             return;
-        }
 
+        // Note that this is a hard-write to this sprite, not some layer-based operation. If this is called whilst a sprite
+        // is lying down, it will make the sprite stand up, which usually looks wrong.
         sprite.Offset = new Vector2();
         sprite.Rotation = Angle.FromDegrees(0);
+    }
+
+    private bool EntityIsValid(EntityUid? uid, [NotNullWhen(true)] out EntityUid? entity, [NotNullWhen(true)] out WaddleAnimationComponent? component)
+    {
+        entity = null;
+        component = null;
+
+        if (!uid.HasValue)
+            return false;
+
+        entity = uid.Value;
+
+        return TryComp(entity, out component);
     }
 
     private void PlayWaddleAnimationUsing(EntityUid uid, WaddleAnimationComponent component, float len, float tumbleIntensity)

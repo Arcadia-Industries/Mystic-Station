@@ -41,7 +41,7 @@ public abstract class SharedWaddleAnimationSystem : EntitySystem
         // If the waddler is currently moving, make them start waddling
         if ((moverComponent.HeldMoveButtons & MoveButtons.AnyDirection) == MoveButtons.AnyDirection)
         {
-            RaiseNetworkEvent(new StartedWaddlingEvent(GetNetEntity(uid)));
+            RaiseNetworkEvent(new StartedWaddlingEvent());
         }
     }
 
@@ -67,7 +67,7 @@ public abstract class SharedWaddleAnimationSystem : EntitySystem
 
         component.IsCurrentlyWaddling = true;
 
-        RaiseNetworkEvent(new StartedWaddlingEvent(GetNetEntity(uid)));
+        RaiseNetworkEvent(new StartedWaddlingEvent());
     }
 
     private void OnStood(EntityUid uid, WaddleAnimationComponent component, StoodEvent args)
@@ -92,13 +92,13 @@ public abstract class SharedWaddleAnimationSystem : EntitySystem
 
         component.IsCurrentlyWaddling = true;
 
-        RaiseNetworkEvent(new StartedWaddlingEvent(GetNetEntity(uid)));
+        RaiseNetworkEvent(new StartedWaddlingEvent());
     }
 
     private void StopWaddling(EntityUid uid, WaddleAnimationComponent component)
     {
         component.IsCurrentlyWaddling = false;
 
-        RaiseNetworkEvent(new StoppedWaddlingEvent(GetNetEntity(uid)));
+        RaiseNetworkEvent(new StoppedWaddlingEvent());
     }
 }

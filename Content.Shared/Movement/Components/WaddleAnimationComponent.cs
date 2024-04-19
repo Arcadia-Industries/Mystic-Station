@@ -6,22 +6,14 @@ namespace Content.Shared.Movement.Components;
 /// <summary>
 /// Declares that an entity has started to waddle like a duck/clown.
 /// </summary>
-/// <param name="entity">The newly be-waddled.</param>
 [Serializable, NetSerializable]
-public sealed class StartedWaddlingEvent(NetEntity entity) : EntityEventArgs
-{
-    public NetEntity Entity = entity;
-}
+public sealed class StartedWaddlingEvent : EntityEventArgs;
 
 /// <summary>
 /// Declares that an entity has stopped waddling like a duck/clown.
 /// </summary>
-/// <param name="entity">The former waddle-er.</param>
 [Serializable, NetSerializable]
-public sealed class StoppedWaddlingEvent(NetEntity entity) : EntityEventArgs
-{
-    public NetEntity Entity = entity;
-}
+public sealed class StoppedWaddlingEvent : EntityEventArgs;
 
 /// <summary>
 /// Defines something as having a waddle animation when it moves.
@@ -67,8 +59,8 @@ public sealed partial class WaddleAnimationComponent : Component
     public bool LastStep;
 
     /// <summary>
-    /// Stores if we're currently waddling so we can start/stop as appropriate and can tell other systems our state.
+    /// Stores if we're currently waddling, so we can start/stop as appropriate and can tell other systems our state.
     /// </summary>
-    [AutoNetworkedField]
+    [DataField, AutoNetworkedField]
     public bool IsCurrentlyWaddling;
 }
