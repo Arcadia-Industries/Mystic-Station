@@ -314,6 +314,8 @@
       - DeviceQuantumSpinInverter
   - type: EmagLatheRecipes
     emagDynamicRecipes:
+      - CableDetStack
+      - EmptyDetonator
       - ExplosivePayload
       - WeaponLaserCarbine
       - WeaponAdvancedLaser
@@ -671,6 +673,7 @@
       - WeaponLaserCarbinePractice
       - WeaponDisablerPractice
     dynamicRecipes:
+      - CableDetStack
       - CartridgeLightRifleIncendiary
       - CartridgeMagnumIncendiary
       - CartridgePistolIncendiary
@@ -679,6 +682,7 @@
       - CartridgeMagnumUranium
       - CartridgePistolUranium
       - CartridgeRifleUranium
+      - EmptyDetonator
       - ExplosivePayload
       - FlashPayload
       - HoloprojectorSecurity
