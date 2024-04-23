@@ -9,7 +9,7 @@
       layers:
       - state: paper_blood
       - state: cover_strong
-        color: "#645a5a" 
+        color: "#645a5a"
       - state: decor_wingette_flat
         color: "#4d0303"
       - state: icon_pentagramm
@@ -18,6 +18,37 @@
     - type: Tag
       tags:
       - Spellbook
+
+# For the Wizard Antag
+# Do not add discounts or price inflation
+- type: entity
+  id: WizardsGrimoire
+  name: wizards grimoire
+  suffix: Wizard
+  parent: BaseItem
+  components:
+    - type: Sprite
+      sprite: Objects/Misc/books.rsi
+      layers:
+      - state: paper_blood
+      - state: cover_strong
+        color: "#645a5a"
+      - state: decor_wingette_flat
+        color: "#4d0303"
+      - state: icon_pentagramm
+        color: "#f7e19f"
+    - type: UserInterface
+      interfaces:
+        - key: enum.StoreUiKey.Key
+          type: StoreBoundUserInterface
+    - type: ActivatableUI
+      key: enum.StoreUiKey.Key
+    - type: Store
+      refundAllowed: true
+      ownerOnly: true # get your own tome!
+      preset: StorePresetSpellbook
+      balance:
+        WizCoin: 10 # prices are balanced around this 10 point maximum and how strong the spells are
 
 - type: entity
   id: SpawnSpellbook
