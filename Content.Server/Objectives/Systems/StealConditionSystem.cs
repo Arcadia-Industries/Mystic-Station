@@ -9,6 +9,7 @@ using Robust.Shared.Random;
 using Content.Shared.Mind.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Mobs.Components;
+using Content.Server.Thief.Components;
 using Content.Shared.Movement.Pulling.Components;
 
 namespace Content.Server.Objectives.Systems;
@@ -20,6 +21,7 @@ public sealed class StealConditionSystem : EntitySystem
     [Dependency] private readonly MetaDataSystem _metaData = default!;
     [Dependency] private readonly MobStateSystem _mobState = default!;
     [Dependency] private readonly SharedObjectivesSystem _objectives = default!;
+    [Dependency] private readonly EntityLookupSystem _lookup = default!;
 
     private EntityQuery<ContainerManagerComponent> _containerQuery;
     private EntityQuery<MetaDataComponent> _metaQuery;
@@ -95,8 +97,25 @@ public sealed class StealConditionSystem : EntitySystem
         if (!_containerQuery.TryGetComponent(mind.OwnedEntity, out var currentManager))
             return 0;
 
-        var stack = new Stack<ContainerManagerComponent>();
+        var containerStack = new Stack<ContainerManagerComponent>();
         var count = 0;
+
+        //check thieving beacons
+        if (condition.CheckThievingBeacon)
+        {
+            var beaconsQueue = AllEntityQuery<ThiefFultonComponent>();
+            while (beaconsQueue.MoveNext(out var uid, out var beacon))
+            {
+                if (beacon.LinkedOwner != mind.Owner)
+                    continue;
+
+                var nearestEnt = _lookup.GetEntitiesInRange(uid, beacon.ThievingRange);
+                foreach (var ent in nearestEnt)
+                {
+                    CheckEntity(ent, condition, ref containerStack, ref count);
+                }
+            }
+        }
 
         //check pulling object
         if (TryComp<PullerComponent>(mind.OwnedEntity, out var pull)) //TO DO: to make the code prettier? don't like the repetition
@@ -112,7 +131,7 @@ public sealed class StealConditionSystem : EntitySystem
                 {
                     // if it is a container check its contents
                     if (_containerQuery.TryGetComponent(pulledEntity, out var containerManager))
-                        stack.Push(containerManager);
+                        containerStack.Push(containerManager);
                 }
             }
         }
@@ -125,19 +144,29 @@ public sealed class StealConditionSystem : EntitySystem
             {
                 foreach (var entity in container.ContainedEntities)
                 {
-                    // check if this is the item
-                    if (CheckStealTarget(entity, condition)) count++; //To Do: add support for stackable items
-
-                    // if it is a container check its contents
-                    if (_containerQuery.TryGetComponent(entity, out var containerManager))
-                        stack.Push(containerManager);
+                    CheckEntity(entity, condition, ref containerStack, ref count);
                 }
             }
-        } while (stack.TryPop(out currentManager));
+        }
+        while (containerStack.TryPop(out currentManager));
 
         var result = count / (float) condition.CollectionSize;
         result = Math.Clamp(result, 0, 1);
         return result;
+    }
+
+    private void CheckEntity(EntityUid entity, StealConditionComponent condition, ref Stack<ContainerManagerComponent> containerStack, ref int counter)
+    {
+        // check if this is the item
+        if (CheckStealTarget(entity, condition)) counter++;
+
+        //we don't check the inventories of sentient entity
+        if (!TryComp<MindContainerComponent>(entity, out var pullMind))
+        {
+            // if it is a container check its contents
+            if (_containerQuery.TryGetComponent(entity, out var containerManager))
+                containerStack.Push(containerManager);
+        }
     }
 
     private bool CheckStealTarget(EntityUid entity, StealConditionComponent condition)

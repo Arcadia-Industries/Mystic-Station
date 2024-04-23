@@ -41,11 +41,10 @@
     state: implanter0
   content:
   - StorageImplanter
-  - DnaScramblerImplanter
-  - EphedrineChemistryBottle
+  - ChemicalSynthesisKit
   - SoapOmega
   - Syringe
-  - DrinkVodkaBottleFull
+  - Syringe
 
 - type: thiefBackpackSet
   id: SyndieSet
@@ -74,7 +73,6 @@
   - ClothingUniformJumpsuitPyjamaSyndicateBlack
   - NocturineChemistryBottle
   - NocturineChemistryBottle
-  - NocturineChemistryBottle
   - HypopenBox
   - NitrousOxideTankFilled
   - BedsheetSyndie
@@ -89,8 +87,9 @@
   content:
   - EncryptionKeyStationMaster
   - CyberPen
-  - BriefcaseThiefBribingBundleFilled
   - ClothingMaskGasVoiceChameleon
+  - BriefcaseThiefBribingBundleFilled
+  - MaterialDiamond1
   #- todo Chameleon Stamp
 
 - type: thiefBackpackSet
@@ -101,10 +100,22 @@
     sprite: Clothing/Neck/Cloaks/void.rsi
     state: icon
   content:
+  - ThiefFultonBeacon
   - InvisibleCrate
-  - ClothingNeckCloakVoid
   - FultonBeacon
   - Fulton
+  - PetCarrier
+
+- type: thiefBackpackSet
+  id: InvisibleSet
+  name: thief-backpack-category-invisible-name
+  description: thief-backpack-category-invisible-description
+  sprite:
+    sprite: Objects/Devices/chameleon_projector.rsi
+    state: icon
+  content:
   - SmokeGrenade
   - SmokeGrenade
-  - SmokeGrenade
+  - ScramImplanter
+  - ChameleonProjector
+  - ClothingNeckCloakVoid

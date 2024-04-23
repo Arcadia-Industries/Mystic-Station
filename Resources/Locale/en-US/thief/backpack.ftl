@@ -31,9 +31,7 @@ thief-backpack-category-chemistry-name = chemistry kit
 thief-backpack-category-chemistry-description =
     A set for those who love to improve their body.
     It includes a storage implanter,
-    a DNA scrambler implanter,
-    a set of chemicals for a rainy day,
-    and omega soap.
+    chemical synthesis kit and omega soap.
 
 thief-backpack-category-syndie-name = syndie kit
 thief-backpack-category-syndie-description =
@@ -45,19 +43,25 @@ thief-backpack-category-sleeper-name = sleepwalker's kit
 thief-backpack-category-sleeper-description =
     A set for those who like to sleep in,
     or for everyone around you to sleep.
-    Includes a set of nocturine vials, a hypopen and
+    Includes a set of nocturine vials, hypopen and
     a tank of sleeping gas.
 
 thief-backpack-category-communicator-name = communicator's kit
 thief-backpack-category-communicator-description =
     A communication enthusiast's kit. Includes a master key
-    for all station channels, a cybersun pen, a portable
-    crew monitor, a voice chameleon mask and lots of money for business deals.
+    for all station channels, a cybersun pen, a voice chameleon mask 
+    and lots of money for business deals.
 
 thief-backpack-category-smuggler-name = smuggler's kit
 thief-backpack-category-smuggler-description =
     A kit for those who like to have big pockets.
-    Includes a fulton beacon, ten fultons, 3 smoke grenades
-    and an invisible crate. You can't move in them,
-    but you can quickly hide or carry valuable loot.
-    This kit also has a cool void cloak to go along with it.
+    Includes a fulton beacon, ten fultons, Pet Carrier,
+    scram implanter, bonus thieving beacon and an invisible crate. 
+    You can't move in them, but you can quickly 
+    hide or carry valuable loot.
+
+thief-backpack-category-invisible-name = Invisibility kit
+thief-backpack-category-invisible-description = 
+    A set for someone who can't be caught. 
+    Includes: 2 smoke grenades, scram implanter and
+    Chameleon projector.
