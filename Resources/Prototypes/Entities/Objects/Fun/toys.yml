@@ -1464,6 +1464,8 @@
   - type: Tag
     tags:
       - DrinkSpaceGlue
+  - type: Tool
+    qualities: Gluing
 
 - type: entity
   parent: BaseItem
