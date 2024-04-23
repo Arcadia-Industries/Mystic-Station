@@ -653,6 +653,7 @@
   - type: Tag
     tags:
     - DoorBumpOpener
+    - Metal
   - type: ChameleonClothing
     slot: [idcard]
     default: PassengerIDCard
@@ -669,6 +670,9 @@
   id: NukieAgentIDCard
   suffix: Nukie
   components:
+  - type: Tag
+    tags:
+    - Metal
   - type: Access
     tags:
     - Maintenance
@@ -695,6 +699,9 @@
   - type: Sprite
     layers:
     - state: syndie
+  - type: Tag
+    tags:
+    - Metal
   - type: Access
     tags:
     - NuclearOperative
@@ -708,6 +715,9 @@
   - type: Sprite
     layers:
     - state: pirate
+  - type: Tag
+    tags:
+    - Metal
   - type: Access
     tags:
     - NuclearOperative
