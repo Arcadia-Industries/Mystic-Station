@@ -39,6 +39,7 @@ using Content.Shared.Movement.Components;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.Popups;
+using Content.Shared.Slippery;
 using Content.Shared.Tabletop.Components;
 using Content.Shared.Tools.Systems;
 using Content.Shared.Verbs;
@@ -80,6 +81,7 @@ public sealed partial class AdminVerbSystem
     [Dependency] private readonly SharedContentEyeSystem _eyeSystem = default!;
     [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
     [Dependency] private readonly SuperBonkSystem _superBonkSystem = default!;
+    [Dependency] private readonly SlipperySystem _slipperySystem = default!;
 
     // All smite verbs have names so invokeverb works.
     private void AddSmiteVerbs(GetVerbsEvent<Verb> args)
@@ -846,5 +848,31 @@ public sealed partial class AdminVerbSystem
             Message = Loc.GetString("admin-smite-terminate-description")
         };
         args.Verbs.Add(terminate);
+
+        Verb superslip = new()
+        {
+            Text = "Super Slip",
+            Category = VerbCategory.Smite,
+            Icon = new SpriteSpecifier.Rsi(new("Objects/Specific/Janitorial/soap.rsi"), "omega-4"),
+            Act = () =>
+            {
+                var hadSlipComponent = EnsureComp(args.Target, out SlipperyComponent slipComponent);
+                if (!hadSlipComponent)
+                {
+                    slipComponent.SuperSlippery = true;
+                    slipComponent.ParalyzeTime = 5;
+                    slipComponent.LaunchForwardsMultiplier = 20;
+                }
+
+                _slipperySystem.TrySlip(args.Target, slipComponent, args.Target, requiresContact: false);
+                if (!hadSlipComponent)
+                {
+                    RemComp(args.Target, slipComponent);
+                }
+            },
+            Impact = LogImpact.Extreme,
+            Message = Loc.GetString("admin-smite-super-slip-description")
+        };
+        args.Verbs.Add(superslip);
     }
 }
