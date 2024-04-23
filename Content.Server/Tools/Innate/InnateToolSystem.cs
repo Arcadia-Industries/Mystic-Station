@@ -1,99 +1,108 @@
-using System.Linq;
-using Content.Shared.Body.Part;
-using Content.Shared.Destructible;
-using Content.Shared.Hands;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Interaction.Components;
 using Content.Shared.Storage;
-using Content.Shared.Tag;
-using Robust.Shared.Network;
 using Robust.Shared.Random;
 
 namespace Content.Server.Tools.Innate;
 
 /// <summary>
-///     Spawns a list unremovable tools in hands if possible. Used for drones,
+///     Spawns unremovable tools in HandsComponent. Do nothing if no HandsComponent exists on enitity prototype, or if comp added in realtime. Used for drones,
 ///     borgs, or maybe even stuff like changeling armblades!
 /// </summary>
 public sealed class InnateToolSystem : EntitySystem
 {
     [Dependency] private readonly IRobustRandom _robustRandom = default!;
     [Dependency] private readonly SharedHandsSystem _sharedHandsSystem = default!;
-    [Dependency] private readonly TagSystem _tagSystem = default!;
 
     public override void Initialize()
     {
         base.Initialize();
         SubscribeLocalEvent<InnateToolComponent, MapInitEvent>(OnMapInit);
-        SubscribeLocalEvent<InnateToolComponent, HandCountChangedEvent>(OnHandCountChanged);
         SubscribeLocalEvent<InnateToolComponent, ComponentShutdown>(OnShutdown);
-        SubscribeLocalEvent<InnateToolComponent, DestructionEventArgs>(OnDestroyed);
+        SubscribeLocalEvent<InnateToolComponent, ComponentRemove>(OnDestroyed);
     }
 
-    private void OnMapInit(EntityUid uid, InnateToolComponent component, MapInitEvent args)
+    /// <summary>
+    /// Creates hands using HandsComponent (if any) and spawn in hands innate tools
+    /// </summary>
+    /// <param name="innateTool"></param>
+    /// <param name="args"></param>
+    private void OnMapInit(Entity<InnateToolComponent> innateTool, ref MapInitEvent args)
     {
-        if (component.Tools.Count == 0)
+        if (innateTool.Comp.Tools.Count == 0)
             return;
 
-        component.ToSpawn = EntitySpawnCollection.GetSpawns(component.Tools, _robustRandom);
+        if (!TryComp<HandsComponent>(innateTool.Owner, out var hands))
+            return;
+
+        innateTool.Comp.ToSpawn = EntitySpawnCollection.GetSpawns(innateTool.Comp.Tools, _robustRandom);
+        AddHands(innateTool, innateTool.Comp.Tools.Count);
+        TrySpawnInnateTool(innateTool, hands);
     }
 
-    private void OnHandCountChanged(EntityUid uid, InnateToolComponent component, HandCountChangedEvent args)
+
+    /// <summary>
+    /// Creates hands
+    /// </summary>
+    /// <param name="uid"></param>
+    /// <param name="amount"></param>
+    private void AddHands(Entity<InnateToolComponent> innateTool, int amount)
     {
-        if (component.ToSpawn.Count == 0)
-            return;
-
-        var spawnCoord = Transform(uid).Coordinates;
-
-        var toSpawn = component.ToSpawn.First();
-
-        var item = Spawn(toSpawn, spawnCoord);
-        AddComp<UnremoveableComponent>(item);
-        if (!_sharedHandsSystem.TryPickupAnyHand(uid, item, checkActionBlocker: false))
+        for (var i = 0; i < amount; i++)
         {
-            QueueDel(item);
-            component.ToSpawn.Clear();
+            string handId = $"{innateTool.Owner}-innateHand{i}"; // TODO: another way of unique names. If try to add second same hand name, then that second hand don't add
+            _sharedHandsSystem.AddHand(innateTool.Owner, handId, HandLocation.Left);
+            innateTool.Comp.HandIds.Add(handId);
         }
-        component.ToSpawn.Remove(toSpawn);
-        component.ToolUids.Add(item);
     }
 
-    private void OnShutdown(EntityUid uid, InnateToolComponent component, ComponentShutdown args)
+    private void TrySpawnInnateTool(Entity<InnateToolComponent> innateTool, HandsComponent hands)
     {
-        foreach (var tool in component.ToolUids)
+        for (var i = 0; i < innateTool.Comp.ToSpawn.Count; i++)
+        {
+            var spawnCoord = Transform(innateTool.Owner).Coordinates;
+            var toSpawn = innateTool.Comp.ToSpawn[i];
+            var item = Spawn(toSpawn, spawnCoord);
+
+            _sharedHandsSystem.DoPickup(innateTool.Owner, hands.Hands[innateTool.Comp.HandIds[i]], item);
+
+            AddComp<UnremoveableComponent>(item);
+            innateTool.Comp.ToolUids.Add(item);
+        }
+
+        innateTool.Comp.ToSpawn.Clear();
+    }
+
+    private void OnShutdown(Entity<InnateToolComponent> innateTool, ref ComponentShutdown args)
+    {
+        foreach (var tool in innateTool.Comp.ToolUids)
         {
             RemComp<UnremoveableComponent>(tool);
         }
     }
 
-    private void OnDestroyed(EntityUid uid, InnateToolComponent component, DestructionEventArgs args)
+    private void OnDestroyed(Entity<InnateToolComponent> innateTool, ref ComponentRemove args)
     {
-        Cleanup(uid, component);
+        Cleanup(innateTool);
     }
 
-    public void Cleanup(EntityUid uid, InnateToolComponent component)
+    private void Cleanup(Entity<InnateToolComponent> innateTool)
     {
-        foreach (var tool in component.ToolUids)
-        {
-            if (_tagSystem.HasTag(tool, "InnateDontDelete"))
-            {
-                RemComp<UnremoveableComponent>(tool);
-            }
-            else
-            {
-                Del(tool);
-            }
+        TryComp<HandsComponent>(innateTool, out var hands);
 
-            if (TryComp<HandsComponent>(uid, out var hands))
-            {
-                foreach (var hand in hands.Hands)
-                {
-                    _sharedHandsSystem.TryDrop(uid, hand.Value, checkActionBlocker: false, handsComp: hands);
-                }
-            }
+        int i = 0;
+        foreach (var tool in innateTool.Comp.ToolUids)
+        {
+            RemComp<UnremoveableComponent>(tool); // in RemComp already existsd tryGetComp
+            Del(tool);
+            if (hands != null)
+                _sharedHandsSystem.TryDrop(innateTool.Owner, hands.Hands[innateTool.Comp.HandIds[i]], checkActionBlocker: false, handsComp: hands);
+
+            i++;
         }
 
-        component.ToolUids.Clear();
+        innateTool.Comp.ToolUids.Clear();
+        innateTool.Comp.HandIds.Clear();
     }
 }
