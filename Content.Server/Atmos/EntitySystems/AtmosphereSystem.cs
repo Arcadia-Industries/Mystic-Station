@@ -45,6 +45,7 @@ public sealed partial class AtmosphereSystem : SharedAtmosphereSystem
     private EntityQuery<MapAtmosphereComponent> _mapAtmosQuery;
     private EntityQuery<AirtightComponent> _airtightQuery;
     private EntityQuery<FirelockComponent> _firelockQuery;
+    private EntityQuery<AirLeakageComponent> _airLeakageQuery;
     private HashSet<EntityUid> _entSet = new();
 
     public override void Initialize()
@@ -64,6 +65,7 @@ public sealed partial class AtmosphereSystem : SharedAtmosphereSystem
         _atmosQuery = GetEntityQuery<GridAtmosphereComponent>();
         _airtightQuery = GetEntityQuery<AirtightComponent>();
         _firelockQuery = GetEntityQuery<FirelockComponent>();
+        _airLeakageQuery = GetEntityQuery<AirLeakageComponent>();
 
         SubscribeLocalEvent<TileChangedEvent>(OnTileChanged);
 
