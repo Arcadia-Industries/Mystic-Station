@@ -334,3 +334,33 @@
   flatReductions:
     # can't punch the endoskeleton to death
     Blunt: 5
+
+# Standart borg damage set, i think 10% to brute and heat is ok
+- type: damageModifierSet
+  id: Borg
+  coefficients:
+    Blunt: 0.9
+    Piercing: 0.9
+    Slash: 0.9
+    Heat: 0.9
+    Shock: 2.5
+    # Shock does 2.5x damage
+  flatReductions:
+    Blunt: 5 
+    # Borgs are metall
+    Heat: 5 
+    # Can`t kill borg with lighter
+
+# Syndicate assault borg damage set
+- type: damageModifierSet
+  id: BorgAssault
+  coefficients:
+    Blunt: 0.6
+    Slash: 0.6
+    Piercing: 0.6
+    Heat: 0.6
+    # Brute coefficients are taken from syndicate elite hardsuit, but heat resistance was nerfed
+    Shock: 2.5
+  flatReductions:
+    Blunt: 5
+    Heat: 5

@@ -146,6 +146,7 @@
   - type: Flashable
   - type: Damageable
     damageContainer: Silicon
+    damageModifierSet: Borg
   - type: Destructible
     thresholds:
     - trigger:
@@ -255,3 +256,9 @@
         - Syndicate
     - type: ShowSyndicateIcons
     - type: MovementAlwaysTouching
+    - type: Repairable
+      doAfterDelay: 15
+      # Longer delay
+    - type: Damageable
+      damageContainer: Silicon
+      damageModifierSet: BorgAssault
