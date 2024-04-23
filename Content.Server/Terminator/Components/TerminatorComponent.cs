@@ -1,3 +1,4 @@
+/* Commented out to be used as future reference for the role; won't work if uncommented.
 using Content.Server.Terminator.Systems;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization.TypeSerializers.Implementations.Custom.Prototype.List;
@@ -17,3 +18,4 @@ public sealed partial class TerminatorComponent : Component
     [DataField("target")]
     public EntityUid? Target;
 }
+*/

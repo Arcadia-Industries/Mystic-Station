@@ -1,3 +1,4 @@
+/* Commented out to be used as future reference for the role; won't work if uncommented.
 using Content.Server.Objectives.Components;
 using Content.Server.Terminator.Components;
 using Content.Shared.Mind;
@@ -39,3 +40,4 @@ public sealed class TerminatorTargetOverrideSystem : EntitySystem
             _target.SetTarget(uid, terminator.Target.Value);
     }
 }
+*/

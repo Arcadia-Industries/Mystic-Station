@@ -1,3 +1,4 @@
+/* Commented out to be used as future reference for the role; won't work if uncommented.
 using Content.Server.Objectives.Systems;
 
 namespace Content.Server.Objectives.Components;
@@ -10,3 +11,4 @@ namespace Content.Server.Objectives.Components;
 public sealed partial class TerminatorTargetOverrideComponent : Component
 {
 }
+*/
