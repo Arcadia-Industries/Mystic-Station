@@ -155,6 +155,8 @@
   - type: ItemToggleSize
     activatedSize: Small
   - type: ItemToggleHot
+  - type: IgnitionSource
+    ignited: false
   - type: Item
     size: Tiny
     sprite: Objects/Tools/lighters.rsi
