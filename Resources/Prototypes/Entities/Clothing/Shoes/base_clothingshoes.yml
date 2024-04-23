@@ -23,6 +23,7 @@
     tags:
     - ClothMade
     - WhitelistChameleon
+  - type: ShoesRequiredStepTriggerImmune
 
 - type: entity
   abstract: true

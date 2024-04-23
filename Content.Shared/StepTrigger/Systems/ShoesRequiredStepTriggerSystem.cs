@@ -1,4 +1,4 @@
-﻿using Content.Shared.Examine;
+using Content.Shared.Examine;
 using Content.Shared.Inventory;
 using Content.Shared.StepTrigger.Components;
 using Content.Shared.Tag;
@@ -8,7 +8,6 @@ namespace Content.Shared.StepTrigger.Systems;
 public sealed class ShoesRequiredStepTriggerSystem : EntitySystem
 {
     [Dependency] private readonly InventorySystem _inventory = default!;
-    [Dependency] private readonly TagSystem _tagSystem = default!;
 
     /// <inheritdoc/>
     public override void Initialize()
@@ -19,18 +18,24 @@ public sealed class ShoesRequiredStepTriggerSystem : EntitySystem
 
     private void OnStepTriggerAttempt(EntityUid uid, ShoesRequiredStepTriggerComponent component, ref StepTriggerAttemptEvent args)
     {
-        if (_tagSystem.HasTag(args.Tripper, "ShoesRequiredStepTriggerImmune"))
+        // checks if the entity itself is the one with the component
+        if (HasComp<ShoesRequiredStepTriggerImmuneComponent>(args.Tripper))
         {
             args.Cancelled = true;
             return;
         }
 
-        if (!TryComp<InventoryComponent>(args.Tripper, out var inventory))
-            return;
-
-        if (_inventory.TryGetSlotEntity(args.Tripper, "shoes", out _, inventory))
+        // go through all equipped items, checks if item is equipped in shoe slot or has shoe immmune component
+        if (_inventory.TryGetContainerSlotEnumerator(args.Tripper, out var containerSlotEnumerator, SlotFlags.All & ~SlotFlags.POCKET))
         {
-            args.Cancelled = true;
+            while (containerSlotEnumerator.NextItem(out var item, out var slot))
+            {
+                if (HasComp<ShoesRequiredStepTriggerImmuneComponent>(item))
+                {
+                    args.Cancelled = true;
+                    return;
+                }
+            }
         }
     }
 
