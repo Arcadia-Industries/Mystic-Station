@@ -29,6 +29,7 @@
     tags:
     - Kangaroo
     - WhitelistChameleon
+    - BoxingGlove
 
 - type: entity
   parent: ClothingHandsGlovesBoxingRed

@@ -34,6 +34,8 @@ namespace Content.Shared.Weapons.Melee;
 
 public abstract class SharedMeleeWeaponSystem : EntitySystem
 {
+    public const float DamagePitchVariation = 0.05f;
+
     [Dependency] protected readonly ISharedAdminLogManager   AdminLogger     = default!;
     [Dependency] protected readonly ActionBlockerSystem      Blocker         = default!;
     [Dependency] protected readonly SharedCombatModeSystem   CombatMode      = default!;
@@ -48,6 +50,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
     [Dependency] private   readonly SharedPhysicsSystem     _physics         = default!;
     [Dependency] private   readonly IPrototypeManager       _protoManager    = default!;
     [Dependency] private   readonly StaminaSystem           _stamina         = default!;
+
 
     private const int AttackMask = (int) (CollisionGroup.MobMask | CollisionGroup.Opaque);
 
@@ -445,7 +448,7 @@ public abstract class SharedMeleeWeaponSystem : EntitySystem
 
         // For consistency with wide attacks stuff needs damageable.
         if (Deleted(target) ||
-            !HasComp<DamageableComponent>(target) ||
+            !HasComp<DamageableComponent>(target) && component.HitItem == false ||
             !TryComp<TransformComponent>(target, out var targetXform) ||
             // Not in LOS.
             !InRange(user, target.Value, component.Range, session))
