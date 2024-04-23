@@ -176,6 +176,7 @@ public sealed class PlantHolderSystem : EntitySystem
                 {
                     component.Health = component.Seed.Endurance;
                 }
+
                 component.LastCycle = _gameTiming.CurTime;
 
                 QueueDel(args.Used);
@@ -348,7 +349,7 @@ public sealed class PlantHolderSystem : EntitySystem
             var seed = produce.Seed;
             if (seed != null)
             {
-                var nutrientBonus = seed.Potency / 2.5f;
+                var nutrientBonus = produce.ProducePotency / 2.5f;
                 AdjustNutrient(uid, nutrientBonus, component);
             }
             QueueDel(args.Used);
@@ -572,7 +573,7 @@ public sealed class PlantHolderSystem : EntitySystem
             foreach (var (gas, amount) in component.Seed.ExudeGasses)
             {
                 environment.AdjustMoles(gas,
-                    MathF.Max(1f, MathF.Round(amount * MathF.Round(component.Seed.Potency) / exudeCount)));
+                    MathF.Max(1f, MathF.Round(amount * MathF.Round(component.PotencyBonus + component.Seed.Potency) / exudeCount)));
             }
         }
 
@@ -591,7 +592,7 @@ public sealed class PlantHolderSystem : EntitySystem
                 component.UpdateSpriteAfterUpdate = true;
         }
 
-        // Weed levels.
+        // Pest levels.
         if (component.PestLevel > 0)
         {
             // TODO: Carnivorous plants?
@@ -693,7 +694,7 @@ public sealed class PlantHolderSystem : EntitySystem
         component.PestLevel = MathHelper.Clamp(component.PestLevel, 0f, 10f);
         component.WeedLevel = MathHelper.Clamp(component.WeedLevel, 0f, 10f);
         component.Toxins = MathHelper.Clamp(component.Toxins, 0f, 100f);
-        component.YieldMod = MathHelper.Clamp(component.YieldMod, 0, 2);
+        component.YieldMod = MathHelper.Clamp(component.YieldMod, 0f, 2f);
         component.MutationMod = MathHelper.Clamp(component.MutationMod, 0f, 3f);
     }
 
@@ -718,7 +719,7 @@ public sealed class PlantHolderSystem : EntitySystem
                 return false;
             }
 
-            _botany.Harvest(component.Seed, user, component.YieldMod);
+            _botany.Harvest(component.Seed, component.PotencyBonus, user, component.YieldMod);
             AfterHarvest(plantholder, component);
             return true;
         }
@@ -739,7 +740,7 @@ public sealed class PlantHolderSystem : EntitySystem
         if (component.Seed == null || !component.Harvest)
             return;
 
-        _botany.AutoHarvest(component.Seed, Transform(uid).Coordinates);
+        _botany.AutoHarvest(component.Seed, component.PotencyBonus, Transform(uid).Coordinates);
         AfterHarvest(uid, component);
     }
 
@@ -781,6 +782,7 @@ public sealed class PlantHolderSystem : EntitySystem
         component.Harvest = false;
         component.MutationLevel = 0;
         component.YieldMod = 1;
+        component.PotencyBonus = 0;
         component.MutationMod = 1;
         component.ImproperLight = false;
         component.ImproperHeat = false;
@@ -796,6 +798,7 @@ public sealed class PlantHolderSystem : EntitySystem
             return;
 
         component.YieldMod = 1;
+        component.PotencyBonus = 0;
         component.MutationMod = 1;
         component.PestLevel = 0;
         component.Seed = null;
