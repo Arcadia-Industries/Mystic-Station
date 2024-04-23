@@ -216,7 +216,13 @@
     sprite: Objects/Weapons/Guns/Battery/laser_gun.rsi
   - type: StaticPrice
     price: 420
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
   - type: Gun
+    minAngle: 21
+    maxAngle: 32
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto
@@ -281,7 +287,13 @@
       shader: unshaded
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/pulse_carbine.rsi
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
   - type: Gun
+    minAngle: 21
+    maxAngle: 32
     selectedMode: SemiAuto
     fireRate: 3
     availableModes:
@@ -312,7 +324,13 @@
       shader: unshaded
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/pulse_rifle.rsi
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
   - type: Gun
+    minAngle: 21
+    maxAngle: 32
     fireRate: 1.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
@@ -339,7 +357,13 @@
       shader: unshaded
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/laser_cannon.rsi
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
   - type: Gun
+    minAngle: 21
+    maxAngle: 32
     fireRate: 1.5
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser_cannon.ogg
@@ -394,7 +418,13 @@
       shader: unshaded
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/xray.rsi
+  - type: Wieldable
+  - type: GunWieldBonus
+    minAngle: -20
+    maxAngle: -30
   - type: Gun
+    minAngle: 21
+    maxAngle: 32
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
   - type: HitscanBatteryAmmoProvider
