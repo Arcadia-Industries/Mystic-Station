@@ -1,14 +1,21 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Numerics;
+using Content.Shared.ActionBlocker;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Audio;
+using Content.Shared.Damage.Components;
+using Content.Shared.Damage.Systems;
 using Content.Shared.Database;
+using Content.Shared.Gravity;
 using Content.Shared.Hands;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Item.ItemToggle.Components;
+using Content.Shared.Movement.Components;
+using Content.Shared.Movement.Systems;
 using Content.Shared.Popups;
 using Content.Shared.Projectiles;
+using Content.Shared.Standing;
 using Content.Shared.Weapons.Ranged.Components;
 using Content.Shared.Weapons.Ranged.Events;
 using Robust.Shared.Audio;
@@ -35,6 +42,8 @@ public sealed class ReflectSystem : EntitySystem
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedTransformSystem _transform = default!;
     [Dependency] private readonly InventorySystem _inventorySystem = default!;
+    [Dependency] private readonly SharedGravitySystem _gravity = default!;
+    [Dependency] private readonly StandingStateSystem _standing = default!;
 
     public override void Initialize()
     {
@@ -91,15 +100,20 @@ public sealed class ReflectSystem : EntitySystem
 
     private bool TryReflectProjectile(EntityUid user, EntityUid reflector, EntityUid projectile, ProjectileComponent? projectileComp = null, ReflectComponent? reflect = null)
     {
-        if (!Resolve(reflector, ref reflect, false) ||
+        // Do we have the components needed to try a reflect at all?
+        if (
+            !Resolve(reflector, ref reflect, false) ||
             !reflect.Enabled ||
             !TryComp<ReflectiveComponent>(projectile, out var reflective) ||
             (reflect.Reflects & reflective.Reflective) == 0x0 ||
-            !_random.Prob(reflect.ReflectProb) ||
-            !TryComp<PhysicsComponent>(projectile, out var physics))
-        {
+            !TryComp<PhysicsComponent>(projectile, out var physics) ||
+            TryComp<StaminaComponent>(reflector, out var staminaComponent) && staminaComponent.Critical ||
+            _standing.IsDown(reflector)
+        )
             return false;
-        }
+
+        if (!_random.Prob(CalcReflectChance(reflector, reflect)))
+            return false;
 
         var rotation = _random.NextAngle(-reflect.Spread / 2, reflect.Spread / 2).Opposite();
         var existingVelocity = _physics.GetMapLinearVelocity(projectile, component: physics);
@@ -137,6 +151,34 @@ public sealed class ReflectSystem : EntitySystem
         return true;
     }
 
+    private float CalcReflectChance(EntityUid reflector, ReflectComponent reflect)
+    {
+        /*
+         *  The rules of deflection are as follows:
+         *  If you innately reflect things via magic, biology etc., you always have a full chance.
+         *  If you are standing up and standing still, you're prepared to deflect and have full chance.
+         *  If you have velocity, your deflection chance depends on your velocity, clamped.
+         *  If you are floating, your chance is the minimum value possible.
+         *  You cannot deflect if you are knocked down or stunned.
+         */
+
+        if (reflect.Innate)
+            return reflect.ReflectProb;
+
+        if (_gravity.IsWeightless(reflector))
+            return reflect.MinReflectProb;
+
+        if (!TryComp<PhysicsComponent>(reflector, out var reflectorPhysics))
+            return reflect.ReflectProb;
+
+        return MathHelper.Lerp(
+            reflect.MinReflectProb,
+            reflect.ReflectProb,
+            // Inverse progression between velocities fed in as progression between probabilities. We go high -> low so the output here needs to be _inverted_.
+            1 - Math.Clamp((reflectorPhysics.LinearVelocity.Length() - reflect.VelocityBeforeNotMaxProb) / (reflect.VelocityBeforeMinProb - reflect.VelocityBeforeNotMaxProb), 0, 1)
+        );
+    }
+
     private void OnReflectHitscan(EntityUid uid, ReflectComponent component, ref HitScanReflectAttemptEvent args)
     {
         if (args.Reflected ||
@@ -162,7 +204,14 @@ public sealed class ReflectSystem : EntitySystem
     {
         if (!TryComp<ReflectComponent>(reflector, out var reflect) ||
             !reflect.Enabled ||
-            !_random.Prob(reflect.ReflectProb))
+            TryComp<StaminaComponent>(reflector, out var staminaComponent) && staminaComponent.Critical ||
+            _standing.IsDown(reflector))
+        {
+            newDirection = null;
+            return false;
+        }
+
+        if (!_random.Prob(CalcReflectChance(reflector, reflect)))
         {
             newDirection = null;
             return false;
