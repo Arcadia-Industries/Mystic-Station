@@ -3,12 +3,12 @@ using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.Preferences;
 using Content.Shared.Verbs;
-using Robust.Shared.GameObjects.Components.Localization;
 
 namespace Content.Server.Humanoid;
 
 public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
 {
+    [Dependency] private readonly GrammarSystem _grammar = default!;
     [Dependency] private readonly MarkingManager _markingManager = default!;
 
     public override void Initialize()
@@ -46,10 +46,7 @@ public sealed partial class HumanoidAppearanceSystem : SharedHumanoidAppearanceS
         targetHumanoid.MarkingSet = new(sourceHumanoid.MarkingSet);
 
         targetHumanoid.Gender = sourceHumanoid.Gender;
-        if (TryComp<GrammarComponent>(target, out var grammar))
-        {
-            grammar.Gender = sourceHumanoid.Gender;
-        }
+        _grammar.SetGender(target, sourceHumanoid.Gender);
 
         Dirty(target, targetHumanoid);
     }

@@ -5,7 +5,6 @@ using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Preferences;
-using Robust.Shared.GameObjects.Components.Localization;
 using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 
@@ -22,6 +21,7 @@ namespace Content.Shared.Humanoid;
 /// </summary>
 public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 {
+    [Dependency] private readonly GrammarSystem _grammar = default!;
     [Dependency] private readonly INetManager _netManager = default!;
     [Dependency] private readonly IPrototypeManager _proto = default!;
     [Dependency] private readonly MarkingManager _markingManager = default!;
@@ -335,10 +335,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         EnsureDefaultMarkings(uid, humanoid);
 
         humanoid.Gender = profile.Gender;
-        if (TryComp<GrammarComponent>(uid, out var grammar))
-        {
-            grammar.Gender = profile.Gender;
-        }
+        _grammar.SetGender(uid, profile.Gender);
 
         humanoid.Age = profile.Age;
 
