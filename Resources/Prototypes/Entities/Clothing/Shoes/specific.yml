@@ -182,6 +182,10 @@
         - state: soles-inhand-right
     - type: ChameleonClothing
       slot: [FEET]
+      whitelist:
+        tags:
+          - WhitelistChameleon
+        requireAll: true
       default: ClothingShoesColorBlack
     - type: UserInterface
       interfaces:
