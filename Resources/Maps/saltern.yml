@@ -6116,8 +6116,7 @@ entities:
           maxVol: 50
           name: null
           reagents:
-          - data: null
-            ReagentId: Leporazine
+          - ReagentId: Leporazine
             Quantity: 40
     - type: MixableSolution
       solution: beaker
