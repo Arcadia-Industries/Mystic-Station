@@ -1,5 +1,6 @@
 using Content.Server.Administration.Logs;
 using Content.Server.Body.Systems;
+using Content.Server.Forensics;
 using Content.Server.Kitchen.Components;
 using Content.Server.Popups;
 using Content.Shared.Database;
@@ -36,6 +37,7 @@ namespace Content.Server.Kitchen.EntitySystems
         [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
         [Dependency] private readonly SharedAudioSystem _audio = default!;
         [Dependency] private readonly MetaDataSystem _metaData = default!;
+        [Dependency] private readonly ForensicsSystem _forensicsSystem = default!;
 
         public override void Initialize()
         {
@@ -92,6 +94,8 @@ namespace Content.Server.Kitchen.EntitySystems
             if (Spikeable(uid, args.Args.User, args.Args.Target.Value, component, butcherable))
                 Spike(uid, args.Args.User, args.Args.Target.Value, component);
 
+            _forensicsSystem.ApplyEvidence(args.User, uid);
+
             component.InUse = false;
             args.Handled = true;
         }
@@ -142,7 +146,17 @@ namespace Content.Server.Kitchen.EntitySystems
             // This feels not okay, but entity is getting deleted on "Spike", for now...
             component.MeatSource1p = Loc.GetString("comp-kitchen-spike-remove-meat", ("victim", victimUid));
             component.MeatSource0 = Loc.GetString("comp-kitchen-spike-remove-meat-last", ("victim", victimUid));
-            component.Victim = Name(victimUid);
+            if (TryComp<DnaComponent>(victimUid, out var dna))
+            {
+                component.VictimDNA = dna.DNA;
+            } else
+            {
+                component.VictimDNA = Loc.GetString("forensics-dna-unknown");
+            }
+            EnsureComp<ForensicsComponent>(uid, out var forensics);
+            forensics.DNAs.Add(component.VictimDNA);
+
+            _metaData.SetEntityName(uid, Loc.GetString("comp-kitchen-spike-meat-name", ("name", Name(uid)), ("victim", Name(victimUid))));
 
             UpdateAppearance(uid, null, component);
 
@@ -155,6 +169,8 @@ namespace Content.Server.Kitchen.EntitySystems
             foreach (var gib in gibs) {
                 QueueDel(gib);
             }
+
+            _forensicsSystem.TransferDna(uid, victimUid);
 
             _audio.PlayEntity(component.SpikeSound, Filter.Pvs(uid), uid, true);
         }
@@ -171,11 +187,16 @@ namespace Content.Server.Kitchen.EntitySystems
                 return false;
             }
 
+
+            EnsureComp<ForensicsComponent>(used, out var forensicsKnife);
+            forensicsKnife.DNAs.Add(component.VictimDNA);
+
             var item = _random.PickAndTake(component.PrototypesToSpawn);
 
             var ent = Spawn(item, Transform(uid).Coordinates);
-            _metaData.SetEntityName(ent,
-                Loc.GetString("comp-kitchen-spike-meat-name", ("name", Name(ent)), ("victim", component.Victim)));
+
+            EnsureComp<ForensicsComponent>(ent, out var forensics);
+            forensics.DNAs.Add(component.VictimDNA);
 
             if (component.PrototypesToSpawn.Count != 0)
                 _popupSystem.PopupEntity(component.MeatSource1p, uid, user, PopupType.MediumCaution);
@@ -194,6 +215,10 @@ namespace Content.Server.Kitchen.EntitySystems
                 return;
 
             _appearance.SetData(uid, KitchenSpikeVisuals.Status, component.PrototypesToSpawn?.Count > 0 ? KitchenSpikeStatus.Bloody : KitchenSpikeStatus.Empty, appearance);
+
+            var proto = Prototype(uid);
+            if (component.PrototypesToSpawn?.Count == 0 && proto != null)
+                _metaData.SetEntityName(uid, proto.Name);
         }
 
         private bool Spikeable(EntityUid uid, EntityUid userUid, EntityUid victimUid,
