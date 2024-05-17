@@ -1,0 +1,130 @@
+# Jumpsuit
+- type: loadout
+  id: DirectorJumpsuit
+  equipment: DirectorJumpsuit
+
+- type: startingGear
+  id: DirectorJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitDirector
+
+- type: loadout
+  id: DirectorJumpskirt
+  equipment: DirectorJumpskirt
+
+- type: startingGear
+  id: DirectorJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtDirector
+
+- type: loadout
+  id: DirectorFormalSuit
+  equipment: DirectorFormalSuit
+
+- type: startingGear
+  id: DirectorFormalSuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitCapFormal
+
+- type: loadout
+  id: DirectorFormalSkirt
+  equipment: DirectorFormalSkirt
+
+- type: startingGear
+  id: DirectorFormalSkirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtCapFormalDress
+
+# Head
+- type: loadout
+  id: DirectorHead
+  equipment: DirectorHead
+
+- type: startingGear
+  id: DirectorHead
+  equipment:
+    head: ClothingHeadHatDirector
+
+- type: loadout
+  id: DirectorCap
+  equipment: DirectorCap
+
+- type: startingGear
+  id: DirectorCap
+  equipment:
+    head: ClothingHeadHatCapcap
+
+# Neck
+- type: loadout
+  id: DirectorCloak
+  equipment: DirectorCloak
+
+- type: startingGear
+  id: DirectorCloak
+  equipment:
+    neck: ClothingNeckCloakCap
+
+- type: loadout
+  id: DirectorCloakFormal
+  equipment: DirectorCloakFormal
+
+- type: startingGear
+  id: DirectorCloakFormal
+  equipment:
+    neck: ClothingNeckCloakCapFormal
+
+- type: loadout
+  id: DirectorMantle
+  equipment: DirectorMantle
+
+- type: startingGear
+  id: DirectorMantle
+  equipment:
+    neck: ClothingNeckMantleCap
+
+# Back
+- type: loadout
+  id: DirectorBackpack
+  equipment: DirectorBackpack
+
+- type: startingGear
+  id: DirectorBackpack
+  equipment:
+    back: ClothingBackpackDirectorFilled
+
+- type: loadout
+  id: DirectorSatchel
+  equipment: DirectorSatchel
+
+- type: startingGear
+  id: DirectorSatchel
+  equipment:
+    back: ClothingBackpackSatchelDirectorFilled
+
+- type: loadout
+  id: DirectorDuffel
+  equipment: DirectorDuffel
+
+- type: startingGear
+  id: DirectorDuffel
+  equipment:
+    back: ClothingBackpackDuffelDirectorFilled
+
+# Outer clothing
+- type: loadout
+  id: DirectorOuterClothing
+  equipment: DirectorOuterClothing
+
+- type: startingGear
+  id: DirectorOuterClothing
+  equipment:
+    outerClothing: ClothingOuterArmorDirectorCarapace
+
+- type: loadout
+  id: DirectorWintercoat
+  equipment: DirectorWintercoat
+
+- type: startingGear
+  id: DirectorWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterCap
