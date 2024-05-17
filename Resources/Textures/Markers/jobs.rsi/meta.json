@@ -29,7 +29,7 @@
       "name": "brigmedic"
     },
     {
-      "name": "captain"
+      "name": "director"
     },
     {
       "name": "cargo_tech"
@@ -170,7 +170,7 @@
       "name": "scientist"
     },
     {
-      "name": "security_cadet" 
+      "name": "security_cadet"
     },
     {
       "name": "security_officer"

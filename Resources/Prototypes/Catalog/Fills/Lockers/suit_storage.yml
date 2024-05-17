@@ -44,7 +44,7 @@
   suffix: Prisoner EVA
   components:
   - type: StorageFill
-    contents:   
+    contents:
         - id: OxygenTankFilled
         - id: ClothingOuterHardsuitEVAPrisoner
         - id: ClothingHeadHelmetEVALarge
@@ -217,19 +217,19 @@
   - type: AccessReader
     access: [["Armory"]]
 
-#Captain's hardsuit
+#Director's hardsuit
 - type: entity
-  id: SuitStorageCaptain
+  id: SuitStorageDirector
   parent: SuitStorageBase
-  suffix: Captain
+  suffix: Director
   components:
   - type: StorageFill
     contents:
         - id: OxygenTankFilled
         - id: ClothingOuterHardsuitCap
-        - id: ClothingMaskGasCaptain
+        - id: ClothingMaskGasDirector
   - type: AccessReader
-    access: [["Captain"]]
+    access: [["Director"]]
 
 #Salvage hardsuit
 - type: entity
@@ -259,11 +259,11 @@
         - id: ClothingShoesBootsMagSyndie
         - id: ClothingMaskGasSyndicate
 
-#Pirate Captain's hardsuit
+#Pirate Director's hardsuit
 - type: entity
   id: SuitStoragePirateCap
   parent: SuitStorageBase
-  suffix: Pirate Captain
+  suffix: Pirate Director
   components:
   - type: StorageFill
     contents:

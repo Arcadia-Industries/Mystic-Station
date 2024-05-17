@@ -3888,28 +3888,28 @@ entities:
     - type: Transform
       pos: -4.5,6.5
       parent: 31
-- proto: AirlockCaptainGlassLocked
+- proto: AirlockDirectorGlassLocked
   entities:
   - uid: 1494
     components:
     - type: MetaData
-      name: Captain's Office
+      name: Director's Office
     - type: Transform
       pos: 5.5,25.5
       parent: 31
-- proto: AirlockCaptainLocked
+- proto: AirlockDirectorLocked
   entities:
   - uid: 149
     components:
     - type: MetaData
-      name: Captain's Bathroom
+      name: Director's Bathroom
     - type: Transform
       pos: 12.5,25.5
       parent: 31
   - uid: 731
     components:
     - type: MetaData
-      name: Captain's Bedroom
+      name: Director's Bedroom
     - type: Transform
       pos: 9.5,25.5
       parent: 31
@@ -5387,7 +5387,7 @@ entities:
   - uid: 2154
     components:
     - type: MetaData
-      name: Captain's Quarters APC
+      name: Director's Quarters APC
     - type: Transform
       pos: 8.5,27.5
       parent: 31
@@ -6236,7 +6236,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -36.5,17.5
       parent: 31
-- proto: BedsheetCaptain
+- proto: BedsheetDirector
   entities:
   - uid: 515
     components:
@@ -21730,7 +21730,7 @@ entities:
     - type: Transform
       pos: 6.4716253,-3.2451885
       parent: 31
-- proto: CaptainIDCard
+- proto: DirectorIDCard
   entities:
   - uid: 4684
     components:
@@ -28706,7 +28706,7 @@ entities:
     - type: Transform
       pos: -10.5,8.5
       parent: 31
-- proto: DefaultStationBeaconCaptainsQuarters
+- proto: DefaultStationBeaconDirectorsQuarters
   entities:
   - uid: 11268
     components:
@@ -31597,7 +31597,7 @@ entities:
     - type: Transform
       pos: 7.5,16.5
       parent: 31
-- proto: DresserCaptainFilled
+- proto: DresserDirectorFilled
   entities:
   - uid: 11383
     components:
@@ -32425,7 +32425,7 @@ entities:
     - type: FaxMachine
       destinationAddress: bridge
       name: bridge
-- proto: FaxMachineCaptain
+- proto: FaxMachineDirector
   entities:
   - uid: 9686
     components:
@@ -32433,7 +32433,7 @@ entities:
       pos: 7.5,24.5
       parent: 31
     - type: FaxMachine
-      name: captain's office
+      name: director's office
 - proto: filingCabinetDrawerRandom
   entities:
   - uid: 4637
@@ -48879,7 +48879,7 @@ entities:
     - type: Transform
       pos: -17.5,1.5
       parent: 31
-- proto: LockerCaptainFilledHardsuit
+- proto: LockerDirectorFilledHardsuit
   entities:
   - uid: 5737
     components:
@@ -57890,7 +57890,7 @@ entities:
     - type: Transform
       pos: -20.5,-0.5
       parent: 31
-- proto: SpawnPointCaptain
+- proto: SpawnPointDirector
   entities:
   - uid: 39
     components:
@@ -58605,7 +58605,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Office
+      id: Director's Office
   - uid: 4198
     components:
     - type: Transform
@@ -58615,7 +58615,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Room
+      id: Director's Room
   - uid: 4256
     components:
     - type: Transform
@@ -69616,7 +69616,7 @@ entities:
       pos: 8.5,25.5
       parent: 31
     - type: WarpPoint
-      location: captain's quarters
+      location: director's quarters
   - uid: 11308
     components:
     - type: Transform

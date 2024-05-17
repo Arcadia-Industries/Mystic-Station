@@ -80,7 +80,7 @@
     prototypes:
     - HoPGear
     - CentcomGear
-    - CaptainGear
+    - DirectorGear
     - HoSGear
     - ResearchDirectorGear
     - CMOGear

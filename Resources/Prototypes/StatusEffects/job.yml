@@ -175,10 +175,10 @@
 
 - type: statusIcon
   parent: JobIcon
-  id: JobIconCaptain
+  id: JobIconDirector
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
-    state: Captain
+    state: Director
 
 - type: statusIcon
   parent: JobIcon

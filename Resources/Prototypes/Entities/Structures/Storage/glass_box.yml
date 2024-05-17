@@ -42,7 +42,7 @@
     closedState: glass
   - type: Lock
   - type: AccessReader
-    access: [["Captain"]]
+    access: [["Director"]]
   - type: ItemSlots
   - type: ContainerContainer
     containers:

@@ -2362,14 +2362,14 @@ entities:
     - type: Transform
       pos: -4.8741612,8.817795
       parent: 179
-- proto: CaptainIDCard
+- proto: DirectorIDCard
   entities:
   - uid: 726
     components:
     - type: Transform
       pos: 1.0820513,8.752605
       parent: 179
-- proto: CaptainSabre
+- proto: DirectorSabre
   entities:
   - uid: 381
     components:
@@ -3433,7 +3433,7 @@ entities:
     - type: Transform
       pos: 6.829691,9.4118185
       parent: 179
-- proto: FaxMachineCaptain
+- proto: FaxMachineDirector
   entities:
   - uid: 967
     components:
@@ -4908,7 +4908,7 @@ entities:
     - type: Transform
       pos: 9.532393,18.446417
       parent: 179
-- proto: RubberStampCaptain
+- proto: RubberStampDirector
   entities:
   - uid: 982
     components:
@@ -5144,7 +5144,7 @@ entities:
     - type: Transform
       pos: 3.5,8.5
       parent: 179
-- proto: SpawnPointCaptain
+- proto: SpawnPointDirector
   entities:
   - uid: 954
     components:

@@ -138,34 +138,34 @@
         - 1.025689525 # oxygen
         - 1.025689525 # nitrogen
 
-#Empty captain
+#Empty director
 - type: entity
-  id: JetpackCaptain
+  id: JetpackDirector
   parent: BaseJetpack
-  name: captain's jetpack
+  name: director's jetpack
   suffix: Empty
   components:
   - type: Sprite
-    sprite: Objects/Tanks/Jetpacks/captain.rsi
+    sprite: Objects/Tanks/Jetpacks/director.rsi
   - type: Clothing
-    sprite: Objects/Tanks/Jetpacks/captain.rsi
+    sprite: Objects/Tanks/Jetpacks/director.rsi
     slots:
       - Back
       - SuitStorage
   - type: Item
-    sprite: Objects/Tanks/Jetpacks/captain.rsi
+    sprite: Objects/Tanks/Jetpacks/director.rsi
     size: Normal
   - type: Tag
     tags:
     - HighRiskItem
   - type: StealTarget
-    stealGroup: JetpackCaptainFilled
+    stealGroup: JetpackDirectorFilled
 
-# Filled captain
+# Filled director
 - type: entity
-  id: JetpackCaptainFilled
-  parent: JetpackCaptain
-  name: captain's jetpack
+  id: JetpackDirectorFilled
+  parent: JetpackDirector
+  name: director's jetpack
   suffix: Filled
   components:
   - type: GasTank

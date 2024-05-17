@@ -334,7 +334,7 @@
   id: ClothingNeckClownmedalStealObjective
   components:
   - type: NotJobRequirement
-    job: Captain
+    job: Director
   - type: StealCondition
     stealGroup: ClothingNeckClownmedal
   - type: Objective
@@ -348,7 +348,7 @@
   id: NuclearBombStealObjective
   components:
   - type: NotJobRequirement
-    job: Captain
+    job: Director
   - type: StealCondition
     stealGroup: NuclearBomb
   - type: Objective
@@ -357,12 +357,12 @@
 - type: entity
   noSpawn: true
   parent: BaseThiefStealStructureObjective
-  id: FaxMachineCaptainStealObjective
+  id: FaxMachineDirectorStealObjective
   components:
   - type: NotJobRequirement
-    job: Captain
+    job: Director
   - type: StealCondition
-    stealGroup: FaxMachineCaptain
+    stealGroup: FaxMachineDirector
   - type: Objective
     difficulty: 2
 
@@ -514,7 +514,7 @@
   id: RenaultStealObjective
   components:
   - type: NotJobRequirement
-    job: Captain
+    job: Director
   - type: StealCondition
     stealGroup: AnimalRenault
   - type: Objective

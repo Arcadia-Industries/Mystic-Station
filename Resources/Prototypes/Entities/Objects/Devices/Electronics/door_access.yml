@@ -1,11 +1,11 @@
 # Command
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsCaptain
-  suffix: Captain, Locked
+  id: DoorElectronicsDirector
+  suffix: Director, Locked
   components:
   - type: AccessReader
-    access: [["Captain"]]
+    access: [["Director"]]
 
 - type: entity
   parent: DoorElectronics

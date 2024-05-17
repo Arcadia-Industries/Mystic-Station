@@ -10,7 +10,7 @@
 - type: weightedRandom
   id: TraitorObjectiveGroupSteal
   weights:
-    CaptainIDStealObjective: 1
+    DirectorIDStealObjective: 1
     CMOHyposprayStealObjective: 1
     CMOCrewMonitorStealObjective: 1
     RDHardsuitStealObjective: 1
@@ -18,8 +18,8 @@
     MagbootsStealObjective: 1
     CorgiMeatStealObjective: 1
     ClipboardStealObjective: 1
-    CaptainGunStealObjective: 0.5
-    CaptainJetpackStealObjective: 0.5
+    DirectorGunStealObjective: 0.5
+    DirectorJetpackStealObjective: 0.5
     HandTeleporterStealObjective: 0.5
     SecretDocumentsStealObjective: 0.5
 
@@ -97,7 +97,7 @@
   id: ThiefObjectiveGroupStructure
   weights:
     NuclearBombStealObjective: 0.5
-    FaxMachineCaptainStealObjective: 1
+    FaxMachineDirectorStealObjective: 1
     VehicleSecwayStealObjective: 1
     ChemDispenserStealObjective: 1
     XenoArtifactStealObjective: 1

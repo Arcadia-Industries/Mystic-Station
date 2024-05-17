@@ -129,7 +129,7 @@
   - type: ContainerFill
     containers:
       item:
-      - CaptainSabre
+      - DirectorSabre
 
 - type: entity
   id: ClothingBeltMilitaryWebbingGrenadeFilled

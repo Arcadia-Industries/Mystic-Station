@@ -95,14 +95,14 @@
 
 - type: entity
   parent: ClothingHandsBase
-  id: ClothingHandsGlovesCaptain
-  name: captain gloves
+  id: ClothingHandsGlovesDirector
+  name: director gloves
   description: Regal blue gloves, with a nice gold trim. Swanky.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/captain.rsi
+    sprite: Clothing/Hands/Gloves/director.rsi
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/captain.rsi
+    sprite: Clothing/Hands/Gloves/director.rsi
   - type: GloveHeatResistance
     heatResistance: 1400
   - type: Insulated

@@ -8,11 +8,11 @@
     sprite: Clothing/Neck/Cloaks/centcomcloakformal.rsi
   - type: StealTarget
     stealGroup: HeadCloak # leaving this here because I suppose it might be interesting?
-    
+
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakCap
-  name: captain's cloak
+  name: director's cloak
   description: A pompous and comfy blue cloak with a nice gold trim, while not particularly valuable as your other possessions, it sure is fancy.
   components:
   - type: Sprite
@@ -107,7 +107,7 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakCapFormal
-  name: captain's formal cloak
+  name: director's formal cloak
   description: A lavish and decorated cloak for special occasions.
   components:
   - type: Sprite
@@ -164,7 +164,7 @@
 - type: entity
   parent: ClothingNeckBase
   id: ClothingNeckCloakPirateCap
-  name: pirate captain cloak
+  name: pirate director cloak
   description: A rather fetching black pirate cloak, complete with skull motif.
   components:
   - type: Sprite

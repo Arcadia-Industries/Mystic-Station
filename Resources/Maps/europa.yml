@@ -4552,7 +4552,7 @@ entities:
     - type: Transform
       pos: -1.5,60.5
       parent: 1
-- proto: AirlockCaptainLocked
+- proto: AirlockDirectorLocked
   entities:
   - uid: 1336
     components:
@@ -7003,7 +7003,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -40.5,-2.5
       parent: 1
-- proto: BedsheetCaptain
+- proto: BedsheetDirector
   entities:
   - uid: 1471
     components:
@@ -21889,7 +21889,7 @@ entities:
       parent: 4497
     - type: Physics
       canCollide: False
-- proto: CaptainIDCard
+- proto: DirectorIDCard
   entities:
   - uid: 1657
     components:
@@ -29676,7 +29676,7 @@ entities:
     - type: Transform
       pos: -9.585646,-6.362417
       parent: 1
-- proto: ClothingMaskGasCaptain
+- proto: ClothingMaskGasDirector
   entities:
   - uid: 12435
     components:
@@ -34363,7 +34363,7 @@ entities:
     - type: FaxMachine
       destinationAddress: Perma
       name: Perma
-- proto: FaxMachineCaptain
+- proto: FaxMachineDirector
   entities:
   - uid: 856
     components:
@@ -34371,8 +34371,8 @@ entities:
       pos: -1.5,6.5
       parent: 1
     - type: FaxMachine
-      destinationAddress: Captain
-      name: Captain
+      destinationAddress: Director
+      name: Director
 - proto: filingCabinetDrawerRandom
   entities:
   - uid: 1223
@@ -54990,7 +54990,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerCaptainFilled
+- proto: LockerDirectorFilled
   entities:
   - uid: 77
     components:
@@ -64221,7 +64221,7 @@ entities:
     - type: Transform
       pos: 8.5,27.5
       parent: 1
-- proto: SpawnPointCaptain
+- proto: SpawnPointDirector
   entities:
   - uid: 1608
     components:

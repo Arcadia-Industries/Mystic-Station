@@ -96,7 +96,7 @@
   components:
   - type: Sprite
     layers:
-      - state: captain
+      - state: director
       - state: green
   - type: ConditionalSpawner
     prototypes:

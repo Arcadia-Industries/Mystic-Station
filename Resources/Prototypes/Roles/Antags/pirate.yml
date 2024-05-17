@@ -10,7 +10,7 @@
     pocket1: AppraisalTool
 
 - type: startingGear
-  id: PirateCaptainGear
+  id: PiratecaptainGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitPirate
     back: ClothingBackpackPirateFilled

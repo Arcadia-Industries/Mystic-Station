@@ -240,12 +240,12 @@
       shader: unshaded
 
 - type: entity
-  id: LockableButtonCaptain
-  suffix: Captain
+  id: LockableButtonDirector
+  suffix: Director
   parent: LockableButton
   components:
   - type: AccessReader
-    access: [["Captain"]]
+    access: [["Director"]]
 
 - type: entity
   id: LockableButtonHeadOfPersonnel

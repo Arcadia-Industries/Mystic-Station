@@ -862,9 +862,9 @@
       - ClothingUniformJumpsuitBartender
       - ClothingUniformJumpskirtBartender
       - ClothingHeadHatCapcap
-      - ClothingHeadHatCaptain
-      - ClothingUniformJumpsuitCaptain
-      - ClothingUniformJumpskirtCaptain
+      - ClothingHeadHatDirector
+      - ClothingUniformJumpsuitDirector
+      - ClothingUniformJumpskirtDirector
       - ClothingUniformJumpsuitCapFormal
       - ClothingUniformJumpskirtCapFormalDress
       - ClothingUniformJumpsuitCargo

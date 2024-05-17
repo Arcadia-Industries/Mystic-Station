@@ -11521,7 +11521,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 32.5,-9.5
       parent: 2
-- proto: AirlockCaptainLocked
+- proto: AirlockDirectorLocked
   entities:
   - uid: 2596
     components:
@@ -35028,7 +35028,7 @@ entities:
     - type: Transform
       pos: 14.5,29.5
       parent: 2
-- proto: BedsheetCaptain
+- proto: BedsheetDirector
   entities:
   - uid: 2706
     components:
@@ -66654,7 +66654,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: -25.7441,-49.319046
       parent: 2
-- proto: CaptainIDCard
+- proto: DirectorIDCard
   entities:
   - uid: 2741
     components:
@@ -77460,7 +77460,7 @@ entities:
     - type: Transform
       pos: 43.5,-14.5
       parent: 2
-- proto: DefaultStationBeaconCaptainsQuarters
+- proto: DefaultStationBeaconDirectorsQuarters
   entities:
   - uid: 14769
     components:
@@ -85934,7 +85934,7 @@ entities:
           - 22430
           - 23526
           - 22573
-- proto: DresserCaptainFilled
+- proto: DresserDirectorFilled
   entities:
   - uid: 358
     components:
@@ -87893,7 +87893,7 @@ entities:
       parent: 21002
     - type: FaxMachine
       name: Perma
-- proto: FaxMachineCaptain
+- proto: FaxMachineDirector
   entities:
   - uid: 2688
     components:
@@ -133807,7 +133807,7 @@ entities:
     - type: Transform
       pos: 14.5,23.5
       parent: 2
-- proto: LockerCaptainFilledNoLaser
+- proto: LockerDirectorFilledNoLaser
   entities:
   - uid: 17459
     components:
@@ -136060,7 +136060,7 @@ entities:
     - type: Transform
       pos: -52.5,-10.5
       parent: 2
-- proto: PaperCaptainsThoughts
+- proto: PaperDirectorsThoughts
   entities:
   - uid: 2743
     components:
@@ -153984,7 +153984,7 @@ entities:
     - type: Transform
       pos: 5.5,15.5
       parent: 2
-- proto: SpawnPointCaptain
+- proto: SpawnPointDirector
   entities:
   - uid: 20780
     components:
@@ -155264,7 +155264,7 @@ entities:
           occludes: True
           ents:
           - 11277
-- proto: SuitStorageCaptain
+- proto: SuitStorageDirector
   entities:
   - uid: 2742
     components:
@@ -155469,7 +155469,7 @@ entities:
       pos: 33.5,18.5
       parent: 2
     - type: SurveillanceCamera
-      id: Captain's Office
+      id: Director's Office
   - uid: 20880
     components:
     - type: Transform
@@ -155477,7 +155477,7 @@ entities:
       pos: 40.5,12.5
       parent: 2
     - type: SurveillanceCamera
-      id: Captain's Bedroom
+      id: Director's Bedroom
   - uid: 20881
     components:
     - type: Transform

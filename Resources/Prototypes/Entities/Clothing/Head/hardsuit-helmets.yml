@@ -233,12 +233,12 @@
         Piercing: 0.9
         Heat: 0.9
 
-#Captain's Hardsuit
+#Director's Hardsuit
 - type: entity
   parent: ClothingHeadHardsuitWithLightBase
   id: ClothingHeadHelmetHardsuitCap
-  name: captain's hardsuit helmet
-  description: Special hardsuit helmet, made for the captain of the station.
+  name: director's hardsuit helmet
+  description: Special hardsuit helmet, made for the director of the station.
   components:
   - type: BreathMask
   - type: Sprite
@@ -531,13 +531,13 @@
     highPressureMultiplier: 0.3
     lowPressureMultiplier: 1000
 
-#Pirate Captain Hardsuit
+#Pirate Director Hardsuit
 - type: entity
   parent: ClothingHeadHardsuitBase
   id: ClothingHeadHelmetHardsuitPirateCap
-  name: pirate captain's hardsuit helmet
+  name: pirate director's hardsuit helmet
   suffix: Pirate
-  description: A special hardsuit helmet, made for the captain of a pirate ship.
+  description: A special hardsuit helmet, made for the director of a pirate ship.
   components:
   - type: BreathMask
   - type: Sprite

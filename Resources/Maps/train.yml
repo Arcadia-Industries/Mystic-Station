@@ -6798,7 +6798,7 @@ entities:
     - type: Transform
       pos: 0.5,-355.5
       parent: 2
-- proto: AirlockCaptainLocked
+- proto: AirlockDirectorLocked
   entities:
   - uid: 155
     components:
@@ -11285,7 +11285,7 @@ entities:
     - type: Transform
       pos: -5.5,-73.5
       parent: 2
-- proto: BedsheetCaptain
+- proto: BedsheetDirector
   entities:
   - uid: 296
     components:
@@ -31688,7 +31688,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: -6.6078706,-304.26178
       parent: 2
-- proto: CaptainIDCard
+- proto: DirectorIDCard
   entities:
   - uid: 316
     components:
@@ -37655,7 +37655,7 @@ entities:
     - type: Transform
       pos: -2.5,-338.5
       parent: 2
-- proto: DefaultStationBeaconCaptainsQuarters
+- proto: DefaultStationBeaconDirectorsQuarters
   entities:
   - uid: 11476
     components:
@@ -45912,7 +45912,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: -5.5,-339.5
       parent: 2
-- proto: DresserCaptainFilled
+- proto: DresserDirectorFilled
   entities:
   - uid: 298
     components:
@@ -46931,7 +46931,7 @@ entities:
       parent: 2
     - type: FaxMachine
       name: Head of Security
-- proto: FaxMachineCaptain
+- proto: FaxMachineDirector
   entities:
   - uid: 300
     components:
@@ -75877,7 +75877,7 @@ entities:
     - type: Transform
       pos: -6.5,-89.5
       parent: 2
-- proto: LockerCaptainFilled
+- proto: LockerDirectorFilled
   entities:
   - uid: 297
     components:
@@ -87834,7 +87834,7 @@ entities:
     - type: Transform
       pos: -6.5,-84.5
       parent: 2
-- proto: SpawnPointCaptain
+- proto: SpawnPointDirector
   entities:
   - uid: 11971
     components:
@@ -88683,7 +88683,7 @@ entities:
     - type: Transform
       pos: 9.5,-118.5
       parent: 2
-- proto: SuitStorageCaptain
+- proto: SuitStorageDirector
   entities:
   - uid: 299
     components:
@@ -91306,7 +91306,7 @@ entities:
     - type: Transform
       pos: -4.5218763,-87.44556
       parent: 2
-- proto: ToyFigurineCaptain
+- proto: ToyFigurineDirector
   entities:
   - uid: 12175
     components:

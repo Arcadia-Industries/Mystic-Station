@@ -38,13 +38,13 @@
         maxDistance: 5
 
 - type: entity
-  name: captain's rubber stamp
+  name: director's rubber stamp
   parent: RubberStampBase
-  id: RubberStampCaptain
+  id: RubberStampDirector
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: stamp-component-stamped-name-captain
+    stampedName: stamp-component-stamped-name-director
     stampedColor: "#3681bb"
     stampState: "paper_stamp-cap"
   - type: Sprite

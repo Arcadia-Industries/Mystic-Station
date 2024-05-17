@@ -517,13 +517,13 @@
         ejectVerbText: sheath-eject-verb
         whitelist:
           tags:
-          - CaptainSabre
+          - DirectorSabre
   - type: ItemMapper
     mapLayers:
       sheath-sabre:
         whitelist:
           tags:
-          - CaptainSabre
+          - DirectorSabre
   - type: Appearance
 
 # Belts without visualizers

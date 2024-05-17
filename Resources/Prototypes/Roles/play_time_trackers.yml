@@ -17,7 +17,7 @@
   id: JobBotanist
 
 - type: playTimeTracker
-  id: JobCaptain
+  id: JobDirector
 
 - type: playTimeTracker
   id: JobCargoTechnician

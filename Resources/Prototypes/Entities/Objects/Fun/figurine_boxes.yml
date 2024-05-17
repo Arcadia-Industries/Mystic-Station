@@ -38,7 +38,7 @@
         orGroup: SpacemenFig
       - id: ToyFigurineBoxer
         orGroup: SpacemenFig
-      - id: ToyFigurineCaptain
+      - id: ToyFigurineDirector
         orGroup: SpacemenFig
       - id: ToyFigurineHeadOfSecurity
         orGroup: SpacemenFig

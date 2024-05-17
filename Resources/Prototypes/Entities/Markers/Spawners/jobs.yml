@@ -299,16 +299,16 @@
 # Command
 
 - type: entity
-  id: SpawnPointCaptain
+  id: SpawnPointDirector
   parent: SpawnPointJobBase
-  name: captain
+  name: director
   components:
   - type: SpawnPoint
-    job_id: Captain
+    job_id: Director
   - type: Sprite
     layers:
       - state: green
-      - state: captain
+      - state: director
 
 - type: entity
   id: SpawnPointHeadOfPersonnel

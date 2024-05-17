@@ -2109,7 +2109,7 @@ entities:
     - type: Transform
       pos: -2.5,0.5
       parent: 1
-- proto: CratePirateChestCaptain
+- proto: CratePirateChestDirector
   entities:
   - uid: 311
     components:

@@ -250,15 +250,15 @@
 
 - type: entity
   parent: ClothingHeadHatHoodWinterBase
-  id: ClothingHeadHatHoodWinterCaptain
+  id: ClothingHeadHatHoodWinterDirector
   noSpawn: true
-  name: captain's winter coat hood
-  description: An expensive hood, to keep the captain's head warm.
+  name: director's winter coat hood
+  description: An expensive hood, to keep the director's head warm.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hoods/Coat/hoodcaptain.rsi
+    sprite: Clothing/Head/Hoods/Coat/hooddirector.rsi
   - type: Clothing
-    sprite: Clothing/Head/Hoods/Coat/hoodcaptain.rsi
+    sprite: Clothing/Head/Hoods/Coat/hooddirector.rsi
 
 - type: entity
   parent: ClothingHeadHatHoodWinterBase

@@ -10036,7 +10036,7 @@ entities:
     - type: Transform
       pos: 14.5,22.5
       parent: 5350
-- proto: AirlockCaptainLocked
+- proto: AirlockDirectorLocked
   entities:
   - uid: 981
     components:
@@ -11299,7 +11299,7 @@ entities:
     - type: Transform
       pos: 45.5,-22.5
       parent: 5350
-- proto: AirlockMaintCaptainLocked
+- proto: AirlockMaintDirectorLocked
   entities:
   - uid: 984
     components:
@@ -13046,7 +13046,7 @@ entities:
   - uid: 140
     components:
     - type: MetaData
-      name: Captain's Office APC
+      name: Director's Office APC
     - type: Transform
       pos: 7.5,1.5
       parent: 5350
@@ -14447,7 +14447,7 @@ entities:
     - type: Transform
       pos: 41.5,-35.5
       parent: 5350
-- proto: BedsheetCaptain
+- proto: BedsheetDirector
   entities:
   - uid: 1026
     components:
@@ -50196,7 +50196,7 @@ entities:
     - type: Transform
       pos: 12.327702,-31.798004
       parent: 5350
-- proto: CaptainIDCard
+- proto: DirectorIDCard
   entities:
   - uid: 1059
     components:
@@ -59973,7 +59973,7 @@ entities:
     - type: Transform
       pos: 53.5,21.5
       parent: 5350
-- proto: ClothingBackpackDuffelCaptain
+- proto: ClothingBackpackDuffelDirector
   entities:
   - uid: 1108
     components:
@@ -63374,7 +63374,7 @@ entities:
     - type: Transform
       pos: -9.5,30.5
       parent: 5350
-- proto: DefaultStationBeaconCaptainsQuarters
+- proto: DefaultStationBeaconDirectorsQuarters
   entities:
   - uid: 26674
     components:
@@ -70010,7 +70010,7 @@ entities:
     - type: Transform
       pos: 32.5,15.5
       parent: 5350
-- proto: DresserCaptainFilled
+- proto: DresserDirectorFilled
   entities:
   - uid: 1057
     components:
@@ -71148,7 +71148,7 @@ entities:
       parent: 5350
     - type: FaxMachine
       name: Library
-- proto: FaxMachineCaptain
+- proto: FaxMachineDirector
   entities:
   - uid: 5362
     components:
@@ -116394,7 +116394,7 @@ entities:
     - type: Transform
       pos: 35.5,-21.5
       parent: 5350
-- proto: LockerCaptainFilled
+- proto: LockerDirectorFilled
   entities:
   - uid: 1024
     components:
@@ -119727,7 +119727,7 @@ entities:
     - type: Transform
       pos: -26.28364,-10.470074
       parent: 5350
-- proto: PaperCaptainsThoughts
+- proto: PaperDirectorsThoughts
   entities:
   - uid: 11033
     components:
@@ -137097,7 +137097,7 @@ entities:
     - type: Transform
       pos: 35.5,-22.5
       parent: 5350
-- proto: SpawnPointCaptain
+- proto: SpawnPointDirector
   entities:
   - uid: 1084
     components:
@@ -138347,7 +138347,7 @@ entities:
     - type: Transform
       pos: 108.5,2.5
       parent: 5350
-- proto: SuitStorageCaptain
+- proto: SuitStorageDirector
   entities:
   - uid: 1505
     components:
@@ -138523,7 +138523,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Office
+      id: Director's Office
   - uid: 1299
     components:
     - type: Transform
@@ -138534,7 +138534,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Bedroom
+      id: Director's Bedroom
   - uid: 1300
     components:
     - type: Transform

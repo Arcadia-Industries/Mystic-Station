@@ -59,14 +59,14 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitCaptain
-  name: captain's jumpsuit
-  description: It's a blue jumpsuit with some gold markings denoting the rank of "Captain".
+  id: ClothingUniformJumpsuitDirector
+  name: director's jumpsuit
+  description: It's a blue jumpsuit with some gold markings denoting the rank of "Director".
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/captain.rsi
+    sprite: Clothing/Uniforms/Jumpsuit/director.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/captain.rsi
+    sprite: Clothing/Uniforms/Jumpsuit/director.rsi
 
 - type: entity
   parent: ClothingUniformBase
@@ -746,7 +746,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: ClothingUniformJumpsuitCapFormal
-  name: captain's formal suit
+  name: director's formal suit
   description: A suit for special occasions.
   components:
   - type: Sprite

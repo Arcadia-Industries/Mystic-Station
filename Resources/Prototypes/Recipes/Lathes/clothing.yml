@@ -29,8 +29,8 @@
     Cloth: 300
 
 - type: latheRecipe
-  id: ClothingUniformJumpsuitCaptain
-  result: ClothingUniformJumpsuitCaptain
+  id: ClothingUniformJumpsuitDirector
+  result: ClothingUniformJumpsuitDirector
   completetime: 4
   materials:
     Cloth: 300
@@ -54,8 +54,8 @@
     Durathread: 100
 
 - type: latheRecipe
-  id: ClothingUniformJumpskirtCaptain
-  result: ClothingUniformJumpskirtCaptain
+  id: ClothingUniformJumpskirtDirector
+  result: ClothingUniformJumpskirtDirector
   completetime: 4
   materials:
     Cloth: 300
@@ -970,8 +970,8 @@
     Durathread: 300
 # Hats
 - type: latheRecipe
-  id: ClothingHeadHatCaptain
-  result: ClothingHeadHatCaptain
+  id: ClothingHeadHatDirector
+  result: ClothingHeadHatDirector
   completetime: 2
   materials:
     Cloth: 100

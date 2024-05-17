@@ -70,8 +70,8 @@
 
 - type: entity
   noSpawn: true
-  parent: ClothingBackpackDuffelCaptain
-  id: ClothingBackpackDuffelCaptainFilled
+  parent: ClothingBackpackDuffelDirector
+  id: ClothingBackpackDuffelDirectorFilled
   components:
   - type: StorageFill
     contents:
@@ -211,7 +211,7 @@
       - id: BoxSurvival
       - id: Bible
       - id: RubberStampChaplain
-  
+
 - type: entity
   noSpawn: true
   parent: ClothingBackpackDuffel

@@ -28,9 +28,9 @@
           mapNameTemplate: "Dev"
         - type: StationJobs
           overflowJobs:
-          - Captain
+          - Director
           availableJobs:
-            Captain: [ -1, -1 ]
+            Director: [ -1, -1 ]
 
 - type: gameMap
   id: TestTeg

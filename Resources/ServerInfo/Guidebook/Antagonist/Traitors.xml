@@ -3,7 +3,7 @@
 
   - A Traitor is an antagonist employed by the Syndicate. They have access to various Syndicate tools and weapons through their [color=#a4885c]Uplink[/color].
   - Traitors can use codewords to identify themselves to one another in order to cooperate.
-  - In a Traitor round, any player can be a Traitor aside from department heads, the captain, or any security officers.
+  - In a Traitor round, any player can be a Traitor aside from department heads, the director, or any security officers.
   - Traitors should focus primarily on completing their objectives successfully by the end of the round.
 
   ## Uplink
@@ -42,17 +42,17 @@
   - Escape on the evacuation shuttle alive and uncuffed.
   - Help a randomly selected traitor finish 2/3 of their objectives.
   - Die a glorious death.
-  - Steal the Captain's [color=#a4885c]ID Card[/color].
+  - Steal the Director's [color=#a4885c]ID Card[/color].
   <Box>
-    <GuideEntityEmbed Entity="CaptainIDCard" Caption="Captain's ID Card"/>
+    <GuideEntityEmbed Entity="DirectorIDCard" Caption="Director's ID Card"/>
   </Box>
-  - Steal the Captain's [color=#a4885c]Antique Laser Pistol[/color].
+  - Steal the Director's [color=#a4885c]Antique Laser Pistol[/color].
   <Box>
-    <GuideEntityEmbed Entity="WeaponAntiqueLaser" Caption="Captain's Antique Laser Pistol"/>
+    <GuideEntityEmbed Entity="WeaponAntiqueLaser" Caption="Director's Antique Laser Pistol"/>
   </Box>
-  - Steal the Captain's [color=#a4885c]Jetpack[/color].
+  - Steal the Director's [color=#a4885c]Jetpack[/color].
   <Box>
-    <GuideEntityEmbed Entity="JetpackCaptainFilled" Caption="Captain's Jetpack"/>
+    <GuideEntityEmbed Entity="JetpackDirectorFilled" Caption="Director's Jetpack"/>
   </Box>
   - Steal the Chief Medical Officer's [color=#a4885c]Hypospray[/color].
   <Box>

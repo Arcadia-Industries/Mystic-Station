@@ -1,17 +1,17 @@
 - type: entity
-  id: DresserCaptainFilled
+  id: DresserDirectorFilled
   parent: Dresser
-  suffix: Filled, Captain
+  suffix: Filled, Director
   components:
   - type: StorageFill
     contents:
-      - id: ClothingHeadHatCaptain
+      - id: ClothingHeadHatDirector
       - id: ClothingHeadHatCapcap
       - id: ClothingNeckCloakCap
       - id: ClothingNeckCloakCapFormal
       - id: ClothingUniformJumpsuitCapFormal
       - id: ClothingUniformJumpskirtCapFormalDress
-      - id: ClothingHandsGlovesCaptain
+      - id: ClothingHandsGlovesDirector
       - id: ClothingNeckMantleCap
       - id: ClothingOuterWinterCap
 

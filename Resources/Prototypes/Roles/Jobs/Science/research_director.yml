@@ -13,7 +13,7 @@
   startingGear: ResearchDirectorGear
   icon: "JobIconResearchDirector"
   requireAdminNotify: true
-  supervisors: job-supervisors-captain
+  supervisors: job-supervisors-director
   canBeAntag: false
   access:
   - Research

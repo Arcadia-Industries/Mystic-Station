@@ -138,7 +138,7 @@ public sealed class StationJobsTest
                     Assert.That(assignedHere, Has.Count.GreaterThanOrEqualTo(TotalPlayers / stations.Count), "Station has too few players.");
                     // And it shouldn't have ALL the players, either.
                     Assert.That(assignedHere, Has.Count.LessThan(TotalPlayers), "Station has too many players.");
-                    // And there should be *A* captain, as there's one player with captain enabled per station.
+                    // And there should be *A* director, as there's one player with director enabled per station.
                     Assert.That(assignedHere.Where(x => x.Value.Item1 == "TCaptain").ToList(), Has.Count.EqualTo(1));
                 }
 
@@ -150,7 +150,7 @@ public sealed class StationJobsTest
                 Assert.That(assigned.Values, Has.Count.EqualTo(TotalPlayers), $"Expected {TotalPlayers} players.");
                 // There must be assistants present.
                 Assert.That(assigned.Values.Select(x => x.Item1).ToList(), Does.Contain("TAssistant"));
-                // There must be captains present, too.
+                // There must be directors present, too.
                 Assert.That(assigned.Values.Select(x => x.Item1).ToList(), Does.Contain("TCaptain"));
             });
         });
@@ -195,8 +195,8 @@ public sealed class StationJobsTest
                 Assert.That(clownSlots, Is.EqualTo(0));
                 Assert.That(!stationJobs.TryAdjustJobSlot(station, "TCaptain", -9999), "Was able to adjust TCaptain by -9999 without clamping.");
                 Assert.That(stationJobs.TryAdjustJobSlot(station, "TCaptain", -9999, false, true), "Could not adjust TCaptain by -9999.");
-                Assert.That(stationJobs.TryGetJobSlot(station, "TCaptain", out var captainSlots), "Could not get the number of TCaptain slots.");
-                Assert.That(captainSlots, Is.EqualTo(0));
+                Assert.That(stationJobs.TryGetJobSlot(station, "TCaptain", out var directorSlots), "Could not get the number of TCaptain slots.");
+                Assert.That(directorSlots, Is.EqualTo(0));
             });
             Assert.Multiple(() =>
             {

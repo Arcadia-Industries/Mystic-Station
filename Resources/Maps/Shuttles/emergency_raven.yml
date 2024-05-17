@@ -12060,7 +12060,7 @@ entities:
     - type: Transform
       pos: 16.369957,-6.285366
       parent: 1
-- proto: PaperCaptainsThoughts
+- proto: PaperDirectorsThoughts
   entities:
   - uid: 2393
     components:

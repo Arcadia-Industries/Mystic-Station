@@ -10334,7 +10334,7 @@ entities:
     - type: Transform
       pos: 11.5,27.5
       parent: 8364
-- proto: AirlockCaptainLocked
+- proto: AirlockDirectorLocked
   entities:
   - uid: 1152
     components:
@@ -10344,35 +10344,35 @@ entities:
   - uid: 5692
     components:
     - type: MetaData
-      name: Captain's Room
+      name: Director's Room
     - type: Transform
       pos: 7.5,-19.5
       parent: 8364
   - uid: 5693
     components:
     - type: MetaData
-      name: Captain's Office
+      name: Director's Office
     - type: Transform
       pos: 6.5,-10.5
       parent: 8364
   - uid: 5875
     components:
     - type: MetaData
-      name: Captain's Bathroom
+      name: Director's Bathroom
     - type: Transform
       pos: 9.5,-20.5
       parent: 8364
   - uid: 8143
     components:
     - type: MetaData
-      name: Captain Chunnel
+      name: Director Chunnel
     - type: Transform
       pos: -5.5,-16.5
       parent: 8364
   - uid: 8144
     components:
     - type: MetaData
-      name: Captain Chunnel
+      name: Director Chunnel
     - type: Transform
       pos: 4.5,-16.5
       parent: 8364
@@ -12051,7 +12051,7 @@ entities:
     - type: Transform
       pos: 30.5,2.5
       parent: 8364
-- proto: AirlockMaintCaptainLocked
+- proto: AirlockMaintDirectorLocked
   entities:
   - uid: 1154
     components:
@@ -13862,7 +13862,7 @@ entities:
   - uid: 5759
     components:
     - type: MetaData
-      name: Captain's Office APC
+      name: Director's Office APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 4.5,-14.5
@@ -13886,7 +13886,7 @@ entities:
   - uid: 6250
     components:
     - type: MetaData
-      name: Captain's Bedroom APC
+      name: Director's Bedroom APC
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 9.5,-21.5
@@ -15776,7 +15776,7 @@ entities:
     - type: Transform
       pos: -20.5,48.5
       parent: 8364
-- proto: BedsheetCaptain
+- proto: BedsheetDirector
   entities:
   - uid: 5315
     components:
@@ -56753,7 +56753,7 @@ entities:
     - type: Transform
       pos: 74.72912,-20.240425
       parent: 8364
-- proto: CaptainIDCard
+- proto: DirectorIDCard
   entities:
   - uid: 5329
     components:
@@ -67797,7 +67797,7 @@ entities:
     - type: Transform
       pos: 5.5,-65.5
       parent: 8364
-- proto: ClothingBackpackDuffelCaptain
+- proto: ClothingBackpackDuffelDirector
   entities:
   - uid: 27222
     components:
@@ -71694,7 +71694,7 @@ entities:
     - type: Transform
       pos: -5.5,26.5
       parent: 8364
-- proto: DefaultStationBeaconCaptainsQuarters
+- proto: DefaultStationBeaconDirectorsQuarters
   entities:
   - uid: 27711
     components:
@@ -80805,7 +80805,7 @@ entities:
     - type: Transform
       pos: 20.5,4.5
       parent: 8364
-- proto: DresserCaptainFilled
+- proto: DresserDirectorFilled
   entities:
   - uid: 5341
     components:
@@ -81742,7 +81742,7 @@ entities:
       parent: 8364
     - type: FaxMachine
       name: Medical
-- proto: FaxMachineCaptain
+- proto: FaxMachineDirector
   entities:
   - uid: 21189
     components:
@@ -81750,7 +81750,7 @@ entities:
       pos: 5.5,-15.5
       parent: 8364
     - type: FaxMachine
-      name: Captain
+      name: Director
 - proto: FigureSpawner
   entities:
   - uid: 11690
@@ -120466,12 +120466,12 @@ entities:
       rot: 0.000406441162340343 rad
       pos: 52.576862,-22.263298
       parent: 8364
-- proto: HighSecCaptainLocked
+- proto: HighSecDirectorLocked
   entities:
   - uid: 5737
     components:
     - type: MetaData
-      name: Captain Chunnel
+      name: Director Chunnel
     - type: Transform
       pos: -0.5,-17.5
       parent: 8364
@@ -121671,7 +121671,7 @@ entities:
     - type: Transform
       pos: 49.5,-0.5
       parent: 8364
-- proto: LockerCaptainFilled
+- proto: LockerDirectorFilled
   entities:
   - uid: 10526
     components:
@@ -143091,7 +143091,7 @@ entities:
     - type: Transform
       pos: 47.5,-4.5
       parent: 8364
-- proto: SpawnPointCaptain
+- proto: SpawnPointDirector
   entities:
   - uid: 11766
     components:
@@ -144346,7 +144346,7 @@ entities:
     - type: Transform
       pos: -67.42753,12.306509
       parent: 8364
-- proto: SuitStorageCaptain
+- proto: SuitStorageDirector
   entities:
   - uid: 6911
     components:
@@ -144521,7 +144521,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Bedroom
+      id: Director's Bedroom
   - uid: 304
     components:
     - type: Transform
@@ -144531,7 +144531,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Office
+      id: Director's Office
   - uid: 932
     components:
     - type: Transform

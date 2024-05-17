@@ -20,45 +20,45 @@
 
 # Command
 - type: loadoutGroup
-  id: CaptainHead
-  name: loadout-group-captain-head
+  id: DirectorHead
+  name: loadout-group-director-head
   minLimit: 0
   loadouts:
-  - CaptainHead
-  - CaptainCap
+  - DirectorHead
+  - DirectorCap
 
 - type: loadoutGroup
-  id: CaptainJumpsuit
-  name: loadout-group-captain-jumpsuit
+  id: DirectorJumpsuit
+  name: loadout-group-director-jumpsuit
   loadouts:
-  - CaptainJumpsuit
-  - CaptainJumpskirt
-  - CaptainFormalSuit
-  - CaptainFormalSkirt
+  - DirectorJumpsuit
+  - DirectorJumpskirt
+  - DirectorFormalSuit
+  - DirectorFormalSkirt
 
 - type: loadoutGroup
-  id: CaptainNeck
-  name: loadout-group-captain-neck
+  id: DirectorNeck
+  name: loadout-group-director-neck
   minLimit: 0
   loadouts:
-  - CaptainCloak
-  - CaptainCloakFormal
-  - CaptainMantle
+  - DirectorCloak
+  - DirectorCloakFormal
+  - DirectorMantle
 
 - type: loadoutGroup
-  id: CaptainBackpack
-  name: loadout-group-captain-backpack
+  id: DirectorBackpack
+  name: loadout-group-director-backpack
   loadouts:
-  - CaptainBackpack
-  - CaptainSatchel
-  - CaptainDuffel
+  - DirectorBackpack
+  - DirectorSatchel
+  - DirectorDuffel
 
 - type: loadoutGroup
-  id: CaptainOuterClothing
-  name: loadout-group-captain-outerclothing
+  id: DirectorOuterClothing
+  name: loadout-group-director-outerclothing
   loadouts:
-  - CaptainOuterClothing
-  - CaptainWintercoat
+  - DirectorOuterClothing
+  - DirectorWintercoat
 
 - type: loadoutGroup
   id: HoPHead

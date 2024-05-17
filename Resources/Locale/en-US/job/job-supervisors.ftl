@@ -1,5 +1,5 @@
 job-supervisors-centcom = CentCom official
-job-supervisors-captain = the captain
+job-supervisors-director = the director
 job-supervisors-hop = the head of personnel
 job-supervisors-hos = the head of security
 job-supervisors-ce = the chief engineer

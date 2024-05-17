@@ -44,12 +44,12 @@
 
 - type: entity
   parent: ClothingBackpackDuffel
-  id: ClothingBackpackDuffelCaptain
-  name: captain's duffel bag
-  description: A large duffel bag for holding extra captainly goods.
+  id: ClothingBackpackDuffelDirector
+  name: director's duffel bag
+  description: A large duffel bag for holding extra directorly goods.
   components:
   - type: Sprite
-    sprite: Clothing/Back/Duffels/captain.rsi
+    sprite: Clothing/Back/Duffels/director.rsi
 
 - type: entity
   parent: ClothingBackpackDuffel

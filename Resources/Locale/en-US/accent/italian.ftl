@@ -21,7 +21,7 @@ accent-italian-words-replace-4 = molto male
 accent-italian-words-5 = bye
 accent-italian-words-replace-5 = arrivederci
 
-accent-italian-words-6 = captain
+accent-italian-words-6 = director
 accent-italian-words-replace-6 = capitano
 
 accent-italian-words-7 = cheese

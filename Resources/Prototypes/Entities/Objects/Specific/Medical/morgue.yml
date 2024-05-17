@@ -69,7 +69,7 @@
         enum.PaperLabelVisuals.Layer:
           Paper: { state: paper }
           Bounty: { state: bounty }
-          CaptainsPaper: { state: captains_paper }
+          DirectorsPaper: { state: directors_paper }
           Invoice: { state: invoice }
       enum.FoldedVisuals.State:
         foldedLayer:

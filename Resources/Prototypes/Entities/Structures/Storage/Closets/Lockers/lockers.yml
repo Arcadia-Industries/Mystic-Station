@@ -60,9 +60,9 @@
 
 # Command
 - type: entity
-  id: LockerCaptain
+  id: LockerDirector
   parent: LockerBaseSecure
-  name: captain's locker
+  name: director's locker
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -70,7 +70,7 @@
     stateDoorOpen: cap_open
     stateDoorClosed: cap_door
   - type: AccessReader
-    access: [["Captain"]]
+    access: [["Director"]]
 
 - type: entity
   id: LockerHeadOfPersonnel

@@ -190,14 +190,14 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatCaptain
-  name: captain's hardhat
+  id: ClothingHeadHatDirector
+  name: director's hardhat
   description: It's good being the king.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hats/captain.rsi
+    sprite: Clothing/Head/Hats/director.rsi
   - type: Clothing
-    sprite: Clothing/Head/Hats/captain.rsi
+    sprite: Clothing/Head/Hats/director.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -845,7 +845,7 @@
   parent: ClothingHeadBase
   id: ClothingHeadHatCapcap
   name: cap cap
-  description: A grand, stylish captain cap.
+  description: A grand, stylish director cap.
   components:
   - type: Sprite
     sprite: Clothing/Head/Hats/capcap.rsi

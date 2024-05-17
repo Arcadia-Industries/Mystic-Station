@@ -9511,7 +9511,7 @@ entities:
     - type: Transform
       pos: -54.5,32.5
       parent: 30
-- proto: AirlockCaptainGlassLocked
+- proto: AirlockDirectorGlassLocked
   entities:
   - uid: 5008
     components:
@@ -9538,7 +9538,7 @@ entities:
     - type: Transform
       pos: 1.5,83.5
       parent: 30
-- proto: AirlockCaptainLocked
+- proto: AirlockDirectorLocked
   entities:
   - uid: 1357
     components:
@@ -12359,7 +12359,7 @@ entities:
   - uid: 5051
     components:
     - type: MetaData
-      name: Captain's Maint APC
+      name: Director's Maint APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -23.5,40.5
@@ -14032,7 +14032,7 @@ entities:
     - type: Transform
       pos: -48.5,39.5
       parent: 30
-- proto: BedsheetCaptain
+- proto: BedsheetDirector
   entities:
   - uid: 4986
     components:
@@ -54900,7 +54900,7 @@ entities:
     - type: Transform
       pos: -43.5,42.5
       parent: 30
-- proto: DefaultStationBeaconCaptainsQuarters
+- proto: DefaultStationBeaconDirectorsQuarters
   entities:
   - uid: 20540
     components:
@@ -60752,7 +60752,7 @@ entities:
     - type: Transform
       pos: -29.5,-45.5
       parent: 30
-- proto: DresserCaptainFilled
+- proto: DresserDirectorFilled
   entities:
   - uid: 4989
     components:
@@ -61782,7 +61782,7 @@ entities:
       parent: 30
     - type: FaxMachine
       name: Library
-- proto: FaxMachineCaptain
+- proto: FaxMachineDirector
   entities:
   - uid: 22275
     components:
@@ -61790,7 +61790,7 @@ entities:
       pos: -21.5,30.5
       parent: 30
     - type: FaxMachine
-      name: Captain
+      name: Director
 - proto: FigureSpawner
   entities:
   - uid: 20789
@@ -99981,7 +99981,7 @@ entities:
         - 0
         - 0
         - 0
-- proto: LockerCaptainFilledHardsuit
+- proto: LockerDirectorFilledHardsuit
   entities:
   - uid: 1440
     components:
@@ -118148,7 +118148,7 @@ entities:
     - type: Transform
       pos: -24.5,16.5
       parent: 30
-- proto: SpawnPointCaptain
+- proto: SpawnPointDirector
   entities:
   - uid: 5001
     components:
@@ -119452,7 +119452,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Office
+      id: Director's Office
   - uid: 21176
     components:
     - type: Transform
@@ -119484,7 +119484,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Bedroom
+      id: Director's Bedroom
   - uid: 21179
     components:
     - type: Transform
@@ -119565,7 +119565,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Bar
+      id: Director's Bar
   - uid: 21294
     components:
     - type: Transform

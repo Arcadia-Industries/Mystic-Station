@@ -11,14 +11,14 @@
 
 - type: entity
   parent: ClothingUniformSkirtBase
-  id: ClothingUniformJumpskirtCaptain
-  name: captain's jumpskirt
-  description: It's a blue jumpskirt with some gold markings denoting the rank of "Captain".
+  id: ClothingUniformJumpskirtDirector
+  name: director's jumpskirt
+  description: It's a blue jumpskirt with some gold markings denoting the rank of "Director".
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpskirt/captain.rsi
+    sprite: Clothing/Uniforms/Jumpskirt/director.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpskirt/captain.rsi
+    sprite: Clothing/Uniforms/Jumpskirt/director.rsi
 
 - type: entity
   parent: ClothingUniformSkirtBase
@@ -414,7 +414,7 @@
 - type: entity
   parent: ClothingUniformSkirtBase
   id: ClothingUniformJumpskirtCapFormalDress
-  name: captain's formal dress
+  name: director's formal dress
   description: A dress for special occasions.
   components:
   - type: Sprite

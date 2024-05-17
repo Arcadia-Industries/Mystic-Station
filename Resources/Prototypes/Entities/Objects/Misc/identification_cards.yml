@@ -101,24 +101,24 @@
 
 - type: entity
   parent: IDCardStandard
-  id: CaptainIDCard
-  name: captain ID card
+  id: DirectorIDCard
+  name: director ID card
   components:
   - type: Sprite
     layers:
     - state: gold
-    - state: idcaptain
+    - state: iddirector
   - type: Item
     heldPrefix: gold
   - type: PresetIdCard
-    job: Captain
+    job: Director
   - type: Tag
     tags:
     - DoorBumpOpener
     - WhitelistChameleon
     - HighRiskItem
   - type: StealTarget
-    stealGroup: CaptainIDCard
+    stealGroup: DirectorIDCard
 
 - type: entity
   parent: IDCardStandard
@@ -624,7 +624,7 @@
     - JobIconResearchAssistant
     - JobIconGeneticist
     - JobIconClown
-    - JobIconCaptain
+    - JobIconDirector
     - JobIconHeadOfPersonnel
     - JobIconVirologist
     - JobIconShaftMiner

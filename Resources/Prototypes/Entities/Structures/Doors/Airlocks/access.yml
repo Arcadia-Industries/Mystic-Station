@@ -75,12 +75,12 @@
 
 - type: entity
   parent: AirlockCommandLocked
-  id: AirlockServiceCaptainLocked
-  suffix: Captain, Locked
+  id: AirlockServiceDirectorLocked
+  suffix: Director, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsCaptain ]
+      board: [ DoorElectronicsDirector ]
 
 - type: entity
   parent: AirlockExternal
@@ -273,12 +273,12 @@
 
 - type: entity
   parent: AirlockCommand
-  id: AirlockCaptainLocked
-  suffix: Captain, Locked
+  id: AirlockDirectorLocked
+  suffix: Director, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsCaptain ]
+      board: [ DoorElectronicsDirector ]
 
 - type: entity
   parent: AirlockCommand
@@ -638,12 +638,12 @@
 
 - type: entity
   parent: AirlockCommandGlass
-  id: AirlockCaptainGlassLocked
-  suffix: Captain, Locked
+  id: AirlockDirectorGlassLocked
+  suffix: Director, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsCaptain ]
+      board: [ DoorElectronicsDirector ]
 
 - type: entity
   parent: AirlockCommandGlass
@@ -998,12 +998,12 @@
 
 - type: entity
   parent: AirlockMaintCommandLocked
-  id: AirlockMaintCaptainLocked
-  suffix: Captain, Locked
+  id: AirlockMaintDirectorLocked
+  suffix: Director, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsCaptain ]
+      board: [ DoorElectronicsDirector ]
 
 - type: entity
   parent: AirlockMaintCommandLocked
@@ -1181,12 +1181,12 @@
 
 - type: entity
   parent: HighSecDoor
-  id: HighSecCaptainLocked
-  suffix: Captain, Locked
+  id: HighSecDirectorLocked
+  suffix: Director, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsCaptain ]
+      board: [ DoorElectronicsDirector ]
 
 - type: entity
   parent: HighSecDoor

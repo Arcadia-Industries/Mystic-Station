@@ -57,17 +57,17 @@
     state: corgi
     #
 - type: stealTargetGroup
-  id: CaptainIDCard
-  name: captain ID card
+  id: DirectorIDCard
+  name: director ID card
   sprite:
     sprite: Objects/Misc/id_cards.rsi
     state: ert_commander #no one will know the difference.
 
 - type: stealTargetGroup
-  id: JetpackCaptainFilled
-  name: captain's jetpack
+  id: JetpackDirectorFilled
+  name: director's jetpack
   sprite:
-    sprite: Objects/Tanks/Jetpacks/captain.rsi
+    sprite: Objects/Tanks/Jetpacks/director.rsi
     state: icon
 
 - type: stealTargetGroup
@@ -282,8 +282,8 @@
     state: nuclearbomb_base
 
 - type: stealTargetGroup
-  id: FaxMachineCaptain
-  name: captain long range fax machine
+  id: FaxMachineDirector
+  name: director long range fax machine
   sprite:
     sprite: Structures/Machines/fax_machine.rsi
     state: icon

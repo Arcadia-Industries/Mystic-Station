@@ -265,42 +265,42 @@
 - type: entity
   abstract: true
   parent: BaseTraitorStealObjective
-  id: BaseCaptainObjective
+  id: BaseDirectorObjective
   components:
   - type: Objective
     # sorry ce but your jordans are not as high security as the caps gear
     difficulty: 3.5
   - type: NotJobRequirement
-    job: Captain
+    job: Director
 
 - type: entity
   noSpawn: true
-  parent: BaseCaptainObjective
-  id: CaptainIDStealObjective
+  parent: BaseDirectorObjective
+  id: DirectorIDStealObjective
   components:
   - type: StealCondition
-    stealGroup: CaptainIDCard
+    stealGroup: DirectorIDCard
 
 - type: entity
   noSpawn: true
-  parent: BaseCaptainObjective
-  id: CaptainJetpackStealObjective
+  parent: BaseDirectorObjective
+  id: DirectorJetpackStealObjective
   components:
   - type: StealCondition
-    stealGroup: JetpackCaptainFilled
+    stealGroup: JetpackDirectorFilled
 
 - type: entity
   noSpawn: true
-  parent: BaseCaptainObjective
-  id: CaptainGunStealObjective
+  parent: BaseDirectorObjective
+  id: DirectorGunStealObjective
   components:
   - type: StealCondition
     stealGroup: WeaponAntiqueLaser
-    owner: job-name-captain
+    owner: job-name-director
 
 - type: entity
   noSpawn: true
-  parent: BaseCaptainObjective
+  parent: BaseDirectorObjective
   id: NukeDiskStealObjective
   components:
   - type: Objective

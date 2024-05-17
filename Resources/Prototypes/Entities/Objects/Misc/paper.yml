@@ -127,10 +127,10 @@
     maxWritableArea: 400.0, 0.0
 
 - type: entity
-  name: captain's thoughts
+  name: director's thoughts
   parent: Paper
-  id: PaperCaptainsThoughts
-  description: "A page of the captain's journal. In luxurious lavender."
+  id: PaperDirectorsThoughts
+  description: "A page of the director's journal. In luxurious lavender."
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -145,9 +145,9 @@
       map: ["enum.PaperVisualLayers.Stamp"]
       visible: false
   - type: PaperLabelType
-    paperType: CaptainsPaper
+    paperType: DirectorsPaper
   - type: PaperVisuals
-    headerImagePath: "/Textures/Interface/Paper/paper_heading_captains_thoughts.svg.96dpi.png"
+    headerImagePath: "/Textures/Interface/Paper/paper_heading_directors_thoughts.svg.96dpi.png"
     backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
     backgroundModulate: "#e6e6fa"
     backgroundPatchMargin: 16.0, 16.0, 16.0, 16.0
@@ -364,10 +364,10 @@
     size: Tiny
 
 - type: entity
-  name: captain's fountain pen
+  name: director's fountain pen
   parent: PenEmbeddable
   id: PenCap
-  description: 'A luxurious fountain pen for the captain of the station.'
+  description: 'A luxurious fountain pen for the director of the station.'
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi

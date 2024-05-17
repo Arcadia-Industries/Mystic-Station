@@ -1,12 +1,12 @@
 - type: entity
-  name: captain's sabre
+  name: director's sabre
   parent: BaseItem
-  id: CaptainSabre
-  description: A ceremonial weapon belonging to the captain of the station.
+  id: DirectorSabre
+  description: A ceremonial weapon belonging to the director of the station.
   components:
   - type: Sharp
   - type: Sprite
-    sprite: Objects/Weapons/Melee/captain_sabre.rsi
+    sprite: Objects/Weapons/Melee/director_sabre.rsi
     state: icon
   - type: MeleeWeapon
     wideAnimationRotation: -135
@@ -22,10 +22,10 @@
     spread: 90
   - type: Item
     size: Normal
-    sprite: Objects/Weapons/Melee/captain_sabre.rsi
+    sprite: Objects/Weapons/Melee/director_sabre.rsi
   - type: Tag
     tags:
-    - CaptainSabre
+    - DirectorSabre
   - type: DisarmMalus
 
 - type: entity

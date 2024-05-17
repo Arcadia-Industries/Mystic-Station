@@ -76,14 +76,14 @@
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
   id: ClothingOuterWinterCap
-  name: captain's winter coat
+  name: director's winter coat
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/WinterCoats/coatcap.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/WinterCoats/coatcap.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatHoodWinterCaptain
+    clothingPrototype: ClothingHeadHatHoodWinterDirector
 
 - type: entity
   parent: ClothingOuterWinterCoatToggleable

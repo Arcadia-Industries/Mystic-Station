@@ -98,12 +98,12 @@
 
 - type: entity
   parent: FaxMachineBase
-  id: FaxMachineCaptain
-  name: captain long range fax machine
+  id: FaxMachineDirector
+  name: director long range fax machine
   suffix: NukeCodes
   components:
     - type: FaxMachine
-      name: "Captain's Office"
+      name: "Director's Office"
       receiveNukeCodes: true
     - type: StealTarget
-      stealGroup: FaxMachineCaptain
+      stealGroup: FaxMachineDirector

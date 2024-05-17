@@ -3,8 +3,8 @@
   name: id-card-access-level-command
 
 - type: accessLevel
-  id: Captain
-  name: id-card-access-level-captain
+  id: Director
+  name: id-card-access-level-director
 
 - type: accessLevel
   id: HeadOfPersonnel
@@ -14,7 +14,7 @@
   id: Command
   tags:
   - Command
-  - Captain
+  - Director
   - HeadOfPersonnel
   - Cryogenics
 

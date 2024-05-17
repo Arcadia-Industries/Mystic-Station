@@ -19,18 +19,18 @@
       - id: BoxEncryptionKeyCargo
 
 - type: entity
-  id: LockerCaptainFilledHardsuit
+  id: LockerDirectorFilledHardsuit
   suffix: Filled, Hardsuit
-  parent: LockerCaptain
+  parent: LockerDirector
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterArmorCaptainCarapace
+      - id: ClothingOuterArmorDirectorCarapace
       - id: NukeDisk
       - id: PinpointerNuclear
-      - id: CaptainIDCard
+      - id: DirectorIDCard
       - id: ClothingOuterHardsuitCap
-      - id: ClothingMaskGasCaptain
+      - id: ClothingMaskGasDirector
       - id: WeaponDisabler
       - id: CommsComputerCircuitboard
       - id: ClothingHeadsetAltCommand
@@ -41,22 +41,22 @@
         prob: 0.25
       - id: ClothingBeltSheathFilled
       - id: DoorRemoteCommand
-      - id: RubberStampCaptain
+      - id: RubberStampDirector
       - id: WeaponAntiqueLaser
-      - id: JetpackCaptainFilled
+      - id: JetpackDirectorFilled
       - id: MedalCase
 
 - type: entity
-  id: LockerCaptainFilled
+  id: LockerDirectorFilled
   suffix: Filled, AntiqueLaser
-  parent: LockerCaptain
+  parent: LockerDirector
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterArmorCaptainCarapace
+      - id: ClothingOuterArmorDirectorCarapace
       - id: NukeDisk
       - id: PinpointerNuclear
-      - id: CaptainIDCard
+      - id: DirectorIDCard
       - id: WeaponDisabler
       - id: CommsComputerCircuitboard
       - id: ClothingHeadsetAltCommand
@@ -67,22 +67,22 @@
         prob: 0.25
       - id: ClothingBeltSheathFilled
       - id: DoorRemoteCommand
-      - id: RubberStampCaptain
+      - id: RubberStampDirector
       - id: WeaponAntiqueLaser
-      - id: JetpackCaptainFilled
+      - id: JetpackDirectorFilled
       - id: MedalCase
 
 - type: entity
-  id: LockerCaptainFilledNoLaser
+  id: LockerDirectorFilledNoLaser
   suffix: Filled
-  parent: LockerCaptain
+  parent: LockerDirector
   components:
   - type: StorageFill
     contents:
-      - id: ClothingOuterArmorCaptainCarapace
+      - id: ClothingOuterArmorDirectorCarapace
       - id: NukeDisk
       - id: PinpointerNuclear
-      - id: CaptainIDCard
+      - id: DirectorIDCard
       - id: WeaponDisabler
       - id: CommsComputerCircuitboard
       - id: ClothingHeadsetAltCommand
@@ -93,8 +93,8 @@
         prob: 0.25
       - id: ClothingBeltSheathFilled
       - id: DoorRemoteCommand
-      - id: RubberStampCaptain
-      - id: JetpackCaptainFilled
+      - id: RubberStampDirector
+      - id: JetpackDirectorFilled
       - id: MedalCase
 
 - type: entity

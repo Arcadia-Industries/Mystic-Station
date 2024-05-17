@@ -19,7 +19,7 @@
 
   ## Ninja Suit
 
-  <GuideEntityEmbed Entity="ClothingOuterSuitSpaceNinja" Captain="ninja suit"/>
+  <GuideEntityEmbed Entity="ClothingOuterSuitSpaceNinja" Director="ninja suit"/>
 
   Your single most important item is [color=#66FF00]your suit[/color], without it none of your abilities would work.
   Your suit requires power to function. Its [color=#a4885c]internal battery[/color] can be replaced by clicking on it with another one, and [color=#a4885c]higher capacity batteries[/color] mean a [color=#a4885c]highly effective ninja[/color].
@@ -46,11 +46,11 @@
 
   ## Energy Katana
 
-  <GuideEntityEmbed Entity="EnergyKatana" Captain="energy katana"/>
+  <GuideEntityEmbed Entity="EnergyKatana" Director="energy katana"/>
 
   You have sworn yourself to the [color=#66FF00]sword[/color] and refuse to use firearms.
   Deals a lot of damage and can be recalled at will, costing suit power proportional to the distance teleported.
-  
+
   While in hand you can [color=#a4885c]teleport[/color] to anywhere that you can see, meaning most doors and windows, but not past solid walls.
   This has a limited number of charges which regenerate slowly, so keep a charge or two spare incase you need a quick getaway.
 

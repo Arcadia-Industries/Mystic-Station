@@ -37,7 +37,7 @@
   description: department-Command-description
   color: "#334E6D"
   roles:
-  - Captain
+  - Director
   - CentralCommandOfficial
   - ChiefEngineer
   - ChiefMedicalOfficer

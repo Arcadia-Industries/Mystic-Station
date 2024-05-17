@@ -7121,7 +7121,7 @@ entities:
     - type: Transform
       pos: -0.5,-10.5
       parent: 2
-- proto: AirlockCaptainLocked
+- proto: AirlockDirectorLocked
   entities:
   - uid: 389
     components:
@@ -9087,7 +9087,7 @@ entities:
   - uid: 5271
     components:
     - type: MetaData
-      name: Captain's Office APC
+      name: Director's Office APC
     - type: Transform
       pos: 33.5,44.5
       parent: 2
@@ -9879,7 +9879,7 @@ entities:
     - type: Transform
       pos: 62.5,-7.5
       parent: 2
-- proto: BedsheetCaptain
+- proto: BedsheetDirector
   entities:
   - uid: 379
     components:
@@ -28205,7 +28205,7 @@ entities:
     - type: Transform
       pos: 41.505302,37.40492
       parent: 2
-- proto: CaptainIDCard
+- proto: DirectorIDCard
   entities:
   - uid: 5431
     components:
@@ -34778,7 +34778,7 @@ entities:
     - type: Transform
       pos: 32.5,23.5
       parent: 2
-- proto: DefaultStationBeaconCaptainsQuarters
+- proto: DefaultStationBeaconDirectorsQuarters
   entities:
   - uid: 12385
     components:
@@ -37983,7 +37983,7 @@ entities:
     - type: Transform
       pos: 64.522316,20.63157
       parent: 2
-- proto: DresserCaptainFilled
+- proto: DresserDirectorFilled
   entities:
   - uid: 10279
     components:
@@ -38601,7 +38601,7 @@ entities:
       parent: 2
     - type: FaxMachine
       name: Conference Room
-- proto: FaxMachineCaptain
+- proto: FaxMachineDirector
   entities:
   - uid: 1465
     components:
@@ -58576,7 +58576,7 @@ entities:
     - type: Transform
       pos: 44.5,-10.5
       parent: 2
-- proto: LockerCaptainFilledHardsuit
+- proto: LockerDirectorFilledHardsuit
   entities:
   - uid: 5158
     components:
@@ -68535,7 +68535,7 @@ entities:
     - type: Transform
       pos: 44.5,-6.5
       parent: 2
-- proto: SpawnPointCaptain
+- proto: SpawnPointDirector
   entities:
   - uid: 8682
     components:
@@ -69502,7 +69502,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Office
+      id: Director's Office
   - uid: 12760
     components:
     - type: Transform
@@ -69513,7 +69513,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: Captain's Bedroom
+      id: Director's Bedroom
   - uid: 12761
     components:
     - type: Transform

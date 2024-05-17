@@ -2,11 +2,11 @@
 loadout-group-trinkets = Trinkets
 
 # Command
-loadout-group-captain-head = Captain head
-loadout-group-captain-jumpsuit = Captain jumpsuit
-loadout-group-captain-neck = Captain neck
-loadout-group-captain-backpack = Captain backpack
-loadout-group-captain-outerclothing = Captain outer clothing
+loadout-group-director-head = Director head
+loadout-group-director-jumpsuit = Director jumpsuit
+loadout-group-director-neck = Director neck
+loadout-group-director-backpack = Director backpack
+loadout-group-director-outerclothing = Director outer clothing
 
 loadout-group-hop-head = Head of Personnel head
 loadout-group-hop-jumpsuit = Head of Personnel jumpsuit

@@ -13647,7 +13647,7 @@ entities:
     - type: Transform
       pos: 12.366143,-10.392332
       parent: 104
-- proto: ToyFigurineCaptain
+- proto: ToyFigurineDirector
   entities:
   - uid: 2470
     components:

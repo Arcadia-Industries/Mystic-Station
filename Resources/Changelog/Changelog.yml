@@ -2199,7 +2199,7 @@
   url: https://github.com/space-wizards/space-station-14/pull/26377
 - author: Baptr0b0t
   changes:
-  - message: Fix access of command door remote. The captain must control his station.
+  - message: Fix access of command door remote. The director must control his station.
     type: Fix
   id: 6217
   time: '2024-03-24T05:19:14.0000000+00:00'
@@ -2257,7 +2257,7 @@
   url: https://github.com/space-wizards/space-station-14/pull/26405
 - author: IProduceWidgets
   changes:
-  - message: The captain can now return his laser to the glass display box.
+  - message: The director can now return his laser to the glass display box.
     type: Fix
   id: 6225
   time: '2024-03-25T00:58:33.0000000+00:00'
@@ -3181,7 +3181,7 @@
 - author: Tayrtahn
   changes:
   - message: Placing a player with no entry in the manifest into cryostorage no longer
-      removes the captain from the crew manifest.
+      removes the director from the crew manifest.
     type: Fix
   id: 6344
   time: '2024-04-14T02:19:42.0000000+00:00'

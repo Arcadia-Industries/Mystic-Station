@@ -18337,7 +18337,7 @@ entities:
     - type: Transform
       pos: 19.539907,21.362776
       parent: 1668
-- proto: ClothingOuterArmorCaptainCarapace
+- proto: ClothingOuterArmorDirectorCarapace
   entities:
   - uid: 3771
     components:
@@ -33287,7 +33287,7 @@ entities:
     - type: Transform
       pos: -10.5,-6.5
       parent: 1668
-- proto: SuitStorageCaptain
+- proto: SuitStorageDirector
   entities:
   - uid: 3768
     components:
@@ -35417,7 +35417,7 @@ entities:
     - type: Transform
       pos: 2.494053,-15.45146
       parent: 1668
-- proto: ToyFigurineCaptain
+- proto: ToyFigurineDirector
   entities:
   - uid: 1189
     components:

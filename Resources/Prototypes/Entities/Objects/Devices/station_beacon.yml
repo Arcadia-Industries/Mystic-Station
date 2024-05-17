@@ -139,11 +139,11 @@
 
 - type: entity
   parent: DefaultStationBeaconCommand
-  id: DefaultStationBeaconCaptainsQuarters
-  suffix: Captain's Quarters
+  id: DefaultStationBeaconDirectorsQuarters
+  suffix: Director's Quarters
   components:
   - type: NavMapBeacon
-    defaultText: station-beacon-captain
+    defaultText: station-beacon-director
 
 - type: entity
   parent: DefaultStationBeaconCommand
