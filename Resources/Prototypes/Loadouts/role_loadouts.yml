@@ -233,14 +233,14 @@
 
 # Security
 - type: roleLoadout
-  id: JobHeadOfSecurity
+  id: JobChiefofsecurity
   groups:
-  - HeadofSecurityHead
-  - HeadofSecurityNeck
-  - HeadofSecurityJumpsuit
+  - ChiefofsecurityHead
+  - ChiefofsecurityNeck
+  - ChiefofsecurityJumpsuit
   - SecurityBackpack
   - SecurityBelt
-  - HeadofSecurityOuterClothing
+  - ChiefofsecurityOuterClothing
   - SecurityShoes
   - Trinkets
 

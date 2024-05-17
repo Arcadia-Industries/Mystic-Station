@@ -11240,7 +11240,7 @@ entities:
     - type: Transform
       pos: -16.5,-17.5
       parent: 5350
-- proto: AirlockHeadOfSecurityLocked
+- proto: AirlockChiefofsecurityLocked
   entities:
   - uid: 6365
     components:
@@ -14500,7 +14500,7 @@ entities:
       parent: 1336
     - type: Physics
       canCollide: False
-- proto: BedsheetHOS
+- proto: Bedsheetcos
   entities:
   - uid: 26596
     components:
@@ -63479,7 +63479,7 @@ entities:
     - type: Transform
       pos: -14.5,-1.5
       parent: 5350
-- proto: DefaultStationBeaconHOSRoom
+- proto: DefaultstationbeaconcosRoom
   entities:
   - uid: 26688
     components:
@@ -69979,7 +69979,7 @@ entities:
       parent: 5350
     - type: Access
       tags:
-      - HeadOfSecurity
+      - Chiefofsecurity
       - Security
       - Armory
       - Brig
@@ -70038,7 +70038,7 @@ entities:
     - type: Transform
       pos: -18.5,1.5
       parent: 5350
-- proto: DresserHeadOfSecurityFilled
+- proto: DresserChiefofsecurityFilled
   entities:
   - uid: 1483
     components:
@@ -71126,7 +71126,7 @@ entities:
       pos: 12.5,45.5
       parent: 5350
     - type: FaxMachine
-      name: HoS's Office
+      name: Cos's Office
   - uid: 8470
     components:
     - type: Transform
@@ -117150,7 +117150,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerHeadOfSecurityFilled
+- proto: LockerChiefofsecurityFilled
   entities:
   - uid: 6366
     components:
@@ -137192,7 +137192,7 @@ entities:
     - type: Transform
       pos: -15.5,-2.5
       parent: 5350
-- proto: SpawnPointHeadOfSecurity
+- proto: SpawnPointChiefofsecurity
   entities:
   - uid: 9928
     components:
@@ -138414,7 +138414,7 @@ entities:
     - type: Transform
       pos: -14.5,-15.5
       parent: 5350
-- proto: SuitStorageHOS
+- proto: Suitstoragecos
   entities:
   - uid: 10385
     components:
@@ -139482,7 +139482,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: HoS Room
+      id: Cos Room
   - uid: 23203
     components:
     - type: Transform

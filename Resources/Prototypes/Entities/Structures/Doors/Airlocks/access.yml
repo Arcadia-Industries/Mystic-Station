@@ -300,12 +300,12 @@
 
 - type: entity
   parent: AirlockCommand
-  id: AirlockHeadOfSecurityLocked
-  suffix: HeadOfSecurity, Locked
+  id: AirlockChiefofsecurityLocked
+  suffix: Chiefofsecurity, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsHeadOfSecurity ]
+      board: [ DoorElectronicsChiefofsecurity ]
 
 - type: entity
   parent: AirlockCommand
@@ -665,12 +665,12 @@
 
 - type: entity
   parent: AirlockCommandGlass
-  id: AirlockHeadOfSecurityGlassLocked
-  suffix: HeadOfSecurity, Locked
+  id: AirlockChiefofsecurityGlassLocked
+  suffix: Chiefofsecurity, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsHeadOfSecurity ]
+      board: [ DoorElectronicsChiefofsecurity ]
 
 - type: entity
   parent: AirlockCommandGlass
@@ -1025,12 +1025,12 @@
 
 - type: entity
   parent: AirlockMaintCommandLocked
-  id: AirlockMaintHeadOfSecurityLocked
-  suffix: HeadOfSecurity, Locked
+  id: AirlockMaintChiefofsecurityLocked
+  suffix: Chiefofsecurity, Locked
   components:
   - type: ContainerFill
     containers:
-      board: [ DoorElectronicsHeadOfSecurity ]
+      board: [ DoorElectronicsChiefofsecurity ]
 
 - type: entity
   parent: AirlockMaintCommandLocked

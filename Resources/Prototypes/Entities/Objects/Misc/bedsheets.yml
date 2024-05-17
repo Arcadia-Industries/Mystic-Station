@@ -173,15 +173,15 @@
     stealGroup: HeadBedsheet
 
 - type: entity
-  id: BedsheetHOS
+  id: Bedsheetcos
   parent: BedsheetBase
-  name: HOS's bedsheet
+  name: COS's bedsheet
   description: It's decorated with a shield emblem. While crime doesn't sleep, you do, but you are still THE LAW!
   components:
   - type: Sprite
     state: sheethos
   - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/hos.rsi
+    sprite: Clothing/Neck/Bedsheets/cos.rsi
   - type: StealTarget
     stealGroup: HeadBedsheet
 

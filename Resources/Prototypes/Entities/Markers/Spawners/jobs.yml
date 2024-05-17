@@ -439,16 +439,16 @@
 # Security
 
 - type: entity
-  id: SpawnPointHeadOfSecurity
+  id: SpawnPointChiefofsecurity
   parent: SpawnPointJobBase
-  name: headofsecurity
+  name: chiefofsecurity
   components:
   - type: SpawnPoint
-    job_id: HeadOfSecurity
+    job_id: Chiefofsecurity
   - type: Sprite
     layers:
       - state: green
-      - state: hos
+      - state: cos
 
 - type: entity
   id: SpawnPointWarden

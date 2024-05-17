@@ -15074,14 +15074,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 27.5,-36.5
       parent: 2
-- proto: AirlockHeadOfSecurityGlassLocked
+- proto: AirlockChiefofsecurityGlassLocked
   entities:
   - uid: 4809
     components:
     - type: Transform
       pos: -12.5,30.5
       parent: 2
-- proto: AirlockHeadOfSecurityLocked
+- proto: AirlockChiefofsecurityLocked
   entities:
   - uid: 4846
     components:
@@ -19376,7 +19376,7 @@ entities:
     - type: Transform
       pos: 35.5,-26.5
       parent: 2
-- proto: BedsheetHOS
+- proto: Bedsheetcos
   entities:
   - uid: 5030
     components:
@@ -59884,7 +59884,7 @@ entities:
     - type: Transform
       pos: 43.5,-24.5
       parent: 2
-- proto: DefaultStationBeaconHOSRoom
+- proto: DefaultstationbeaconcosRoom
   entities:
   - uid: 20846
     components:
@@ -65115,7 +65115,7 @@ entities:
     - type: Transform
       pos: 37.5,-26.5
       parent: 2
-- proto: DresserHeadOfSecurityFilled
+- proto: DresserChiefofsecurityFilled
   entities:
   - uid: 5156
     components:
@@ -98456,7 +98456,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerHeadOfSecurityFilled
+- proto: LockerChiefofsecurityFilled
   entities:
   - uid: 5040
     components:
@@ -115378,7 +115378,7 @@ entities:
     - type: Transform
       pos: 36.5,-25.5
       parent: 2
-- proto: SpawnPointHeadOfSecurity
+- proto: SpawnPointChiefofsecurity
   entities:
   - uid: 5674
     components:
@@ -116425,7 +116425,7 @@ entities:
     - type: Transform
       pos: -0.5,40.5
       parent: 2
-- proto: SuitStorageHOS
+- proto: Suitstoragecos
   entities:
   - uid: 5034
     components:
@@ -118017,7 +118017,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Head of Security's office
+      id: Chief of Security's office
   - uid: 9003
     components:
     - type: Transform

@@ -104,12 +104,12 @@
 
 - type: entity
   parent: BaseFigurine
-  id: ToyFigurineHeadOfSecurity
-  name: head of security figure
+  id: ToyFigurineChiefofsecurity
+  name: chief of security figure
   description: A figurine depicting the glorious head of the Security department.
   components:
   - type: Sprite
-    state: hos
+    state: cos
 
 - type: entity
   parent: BaseFigurine

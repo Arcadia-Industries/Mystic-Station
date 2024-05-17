@@ -6159,14 +6159,14 @@ entities:
     - type: Transform
       pos: 9.5,28.5
       parent: 4812
-- proto: AirlockHeadOfSecurityGlassLocked
+- proto: AirlockChiefofsecurityGlassLocked
   entities:
   - uid: 7935
     components:
     - type: Transform
       pos: -22.5,26.5
       parent: 4812
-- proto: AirlockHeadOfSecurityLocked
+- proto: AirlockChiefofsecurityLocked
   entities:
   - uid: 7934
     components:
@@ -11185,7 +11185,7 @@ entities:
     - type: Transform
       pos: 6.5,29.5
       parent: 4812
-- proto: BedsheetHOS
+- proto: Bedsheetcos
   entities:
   - uid: 8250
     components:
@@ -32103,7 +32103,7 @@ entities:
     - type: Transform
       pos: 19.693497,8.613337
       parent: 4812
-- proto: ClothingNeckMantleHOS
+- proto: ClothingNeckMantleCOS
   entities:
   - uid: 9197
     components:
@@ -34216,7 +34216,7 @@ entities:
     - type: Transform
       pos: 7.5,25.5
       parent: 4812
-- proto: DefaultStationBeaconHOSRoom
+- proto: DefaultstationbeaconcosRoom
   entities:
   - uid: 12337
     components:
@@ -37006,7 +37006,7 @@ entities:
     - type: Transform
       pos: 7.5,29.5
       parent: 4812
-- proto: DresserHeadOfSecurityFilled
+- proto: DresserChiefofsecurityFilled
   entities:
   - uid: 7456
     components:
@@ -37500,7 +37500,7 @@ entities:
       pos: -19.5,22.5
       parent: 4812
     - type: FaxMachine
-      name: HoS Office
+      name: Cos Office
   - uid: 4856
     components:
     - type: Transform
@@ -59384,7 +59384,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerHeadOfSecurityFilled
+- proto: LockerChiefofsecurityFilled
   entities:
   - uid: 8252
     components:
@@ -69954,7 +69954,7 @@ entities:
     - type: Transform
       pos: 7.5,28.5
       parent: 4812
-- proto: SpawnPointHeadOfSecurity
+- proto: SpawnPointChiefofsecurity
   entities:
   - uid: 8253
     components:
@@ -70634,7 +70634,7 @@ entities:
     - type: Transform
       pos: -25.5,24.5
       parent: 4812
-- proto: SuitStorageHOS
+- proto: Suitstoragecos
   entities:
   - uid: 740
     components:
@@ -70770,7 +70770,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: HoS office
+      id: Cos office
   - uid: 12523
     components:
     - type: Transform

@@ -1,0 +1,49 @@
+- type: job
+  id: Chiefofsecurity
+  name: job-name-cos
+  description: job-description-cos
+  playTimeTracker: JobChiefofsecurity
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobWarden
+      time: 10800 #3 hrs
+    - !type:RoleTimeRequirement
+      role: JobSecurityOfficer
+      time: 36000 #10 hrs
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 108000 # 30 hrs
+    - !type:OverallPlaytimeRequirement
+      time: 144000 #40 hrs
+  weight: 10
+  startingGear: HoSGear
+  icon: "JobIconChiefofsecurity"
+  requireAdminNotify: true
+  supervisors: job-supervisors-director
+  canBeAntag: false
+  access:
+  - Chiefofsecurity
+  - Command
+  - Brig
+  - Security
+  - Armory
+  - Maintenance
+  - Service
+  - External
+  - Detective
+  - Cryogenics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: HoSGear
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+    id: HoSPDA
+    gloves: ClothingHandsGlovesCombat
+    ears: ClothingHeadsetAltSecurity
+    pocket1: WeaponPistolMk58

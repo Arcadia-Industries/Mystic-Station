@@ -5164,14 +5164,14 @@ entities:
       rot: 3.141592653589793 rad
       pos: -9.5,12.5
       parent: 1
-- proto: AirlockHeadOfSecurityGlassLocked
+- proto: AirlockChiefofsecurityGlassLocked
   entities:
   - uid: 1158
     components:
     - type: Transform
       pos: -26.5,10.5
       parent: 1
-- proto: AirlockHeadOfSecurityLocked
+- proto: AirlockChiefofsecurityLocked
   entities:
   - uid: 888
     components:
@@ -7056,7 +7056,7 @@ entities:
     - type: Transform
       pos: -11.5,11.5
       parent: 1
-- proto: BedsheetHOS
+- proto: Bedsheetcos
   entities:
   - uid: 2046
     components:
@@ -29880,7 +29880,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ClothingOuterWinterHoS
+- proto: ClothingOuterWinterCos
   entities:
   - uid: 145
     components:
@@ -55294,7 +55294,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerHeadOfSecurityFilledHardsuit
+- proto: LockerChiefofsecurityFilledHardsuit
   entities:
   - uid: 2093
     components:
@@ -64321,7 +64321,7 @@ entities:
     - type: Transform
       pos: -11.5,12.5
       parent: 1
-- proto: SpawnPointHeadOfSecurity
+- proto: SpawnPointChiefofsecurity
   entities:
   - uid: 2206
     components:

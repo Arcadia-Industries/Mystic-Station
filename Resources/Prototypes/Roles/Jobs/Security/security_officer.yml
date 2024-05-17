@@ -9,7 +9,7 @@
       time: 36000 #10 hrs
   startingGear: SecurityOfficerGear
   icon: "JobIconSecurityOfficer"
-  supervisors: job-supervisors-hos
+  supervisors: job-supervisors-cos
   canBeAntag: false
   access:
   - Security

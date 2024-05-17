@@ -2275,7 +2275,7 @@ entities:
     - type: Transform
       pos: 0.94071925,-13.482027
       parent: 1
-- proto: ClothingNeckMantleHOS
+- proto: ClothingNeckMantleCOS
   entities:
   - uid: 37
     components:

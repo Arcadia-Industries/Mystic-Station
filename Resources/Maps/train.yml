@@ -8257,7 +8257,7 @@ entities:
     - type: Transform
       pos: 0.5,-118.5
       parent: 2
-- proto: AirlockHeadOfSecurityLocked
+- proto: AirlockChiefofsecurityLocked
   entities:
   - uid: 10794
     components:
@@ -11327,7 +11327,7 @@ entities:
     - type: Transform
       pos: -0.5,-116.5
       parent: 2
-- proto: BedsheetHOS
+- proto: Bedsheetcos
   entities:
   - uid: 11096
     components:
@@ -37765,7 +37765,7 @@ entities:
     - type: Transform
       pos: 0.5,-119.5
       parent: 2
-- proto: DefaultStationBeaconHOSRoom
+- proto: DefaultstationbeaconcosRoom
   entities:
   - uid: 11500
     components:
@@ -45957,7 +45957,7 @@ entities:
     - type: Transform
       pos: -1.5,-116.5
       parent: 2
-- proto: DresserHeadOfSecurityFilled
+- proto: DresserChiefofsecurityFilled
   entities:
   - uid: 11097
     components:
@@ -46930,7 +46930,7 @@ entities:
       pos: -2.5,-346.5
       parent: 2
     - type: FaxMachine
-      name: Head of Security
+      name: Chief of Security
 - proto: FaxMachineDirector
   entities:
   - uid: 300
@@ -76124,7 +76124,7 @@ entities:
     - type: Transform
       pos: -1.5,-117.5
       parent: 2
-- proto: LockerHeadOfSecurityFilled
+- proto: LockerChiefofsecurityFilled
   entities:
   - uid: 11098
     components:
@@ -87919,7 +87919,7 @@ entities:
     - type: Transform
       pos: -0.5,-116.5
       parent: 2
-- proto: SpawnPointHeadOfSecurity
+- proto: SpawnPointChiefofsecurity
   entities:
   - uid: 12054
     components:
@@ -88773,7 +88773,7 @@ entities:
     - type: Transform
       pos: -0.5,-375.5
       parent: 2
-- proto: SuitStorageHOS
+- proto: Suitstoragecos
   entities:
   - uid: 11095
     components:
@@ -91446,7 +91446,7 @@ entities:
     - type: Transform
       pos: 1.7322779,-121.02217
       parent: 2
-- proto: ToyFigurineHeadOfSecurity
+- proto: ToyFigurineChiefofsecurity
   entities:
   - uid: 12186
     components:

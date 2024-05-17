@@ -9,7 +9,7 @@
       time: 36000 #10 hrs
   startingGear: WardenGear
   icon: "JobIconWarden"
-  supervisors: job-supervisors-hos
+  supervisors: job-supervisors-cos
   canBeAntag: false
   access:
   - Security

@@ -293,19 +293,19 @@
   - type: AccessReader
     access: [ [ "Research" ] ]
 
-# HoS
+# Cos
 - type: entity
-  id: LockerHeadOfSecurity
+  id: LockerChiefofsecurity
   parent: LockerBaseSecure
-  name: head of security's locker
+  name: chief of security's locker
   components:
   - type: Appearance
   - type: EntityStorageVisuals
-    stateBaseClosed: hos
-    stateDoorOpen: hos_open
-    stateDoorClosed: hos_door
+    stateBaseClosed: cos
+    stateDoorOpen: cos_open
+    stateDoorClosed: cos_door
   - type: AccessReader
-    access: [["HeadOfSecurity"]]
+    access: [["Chiefofsecurity"]]
 
 # Warden
 - type: entity

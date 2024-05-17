@@ -47,12 +47,12 @@
 
 - type: entity
   parent: FlaskBase
-  id: DrinkHosFlask
-  name: hos's flask
-  description: A metal flask, fit for a hard working HoS.
+  id: DrinkCosflask
+  name: cos's flask
+  description: A metal flask, fit for a hard working Cos.
   components:
   - type: Sprite
-    sprite: Objects/Consumable/Drinks/hosflask.rsi
+    sprite: Objects/Consumable/Drinks/cosflask.rsi
 
 - type: entity
   parent: FlaskBase

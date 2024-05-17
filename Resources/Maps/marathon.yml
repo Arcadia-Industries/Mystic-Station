@@ -10817,7 +10817,7 @@ entities:
     - type: Transform
       pos: 6.5,33.5
       parent: 30
-- proto: AirlockHeadOfSecurityGlassLocked
+- proto: AirlockChiefofsecurityGlassLocked
   entities:
   - uid: 1794
     components:
@@ -12311,7 +12311,7 @@ entities:
   - uid: 1830
     components:
     - type: MetaData
-      name: HOS Office APC
+      name: COS Office APC
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: -27.5,51.5
@@ -55005,7 +55005,7 @@ entities:
     - type: Transform
       pos: 2.5,33.5
       parent: 30
-- proto: DefaultStationBeaconHOSRoom
+- proto: DefaultstationbeaconcosRoom
   entities:
   - uid: 20555
     components:
@@ -60699,7 +60699,7 @@ entities:
       parent: 30
     - type: Access
       tags:
-      - HeadOfSecurity
+      - Chiefofsecurity
       - Security
       - Armory
       - Brig
@@ -60787,7 +60787,7 @@ entities:
     - type: Transform
       pos: -1.5,35.5
       parent: 30
-- proto: DresserHeadOfSecurityFilled
+- proto: DresserChiefofsecurityFilled
   entities:
   - uid: 20616
     components:
@@ -100575,7 +100575,7 @@ entities:
         - 0
         - 0
         - 0
-- proto: LockerHeadOfSecurityFilled
+- proto: LockerChiefofsecurityFilled
   entities:
   - uid: 2126
     components:
@@ -118233,7 +118233,7 @@ entities:
     - type: Transform
       pos: 4.5,33.5
       parent: 30
-- proto: SpawnPointHeadOfSecurity
+- proto: SpawnPointChiefofsecurity
   entities:
   - uid: 2127
     components:
@@ -119397,7 +119397,7 @@ entities:
     - type: Transform
       pos: -3.5,20.5
       parent: 30
-- proto: SuitStorageHOS
+- proto: Suitstoragecos
   entities:
   - uid: 776
     components:
@@ -120433,7 +120433,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: Head Of Security Office
+      id: Chief Of Security Office
   - uid: 21173
     components:
     - type: Transform

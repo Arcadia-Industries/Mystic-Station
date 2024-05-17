@@ -6389,7 +6389,7 @@ entities:
     - type: Transform
       pos: -3.5,20.5
       parent: 1
-- proto: AirlockHeadOfSecurityLocked
+- proto: AirlockChiefofsecurityLocked
   entities:
   - uid: 3313
     components:
@@ -7934,7 +7934,7 @@ entities:
     - type: Transform
       pos: -5.5,19.5
       parent: 1
-- proto: BedsheetHOS
+- proto: Bedsheetcos
   entities:
   - uid: 5373
     components:
@@ -27913,7 +27913,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ClothingOuterWinterHoS
+- proto: ClothingOuterWinterCos
   entities:
   - uid: 12478
     components:
@@ -29093,7 +29093,7 @@ entities:
     - type: Transform
       pos: -0.5,20.5
       parent: 1
-- proto: DefaultStationBeaconHOSRoom
+- proto: DefaultstationbeaconcosRoom
   entities:
   - uid: 12629
     components:
@@ -56950,7 +56950,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerHeadOfSecurityFilled
+- proto: LockerChiefofsecurityFilled
   entities:
   - uid: 5374
     components:
@@ -68115,7 +68115,7 @@ entities:
     - type: Transform
       pos: -5.5,20.5
       parent: 1
-- proto: SpawnPointHeadOfSecurity
+- proto: SpawnPointChiefofsecurity
   entities:
   - uid: 6044
     components:
@@ -68810,7 +68810,7 @@ entities:
     - type: Transform
       pos: 34.5,23.5
       parent: 1
-- proto: SuitStorageHOS
+- proto: Suitstoragecos
   entities:
   - uid: 4973
     components:

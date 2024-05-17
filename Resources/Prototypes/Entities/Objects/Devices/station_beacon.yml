@@ -180,11 +180,11 @@
 
 - type: entity
   parent: DefaultStationBeaconSecurity
-  id: DefaultStationBeaconHOSRoom
-  suffix: HOS’s Room
+  id: DefaultstationbeaconcosRoom
+  suffix: COS’s Room
   components:
   - type: NavMapBeacon
-    defaultText: station-beacon-hos
+    defaultText: station-beacon-cos
 
 - type: entity
   parent: DefaultStationBeaconSecurity

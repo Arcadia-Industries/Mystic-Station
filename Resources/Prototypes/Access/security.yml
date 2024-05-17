@@ -1,6 +1,6 @@
 - type: accessLevel
-  id: HeadOfSecurity
-  name: id-card-access-level-head-of-security
+  id: Chiefofsecurity
+  name: id-card-access-level-chief-of-security
 
 - type: accessLevel
   id: Security
@@ -21,7 +21,7 @@
 - type: accessGroup
   id: Security
   tags:
-  - HeadOfSecurity
+  - Chiefofsecurity
   - Security
   - Armory
   - Brig

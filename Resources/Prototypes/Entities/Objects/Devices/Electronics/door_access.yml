@@ -182,11 +182,11 @@
 # Security
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsHeadOfSecurity
-  suffix: HeadOfSecurity, Locked
+  id: DoorElectronicsChiefofsecurity
+  suffix: Chiefofsecurity, Locked
   components:
   - type: AccessReader
-    access: [["HeadOfSecurity"]]
+    access: [["Chiefofsecurity"]]
 
 - type: entity
   parent: DoorElectronics

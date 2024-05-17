@@ -120,13 +120,13 @@
 - type: entity
   parent: ClothingHeadBase
   id: ClothingHeadHatBeretHoS
-  name: head of security's beret
+  name: chief of security's beret
   description: A black beret with a commander's rank emblem. For officers that are more inclined towards style than safety.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hats/beret_hos.rsi
+    sprite: Clothing/Head/Hats/beret_cos.rsi
   - type: Clothing
-    sprite: Clothing/Head/Hats/beret_hos.rsi
+    sprite: Clothing/Head/Hats/beret_cos.rsi
   - type: Tag
     tags:
     - ClothMade
@@ -312,14 +312,14 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatHoshat
-  name: head of security's hat
+  id: ClothingHeadHatCoshat
+  name: chief of security's hat
   description: "There's a new sheriff in station."
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hats/hoshat.rsi
+    sprite: Clothing/Head/Hats/coshat.rsi
   - type: Clothing
-    sprite: Clothing/Head/Hats/hoshat.rsi
+    sprite: Clothing/Head/Hats/coshat.rsi
   - type: Tag
     tags:
     - ClothMade

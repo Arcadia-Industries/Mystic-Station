@@ -342,13 +342,13 @@
       "name": "hop_open"
     },
     {
-      "name": "hos"
+      "name": "cos"
     },
     {
-      "name": "hos_door"
+      "name": "cos_door"
     },
     {
-      "name": "hos_open"
+      "name": "cos_open"
     },
     {
       "name": "hydro"

@@ -40,7 +40,7 @@
         orGroup: SpacemenFig
       - id: ToyFigurineDirector
         orGroup: SpacemenFig
-      - id: ToyFigurineHeadOfSecurity
+      - id: ToyFigurineChiefofsecurity
         orGroup: SpacemenFig
       - id: ToyFigurineWarden
         orGroup: SpacemenFig

@@ -66,7 +66,7 @@
   <Box>
     <GuideEntityEmbed Entity="HandTeleporter" Caption="Hand Teleporter"/>
   </Box>
-  - Steal the Head of Security's [color=#a4885c]Secret Documents[/color].
+  - Steal the Chief of Security's [color=#a4885c]Secret Documents[/color].
   <Box>
     <GuideEntityEmbed Entity="BookSecretDocuments" Caption="Secret Documents"/>
   </Box>

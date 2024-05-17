@@ -9726,7 +9726,7 @@ entities:
     - type: Transform
       pos: 24.5,-0.5
       parent: 407
-- proto: LockerHeadOfSecurityFilledHardsuit
+- proto: LockerChiefofsecurityFilledHardsuit
   entities:
   - uid: 1861
     components:
@@ -11852,7 +11852,7 @@ entities:
     - type: Transform
       pos: 8.5,0.5
       parent: 407
-- proto: SpawnPointHeadOfSecurity
+- proto: SpawnPointChiefofsecurity
   entities:
   - uid: 2133
     components:

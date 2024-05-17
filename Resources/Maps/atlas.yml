@@ -3743,7 +3743,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 29.5,-3.5
       parent: 30
-- proto: AirlockHeadOfSecurityGlassLocked
+- proto: AirlockChiefofsecurityGlassLocked
   entities:
   - uid: 733
     components:
@@ -4685,7 +4685,7 @@ entities:
     - type: Transform
       pos: 32.5,-5.5
       parent: 30
-- proto: BedsheetHOS
+- proto: Bedsheetcos
   entities:
   - uid: 1511
     components:
@@ -19651,7 +19651,7 @@ entities:
     - type: Transform
       pos: 27.5,-3.5
       parent: 30
-- proto: DefaultStationBeaconHOSRoom
+- proto: DefaultstationbeaconcosRoom
   entities:
   - uid: 3003
     components:
@@ -22098,7 +22098,7 @@ entities:
     - type: Transform
       pos: 32.5,-1.5
       parent: 30
-- proto: DresserHeadOfSecurityFilled
+- proto: DresserChiefofsecurityFilled
   entities:
   - uid: 7722
     components:
@@ -36276,7 +36276,7 @@ entities:
     - type: Transform
       pos: 32.5,-3.5
       parent: 30
-- proto: LockerHeadOfSecurityFilled
+- proto: LockerChiefofsecurityFilled
   entities:
   - uid: 1642
     components:
@@ -43044,7 +43044,7 @@ entities:
     - type: Transform
       pos: 32.5,-5.5
       parent: 30
-- proto: SpawnPointHeadOfSecurity
+- proto: SpawnPointChiefofsecurity
   entities:
   - uid: 6960
     components:
@@ -43547,7 +43547,7 @@ entities:
     - type: Transform
       pos: 21.5,6.5
       parent: 30
-- proto: SuitStorageHOS
+- proto: Suitstoragecos
   entities:
   - uid: 1583
     components:

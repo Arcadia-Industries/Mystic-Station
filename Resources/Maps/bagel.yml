@@ -12912,12 +12912,12 @@ entities:
     - type: Transform
       pos: 5.5,-33.5
       parent: 60
-- proto: AirlockHeadOfSecurityGlassLocked
+- proto: AirlockChiefofsecurityGlassLocked
   entities:
   - uid: 1729
     components:
     - type: MetaData
-      name: HoS's Room
+      name: Cos's Room
     - type: Transform
       pos: -21.5,-1.5
       parent: 60
@@ -15922,7 +15922,7 @@ entities:
     - type: Transform
       pos: 7.5,-32.5
       parent: 60
-- proto: BedsheetHOS
+- proto: Bedsheetcos
   entities:
   - uid: 11456
     components:
@@ -62227,7 +62227,7 @@ entities:
     - type: Transform
       pos: 5.5,-28.5
       parent: 60
-- proto: DefaultStationBeaconHOSRoom
+- proto: DefaultstationbeaconcosRoom
   entities:
   - uid: 23108
     components:
@@ -67373,7 +67373,7 @@ entities:
     - type: Transform
       pos: 8.5,-32.5
       parent: 60
-- proto: DresserHeadOfSecurityFilled
+- proto: DresserChiefofsecurityFilled
   entities:
   - uid: 15403
     components:
@@ -108992,7 +108992,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerHeadOfSecurityFilledHardsuit
+- proto: LockerChiefofsecurityFilledHardsuit
   entities:
   - uid: 5933
     components:
@@ -129521,7 +129521,7 @@ entities:
     - type: Transform
       pos: 7.5,-31.5
       parent: 60
-- proto: SpawnPointHeadOfSecurity
+- proto: SpawnPointChiefofsecurity
   entities:
   - uid: 1731
     components:
@@ -131947,7 +131947,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: HoS Office
+      id: Cos Office
   - uid: 8380
     components:
     - type: Transform

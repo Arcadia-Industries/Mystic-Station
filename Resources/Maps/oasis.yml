@@ -12941,7 +12941,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 43.5,-7.5
       parent: 2
-- proto: AirlockHeadOfSecurityGlassLocked
+- proto: AirlockChiefofsecurityGlassLocked
   entities:
   - uid: 4315
     components:
@@ -12949,7 +12949,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 41.5,-37.5
       parent: 2
-- proto: AirlockHeadOfSecurityLocked
+- proto: AirlockChiefofsecurityLocked
   entities:
   - uid: 4306
     components:
@@ -35076,7 +35076,7 @@ entities:
     - type: Transform
       pos: 44.5,-9.5
       parent: 2
-- proto: BedsheetHOS
+- proto: Bedsheetcos
   entities:
   - uid: 4342
     components:
@@ -77579,7 +77579,7 @@ entities:
     - type: Transform
       pos: 42.5,-5.5
       parent: 2
-- proto: DefaultStationBeaconHOSRoom
+- proto: DefaultstationbeaconcosRoom
   entities:
   - uid: 11899
     components:
@@ -86047,7 +86047,7 @@ entities:
           ents:
           - 3517
           - 3518
-- proto: DresserHeadOfSecurityFilled
+- proto: DresserChiefofsecurityFilled
   entities:
   - uid: 4343
     components:
@@ -134160,7 +134160,7 @@ entities:
     - type: Transform
       pos: 42.5,-8.5
       parent: 2
-- proto: LockerHeadOfSecurityFilled
+- proto: LockerChiefofsecurityFilled
   entities:
   - uid: 4810
     components:
@@ -154109,7 +154109,7 @@ entities:
     - type: Transform
       pos: 23.5,13.5
       parent: 2
-- proto: SpawnPointHeadOfSecurity
+- proto: SpawnPointChiefofsecurity
   entities:
   - uid: 20797
     components:
@@ -155386,7 +155386,7 @@ entities:
     - type: Transform
       pos: 4.5,2.5
       parent: 21002
-- proto: SuitStorageHOS
+- proto: Suitstoragecos
   entities:
   - uid: 4327
     components:
@@ -156132,7 +156132,7 @@ entities:
       pos: 40.5,-41.5
       parent: 2
     - type: SurveillanceCamera
-      id: HoS's
+      id: Cos's
   - uid: 20889
     components:
     - type: Transform

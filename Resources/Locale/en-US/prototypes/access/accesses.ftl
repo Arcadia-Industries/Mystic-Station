@@ -3,7 +3,7 @@ id-card-access-level-director = Director
 id-card-access-level-head-of-personnel = Head of Personnel
 id-card-access-level-cryogenics = Cryogenics
 
-id-card-access-level-head-of-security = Head of Security
+id-card-access-level-chief-of-security = Chief of Security
 id-card-access-level-security = Security
 id-card-access-level-armory = Armory
 id-card-access-level-brig = Brig

@@ -407,11 +407,11 @@
   - type: StealTarget
     stealGroup: ClothingOuterHardsuitRd
 
-#Head of Security's Hardsuit
+#Chief of Security's Hardsuit
 - type: entity
   parent: ClothingOuterHardsuitSecurity
   id: ClothingOuterHardsuitSecurityRed
-  name: head of security's hardsuit
+  name: chief of security's hardsuit
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor.
   components:
   - type: Sprite

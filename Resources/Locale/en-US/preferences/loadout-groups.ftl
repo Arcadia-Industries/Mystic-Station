@@ -128,10 +128,10 @@ loadout-group-scientist-id = Scientist ID
 loadout-group-research-assistant-jumpsuit = Research Assistant jumpsuit
 
 # Security
-loadout-group-head-of-security-head = Head of Security head
-loadout-group-head-of-security-jumpsuit = Head of Security jumpsuit
-loadout-group-head-of-security-neck = Head of Security neck
-loadout-group-head-of-security-outerclothing = Head of Security outer clothing
+loadout-group-chief-of-security-head = Chief of Security head
+loadout-group-chief-of-security-jumpsuit = Chief of Security jumpsuit
+loadout-group-chief-of-security-neck = Chief of Security neck
+loadout-group-chief-of-security-outerclothing = Chief of Security outer clothing
 
 loadout-group-warden-head = Warden head
 loadout-group-warden-jumpsuit = Warden jumpsuit

@@ -9,7 +9,7 @@
     time: 54000 # 15 hours
   startingGear: DetectiveGear
   icon: "JobIconDetective"
-  supervisors: job-supervisors-hos
+  supervisors: job-supervisors-cos
   canBeAntag: false
   access:
   - Security

@@ -42,7 +42,7 @@
   - ChiefEngineer
   - ChiefMedicalOfficer
   - HeadOfPersonnel
-  - HeadOfSecurity
+  - Chiefofsecurity
   - ResearchDirector
   - Quartermaster
   primary: false
@@ -76,7 +76,7 @@
   color: "#DE3A3A"
   weight: 20
   roles:
-  - HeadOfSecurity
+  - Chiefofsecurity
   - SecurityCadet
   - SecurityOfficer
   - Detective

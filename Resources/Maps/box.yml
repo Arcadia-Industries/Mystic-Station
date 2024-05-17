@@ -11942,7 +11942,7 @@ entities:
     - type: Transform
       pos: -7.5,-28.5
       parent: 8364
-- proto: AirlockHeadOfSecurityGlassLocked
+- proto: AirlockChiefofsecurityGlassLocked
   entities:
   - uid: 5621
     components:
@@ -15822,7 +15822,7 @@ entities:
     - type: Transform
       pos: -10.5,-27.5
       parent: 8364
-- proto: BedsheetHOS
+- proto: Bedsheetcos
   entities:
   - uid: 21245
     components:
@@ -71813,7 +71813,7 @@ entities:
     - type: Transform
       pos: -10.5,-25.5
       parent: 8364
-- proto: DefaultStationBeaconHOSRoom
+- proto: DefaultstationbeaconcosRoom
   entities:
   - uid: 27724
     components:
@@ -80833,7 +80833,7 @@ entities:
     - type: Transform
       pos: -11.5,-25.5
       parent: 8364
-- proto: DresserHeadOfSecurityFilled
+- proto: DresserChiefofsecurityFilled
   entities:
   - uid: 9238
     components:
@@ -81720,7 +81720,7 @@ entities:
       pos: 12.5,41.5
       parent: 8364
     - type: FaxMachine
-      name: HoS
+      name: Cos
   - uid: 21237
     components:
     - type: Transform
@@ -122289,7 +122289,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerHeadOfSecurityFilled
+- proto: LockerChiefofsecurityFilled
   entities:
   - uid: 9250
     components:
@@ -143186,7 +143186,7 @@ entities:
     - type: Transform
       pos: -11.5,-22.5
       parent: 8364
-- proto: SpawnPointHeadOfSecurity
+- proto: SpawnPointChiefofsecurity
   entities:
   - uid: 8815
     components:
@@ -144416,7 +144416,7 @@ entities:
     - type: Transform
       pos: -14.5,3.5
       parent: 8364
-- proto: SuitStorageHOS
+- proto: Suitstoragecos
   entities:
   - uid: 5288
     components:
@@ -145213,7 +145213,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraSecurity
       nameSet: True
-      id: HoS Room
+      id: Cos Room
   - uid: 388
     components:
     - type: Transform

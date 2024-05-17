@@ -422,16 +422,16 @@
 - type: entity
   parent: IDCardStandard
   id: HoSIDCard
-  name: head of security ID card
+  name: chief of security ID card
   components:
   - type: Sprite
     layers:
     - state: silver
-    - state: idheadofsecurity
+    - state: idchiefofsecurity
   - type: Item
     heldPrefix: silver
   - type: PresetIdCard
-    job: HeadOfSecurity
+    job: Chiefofsecurity
 
 - type: entity
   parent: IDCardStandard
@@ -631,7 +631,7 @@
     - JobIconPassenger
     - JobIconChiefEngineer
     - JobIconBartender
-    - JobIconHeadOfSecurity
+    - JobIconChiefofsecurity
     - JobIconMedicalDoctor
     - JobIconParamedic
     - JobIconChef

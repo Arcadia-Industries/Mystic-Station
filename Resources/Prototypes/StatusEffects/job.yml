@@ -224,10 +224,10 @@
 
 - type: statusIcon
   parent: JobIcon
-  id: JobIconHeadOfSecurity
+  id: JobIconChiefofsecurity
   icon:
     sprite: /Textures/Interface/Misc/job_icons.rsi
-    state: HeadOfSecurity
+    state: Chiefofsecurity
 
 - type: statusIcon
   parent: JobIcon

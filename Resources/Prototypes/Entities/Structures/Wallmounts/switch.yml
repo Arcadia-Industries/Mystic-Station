@@ -272,12 +272,12 @@
     access: [["ChiefMedicalOfficer"]]
 
 - type: entity
-  id: LockableButtonHeadOfSecurity
-  suffix: HeadOfSecurity
+  id: LockableButtonChiefofsecurity
+  suffix: Chiefofsecurity
   parent: LockableButton
   components:
   - type: AccessReader
-    access: [["HeadOfSecurity"]]
+    access: [["Chiefofsecurity"]]
 
 - type: entity
   id: LockableButtonResearchDirector

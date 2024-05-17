@@ -595,17 +595,17 @@
 - type: entity
   parent: BasePDA
   id: HoSPDA
-  name: head of security PDA
+  name: chief of security PDA
   description: Whosoever bears this PDA is the law.
   components:
   - type: Pda
     id: HoSIDCard
-    state: pda-hos
+    state: pda-cos
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentHColor: "#447987"
   - type: Icon
-    state: pda-hos
+    state: pda-cos
 
 - type: entity
   parent: BasePDA

@@ -249,14 +249,14 @@
       - id: EncryptionKeyBinary
 
 - type: entity
-  id: LockerHeadOfSecurityFilledHardsuit
+  id: LockerChiefofsecurityFilledHardsuit
   suffix: Filled, Hardsuit
-  parent: LockerHeadOfSecurity
+  parent: LockerChiefofsecurity
   components:
   - type: StorageFill
     contents:
       - id: WeaponDisabler
-      - id: ClothingOuterCoatHoSTrench
+      - id: ClothingOuterCoatcosTrench
       - id: ClothingMaskNeckGaiter
       - id: ClothingOuterHardsuitSecurityRed
       - id: ClothingMaskGasSwat
@@ -275,14 +275,14 @@
       - id: BookSecretDocuments
 
 - type: entity
-  id: LockerHeadOfSecurityFilled
+  id: LockerChiefofsecurityFilled
   suffix: Filled
-  parent: LockerHeadOfSecurity
+  parent: LockerChiefofsecurity
   components:
   - type: StorageFill
     contents:
       - id: WeaponDisabler
-      - id: ClothingOuterCoatHoSTrench
+      - id: ClothingOuterCoatcosTrench
       - id: ClothingMaskNeckGaiter
       - id: ClothingBeltSecurityFilled
       - id: ClothingHeadsetAltSecurity

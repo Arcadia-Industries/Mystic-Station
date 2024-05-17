@@ -292,16 +292,16 @@
     Durathread: 100
 
 - type: latheRecipe
-  id: ClothingUniformJumpsuitHosFormal
-  result: ClothingUniformJumpsuitHosFormal
+  id: ClothingUniformJumpsuitCosformal
+  result: ClothingUniformJumpsuitCosformal
   completetime: 4
   materials:
     Cloth: 300
     Durathread: 100
 
 - type: latheRecipe
-  id: ClothingUniformJumpskirtHosFormal
-  result: ClothingUniformJumpskirtHosFormal
+  id: ClothingUniformJumpskirtCosformal
+  result: ClothingUniformJumpskirtCosformal
   completetime: 4
   materials:
     Cloth: 300
@@ -994,8 +994,8 @@
     Durathread: 50
 
 - type: latheRecipe
-  id: ClothingHeadHatHoshat
-  result: ClothingHeadHatHoshat
+  id: ClothingHeadHatCoshat
+  result: ClothingHeadHatCoshat
   completetime: 2
   materials:
     Cloth: 100

@@ -188,11 +188,11 @@
   - type: AccessReader
     access: [ [ "ResearchDirector" ] ]
 
-#HOS's hardsuit
+#COS's hardsuit
 - type: entity
-  id: SuitStorageHOS
+  id: Suitstoragecos
   parent: SuitStorageBase
-  suffix: Head of Security
+  suffix: Chief of Security
   components:
   - type: StorageFill
     contents:
@@ -201,7 +201,7 @@
         - id: ClothingOuterHardsuitSecurityRed
         - id: ClothingMaskGasSwat
   - type: AccessReader
-    access: [["HeadOfSecurity"]]
+    access: [["Chiefofsecurity"]]
 
 #Warden's hardsuit
 - type: entity

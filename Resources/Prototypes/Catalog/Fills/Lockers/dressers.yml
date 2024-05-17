@@ -57,20 +57,20 @@
       - id: ClothingEyesGlasses
 
 - type: entity
-  id: DresserHeadOfSecurityFilled
+  id: DresserChiefofsecurityFilled
   parent: Dresser
-  suffix: Filled, Head Of Security
+  suffix: Filled, Chief Of Security
   components:
   - type: StorageFill
     contents:
       - id: ClothingNeckMantleHOS
       - id: ClothingHeadHatBeretHoS
-      - id: ClothingHeadHatHoshat
+      - id: ClothingHeadHatCoshat
       - id: ClothingNeckCloakHos
       - id: ClothingUniformJumpskirtHoSAlt
       - id: ClothingUniformJumpsuitHoSAlt
-      - id: ClothingUniformJumpskirtHosFormal
-      - id: ClothingUniformJumpsuitHosFormal
+      - id: ClothingUniformJumpskirtCosformal
+      - id: ClothingUniformJumpsuitCosformal
       - id: ClothingOuterWinterHoS
 
 - type: entity

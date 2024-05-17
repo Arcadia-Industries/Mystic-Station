@@ -3406,10 +3406,10 @@
   url: https://github.com/space-wizards/space-station-14/pull/27062
 - author: Krunk
   changes:
-  - message: Head of Security and Warden now have armored and unarmored variants of
+  - message: Chief of Security and Warden now have armored and unarmored variants of
       their winter coats and the unarmored variants are available in the uniform printer.
     type: Tweak
-  - message: Head of Security's and Warden's winter coats now provide resistances
+  - message: Chief of Security's and Warden's winter coats now provide resistances
       equal to their non-winter counterparts.
     type: Tweak
   id: 6373
@@ -3695,7 +3695,7 @@
   url: https://github.com/space-wizards/space-station-14/pull/27143
 - author: SpeltIncorrectyl
   changes:
-  - message: Security Officers, Head of Security, and Warden can now choose to start
+  - message: Security Officers, Chief of Security, and Warden can now choose to start
       with a security webbing instead of a belt in their loadout menu.
     type: Add
   id: 6411

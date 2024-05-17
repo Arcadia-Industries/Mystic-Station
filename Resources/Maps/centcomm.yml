@@ -4232,7 +4232,7 @@ entities:
     - type: Transform
       pos: 13.5,-7.5
       parent: 1668
-- proto: BedsheetHOS
+- proto: Bedsheetcos
   entities:
   - uid: 2719
     components:
@@ -27509,7 +27509,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerHeadOfSecurityFilled
+- proto: LockerChiefofsecurityFilled
   entities:
   - uid: 3153
     components:
@@ -33308,7 +33308,7 @@ entities:
     - type: Transform
       pos: -15.5,-9.5
       parent: 1668
-- proto: SuitStorageHOS
+- proto: Suitstoragecos
   entities:
   - uid: 6496
     components:
@@ -35508,7 +35508,7 @@ entities:
     - type: Transform
       pos: 2.714695,-2.0789247
       parent: 1668
-- proto: ToyFigurineHeadOfSecurity
+- proto: ToyFigurineChiefofsecurity
   entities:
   - uid: 592
     components:

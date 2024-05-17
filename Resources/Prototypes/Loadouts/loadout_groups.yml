@@ -803,38 +803,38 @@
 
 # Security
 - type: loadoutGroup
-  id: HeadofSecurityHead
-  name: loadout-group-head-of-security-head
+  id: ChiefofsecurityHead
+  name: loadout-group-chief-of-security-head
   minLimit: 0
   loadouts:
-  - HeadofSecurityHead
-  - HeadofSecurityBeret
+  - ChiefofsecurityHead
+  - ChiefofsecurityBeret
 
 - type: loadoutGroup
-  id: HeadofSecurityJumpsuit
-  name: loadout-group-head-of-security-jumpsuit
+  id: ChiefofsecurityJumpsuit
+  name: loadout-group-chief-of-security-jumpsuit
   loadouts:
-  - HeadofSecurityJumpsuit
-  - HeadofSecurityJumpskirt
-  - HeadofSecurityTurtleneck
-  - HeadofSecurityTurtleneckSkirt
-  - HeadofSecurityFormalSuit
-  - HeadofSecurityFormalSkirt
+  - ChiefofsecurityJumpsuit
+  - ChiefofsecurityJumpskirt
+  - ChiefofsecurityTurtleneck
+  - ChiefofsecurityTurtleneckSkirt
+  - ChiefofsecurityFormalSuit
+  - ChiefofsecurityFormalSkirt
 
 - type: loadoutGroup
-  id: HeadofSecurityNeck
-  name: loadout-group-head-of-security-neck
+  id: ChiefofsecurityNeck
+  name: loadout-group-chief-of-security-neck
   minLimit: 0
   loadouts:
-  - HeadofSecurityCloak
-  - HeadofSecurityMantle
+  - ChiefofsecurityCloak
+  - ChiefofsecurityMantle
 
 - type: loadoutGroup
-  id: HeadofSecurityOuterClothing
-  name: loadout-group-head-of-security-outerclothing
+  id: ChiefofsecurityOuterClothing
+  name: loadout-group-chief-of-security-outerclothing
   loadouts:
-  - HeadofSecurityCoat
-  - HeadofSecurityWinterCoat
+  - ChiefofsecurityCoat
+  - ChiefofsecurityWinterCoat
 
 - type: loadoutGroup
   id: WardenHead

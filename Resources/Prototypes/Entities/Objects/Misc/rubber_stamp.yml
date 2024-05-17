@@ -145,17 +145,17 @@
     state: stamp-hop
 
 - type: entity
-  name: head of security's rubber stamp
+  name: chief of security's rubber stamp
   parent: RubberStampBase
   id: RubberStampHos
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: stamp-component-stamped-name-hos
+    stampedName: stamp-component-stamped-name-cos
     stampedColor: "#cc0000"
-    stampState: "paper_stamp-hos"
+    stampState: "paper_stamp-cos"
   - type: Sprite
-    state: stamp-hos
+    state: stamp-cos
 
 - type: entity
   name: mime's rubber stamp
