@@ -30,7 +30,7 @@ public sealed class StationJobsTest
   id: PlayTimeDummyClown
 
 - type: playTimeTracker
-  id: PlayTimeDummyCaptain
+  id: PlayTimeDummyDirector
 
 - type: playTimeTracker
   id: PlayTimeDummyChaplain
@@ -51,7 +51,7 @@ public sealed class StationJobsTest
           availableJobs:
             TMime: [0, -1]
             TAssistant: [-1, -1]
-            TCaptain: [5, 5]
+            TDirector: [5, 5]
             TClown: [5, 6]
 
 - type: job
@@ -69,9 +69,9 @@ public sealed class StationJobsTest
   playTimeTracker: PlayTimeDummyClown
 
 - type: job
-  id: TCaptain
+  id: TDirector
   weight: 10
-  playTimeTracker: PlayTimeDummyCaptain
+  playTimeTracker: PlayTimeDummyDirector
 
 - type: job
   id: TChaplain
@@ -79,9 +79,9 @@ public sealed class StationJobsTest
 ";
 
     private const int StationCount = 100;
-    private const int CaptainCount = StationCount;
+    private const int DirectorCount = StationCount;
     private const int PlayerCount = 2000;
-    private const int TotalPlayers = PlayerCount + CaptainCount;
+    private const int TotalPlayers = PlayerCount + DirectorCount;
 
     [Test]
     public async Task AssignJobsTest()
@@ -113,7 +113,7 @@ public sealed class StationJobsTest
                 .AddPreference("TMime", JobPriority.High)
                 .WithPlayers(
                     new Dictionary<NetUserId, HumanoidCharacterProfile>()
-                    .AddJob("TCaptain", JobPriority.High, CaptainCount)
+                    .AddJob("TDirector", JobPriority.High, DirectorCount)
                 );
             Assert.That(fakePlayers, Is.Not.Empty);
 
@@ -139,7 +139,7 @@ public sealed class StationJobsTest
                     // And it shouldn't have ALL the players, either.
                     Assert.That(assignedHere, Has.Count.LessThan(TotalPlayers), "Station has too many players.");
                     // And there should be *A* director, as there's one player with director enabled per station.
-                    Assert.That(assignedHere.Where(x => x.Value.Item1 == "TCaptain").ToList(), Has.Count.EqualTo(1));
+                    Assert.That(assignedHere.Where(x => x.Value.Item1 == "TDirector").ToList(), Has.Count.EqualTo(1));
                 }
 
                 // All clown players have assistant as a higher priority.
@@ -151,7 +151,7 @@ public sealed class StationJobsTest
                 // There must be assistants present.
                 Assert.That(assigned.Values.Select(x => x.Item1).ToList(), Does.Contain("TAssistant"));
                 // There must be directors present, too.
-                Assert.That(assigned.Values.Select(x => x.Item1).ToList(), Does.Contain("TCaptain"));
+                Assert.That(assigned.Values.Select(x => x.Item1).ToList(), Does.Contain("TDirector"));
             });
         });
         await pair.CleanReturnAsync();
@@ -185,7 +185,7 @@ public sealed class StationJobsTest
             {
                 Assert.That(stationJobs.IsJobUnlimited(station, "TAssistant"), "TAssistant is expected to be unlimited.");
                 Assert.That(stationJobs.IsJobUnlimited(station, "TMime"), "TMime is expected to be unlimited.");
-                Assert.That(!stationJobs.IsJobUnlimited(station, "TCaptain"), "TCaptain is expected to not be unlimited.");
+                Assert.That(!stationJobs.IsJobUnlimited(station, "TDirector"), "TDirector is expected to not be unlimited.");
                 Assert.That(!stationJobs.IsJobUnlimited(station, "TClown"), "TClown is expected to not be unlimited.");
             });
             Assert.Multiple(() =>
@@ -193,9 +193,9 @@ public sealed class StationJobsTest
                 Assert.That(stationJobs.TrySetJobSlot(station, "TClown", 0), "Could not set TClown to have zero slots.");
                 Assert.That(stationJobs.TryGetJobSlot(station, "TClown", out var clownSlots), "Could not get the number of TClown slots.");
                 Assert.That(clownSlots, Is.EqualTo(0));
-                Assert.That(!stationJobs.TryAdjustJobSlot(station, "TCaptain", -9999), "Was able to adjust TCaptain by -9999 without clamping.");
-                Assert.That(stationJobs.TryAdjustJobSlot(station, "TCaptain", -9999, false, true), "Could not adjust TCaptain by -9999.");
-                Assert.That(stationJobs.TryGetJobSlot(station, "TCaptain", out var directorSlots), "Could not get the number of TCaptain slots.");
+                Assert.That(!stationJobs.TryAdjustJobSlot(station, "TDirector", -9999), "Was able to adjust TDirector by -9999 without clamping.");
+                Assert.That(stationJobs.TryAdjustJobSlot(station, "TDirector", -9999, false, true), "Could not adjust TDirector by -9999.");
+                Assert.That(stationJobs.TryGetJobSlot(station, "TDirector", out var directorSlots), "Could not get the number of TDirector slots.");
                 Assert.That(directorSlots, Is.EqualTo(0));
             });
             Assert.Multiple(() =>

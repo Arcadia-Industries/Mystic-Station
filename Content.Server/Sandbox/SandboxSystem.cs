@@ -162,7 +162,7 @@ namespace Content.Server.Sandbox
 
             EntityUid CreateFreshId()
             {
-                var card = Spawn("CaptainIDCard", Transform(attached).Coordinates);
+                var card = Spawn("DirectorIDCard", Transform(attached).Coordinates);
                 UpgradeId(card);
 
                 Comp<IdCardComponent>(card).FullName = MetaData(attached).EntityName;

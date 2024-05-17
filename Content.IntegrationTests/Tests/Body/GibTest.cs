@@ -19,8 +19,8 @@ public sealed  class GibTest
 
         await server.WaitAssertion(() => target1 = server.EntMan.Spawn("MobHuman", map.MapCoords));
         await server.WaitAssertion(() => target2 = server.EntMan.Spawn("MobHuman", map.MapCoords));
-        await pair.WaitCommand($"setoutfit {server.EntMan.GetNetEntity(target1)} CaptainGear");
-        await pair.WaitCommand($"setoutfit {server.EntMan.GetNetEntity(target2)} CaptainGear");
+        await pair.WaitCommand($"setoutfit {server.EntMan.GetNetEntity(target1)} DirectorGear");
+        await pair.WaitCommand($"setoutfit {server.EntMan.GetNetEntity(target2)} DirectorGear");
 
         await pair.RunTicksSync(5);
         var nuid1 = pair.ToClientUid(target1);

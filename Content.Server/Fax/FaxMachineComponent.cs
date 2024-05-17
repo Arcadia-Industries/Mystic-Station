@@ -45,7 +45,7 @@ public sealed partial class FaxMachineComponent : Component
     public bool NotifyAdmins { get; set; } = false;
 
     /// <summary>
-    /// Should that fax receive nuke codes send by admins. Probably should be captain fax only
+    /// Should that fax receive nuke codes send by admins. Probably should be director fax only
     /// </summary>
     [ViewVariables(VVAccess.ReadWrite)]
     [DataField("receiveNukeCodes")]

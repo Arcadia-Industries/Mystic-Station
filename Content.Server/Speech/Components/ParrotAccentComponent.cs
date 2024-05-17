@@ -25,7 +25,7 @@ public sealed partial class ParrotAccentComponent : Component
     /// The longest word must be at least this many characters long to be
     /// repeated. This prevents repeating short words, which can sound weird.
     /// ex: "How are you? AWWK! How!" - bad
-    /// ex: "Look out, it's the captain! RAWWK! Captain!" - good
+    /// ex: "Look out, it's the director! RAWWK! Director!" - good
     /// </summary>
     [DataField]
     public float LongestWordMinLength = 5;

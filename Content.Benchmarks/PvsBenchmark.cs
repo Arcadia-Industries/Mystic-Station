@@ -83,7 +83,7 @@ public class PvsBenchmark
             {
                 var pos = _spawns[i % _spawns.Length];
                 var uid =_entMan.SpawnEntity("MobHuman", pos);
-                _pair.Server.ConsoleHost.ExecuteCommand($"setoutfit {_entMan.GetNetEntity(uid)} CaptainGear");
+                _pair.Server.ConsoleHost.ExecuteCommand($"setoutfit {_entMan.GetNetEntity(uid)} DirectorGear");
                 _players[i] = new DummySession{AttachedEntity = uid};
             }
         }).Wait();

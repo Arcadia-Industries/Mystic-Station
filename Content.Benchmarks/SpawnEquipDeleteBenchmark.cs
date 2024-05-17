@@ -12,7 +12,7 @@ using Robust.Shared.Map;
 namespace Content.Benchmarks;
 
 /// <summary>
-/// This benchmarks spawns several humans, gives them captain equipment and then deletes them.
+/// This benchmarks spawns several humans, gives them director equipment and then deletes them.
 /// This measures performance for spawning, deletion, containers, and inventory code.
 /// </summary>
 [Virtual, MemoryDiagnoser]
@@ -39,7 +39,7 @@ public class SpawnEquipDeleteBenchmark
         var mapData = await _pair.CreateTestMap();
         _coords = mapData.GridCoords;
         _spawnSys = server.System<StationSpawningSystem>();
-        _gear = server.ProtoMan.Index<StartingGearPrototype>("CaptainGear");
+        _gear = server.ProtoMan.Index<StartingGearPrototype>("DirectorGear");
     }
 
     [GlobalCleanup]

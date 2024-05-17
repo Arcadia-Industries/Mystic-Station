@@ -78,7 +78,7 @@ public abstract class SharedJobSystem : EntitySystem
 
     /// <summary>
     /// Like <see cref="TryGetDepartment"/> but ignores any non-primary departments.
-    /// For example, with CE it will return Engineering but with captain it will
+    /// For example, with CE it will return Engineering but with director it will
     /// not return anything, since Command is not a primary department.
     /// </summary>
     public bool TryGetPrimaryDepartment(string jobProto, [NotNullWhen(true)] out DepartmentPrototype? departmentPrototype)
