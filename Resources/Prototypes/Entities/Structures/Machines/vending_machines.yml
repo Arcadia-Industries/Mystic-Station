@@ -224,7 +224,7 @@
     energy: 1.3
     color: "#ffb0b0"
   - type: AccessReader
-    access: [["HeadOfPersonnel"]]
+    access: [["HeadOfService"]]
 
 - type: entity
   parent: VendingMachine
@@ -1250,7 +1250,7 @@
   parent: VendingMachine
   id: VendingMachineGames
   name: Good Clean Fun
-  description: Vends things that the Director and Head of Personnel are probably not going to appreciate you fiddling with instead of your job...
+  description: Vends things that the Director and Head of Service are probably not going to appreciate you fiddling with instead of your job...
   components:
   - type: VendingMachine
     pack: GoodCleanFunInventory

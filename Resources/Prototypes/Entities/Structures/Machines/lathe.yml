@@ -891,9 +891,9 @@
       - ClothingUniformJumpskirtEngineering
       - ClothingUniformJumpsuitSeniorEngineer
       - ClothingUniformJumpskirtSeniorEngineer
-      - ClothingHeadHatHopcap
-      - ClothingUniformJumpsuitHoP
-      - ClothingUniformJumpskirtHoP
+      - ClothingHeadHatServicecap
+      - ClothingUniformJumpsuitHos
+      - ClothingUniformJumpskirtHos
       - ClothingHeadHatBeretHoS
       - ClothingHeadHatCoshat
       - ClothingUniformJumpsuitHoS
@@ -956,16 +956,16 @@
       - ClothingOuterWinterCap
       - ClothingOuterWinterCE
       - ClothingOuterWinterCMO
-      - ClothingOuterWinterHoP
-      - ClothingOuterWinterHoSUnarmored
+      - ClothingOuterWinterCoS
+      - ClothingOuterWinterCoSUnarmored
       - ClothingOuterWinterWardenUnarmored
       - ClothingOuterWinterQM
       - ClothingOuterWinterRD
       - ClothingNeckMantleCap
       - ClothingNeckMantleCE
       - ClothingNeckMantleCMO
-      - ClothingNeckMantleHOP
       - ClothingNeckMantleHOS
+      - ClothingNeckMantleCOS
       - ClothingNeckMantleRD
       - ClothingNeckMantleQM
       - ClothingOuterWinterMusician

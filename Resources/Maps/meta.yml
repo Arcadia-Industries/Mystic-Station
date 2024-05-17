@@ -11211,7 +11211,7 @@ entities:
     - type: Transform
       pos: -13.5,-65.5
       parent: 5350
-- proto: AirlockHeadOfPersonnelGlassLocked
+- proto: AirlockHeadOfServiceGlassLocked
   entities:
   - uid: 1490
     components:
@@ -11223,7 +11223,7 @@ entities:
     - type: Transform
       pos: -17.5,-9.5
       parent: 5350
-- proto: AirlockHeadOfPersonnelLocked
+- proto: AirlockHeadOfServiceLocked
   entities:
   - uid: 979
     components:
@@ -11240,7 +11240,7 @@ entities:
     - type: Transform
       pos: -16.5,-17.5
       parent: 5350
-- proto: AirlockChiefofsecurityLocked
+- proto: AirlockChiefOfSecurityLocked
   entities:
   - uid: 6365
     components:
@@ -13060,7 +13060,7 @@ entities:
   - uid: 142
     components:
     - type: MetaData
-      name: HoP Room APC
+      name: Hos Room APC
     - type: Transform
       pos: -18.5,2.5
       parent: 5350
@@ -14492,7 +14492,7 @@ entities:
     - type: Transform
       pos: -53.5,-55.5
       parent: 5350
-- proto: BedsheetHOP
+- proto: Bedsheethos
   entities:
   - uid: 2131
     components:
@@ -60465,7 +60465,7 @@ entities:
     - type: Transform
       pos: 32.574753,-52.159172
       parent: 5350
-- proto: ClothingHeadHatHopcap
+- proto: ClothingHeadHatHoscap
   entities:
   - uid: 2033
     components:
@@ -69979,7 +69979,7 @@ entities:
       parent: 5350
     - type: Access
       tags:
-      - Chiefofsecurity
+      - ChiefOfSecurity
       - Security
       - Armory
       - Brig
@@ -70031,14 +70031,14 @@ entities:
     - type: Transform
       pos: -15.5,-38.5
       parent: 5350
-- proto: DresserHeadOfPersonnelFilled
+- proto: DresserHeadOfServiceFilled
   entities:
   - uid: 1023
     components:
     - type: Transform
       pos: -18.5,1.5
       parent: 5350
-- proto: DresserChiefofsecurityFilled
+- proto: DresserChiefOfSecurityFilled
   entities:
   - uid: 1483
     components:
@@ -71074,7 +71074,7 @@ entities:
       pos: -11.5,-3.5
       parent: 5350
     - type: FaxMachine
-      name: HoP's Office
+      name: Hos's Office
   - uid: 5795
     components:
     - type: Transform
@@ -117109,7 +117109,7 @@ entities:
     - type: Transform
       pos: 10.5,-12.5
       parent: 5350
-- proto: LockerHeadOfPersonnelFilled
+- proto: LockerHeadOfServiceFilled
   entities:
   - uid: 1336
     components:
@@ -117150,7 +117150,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerChiefofsecurityFilled
+- proto: LockerChiefOfSecurityFilled
   entities:
   - uid: 6366
     components:
@@ -137185,14 +137185,14 @@ entities:
     - type: Transform
       pos: 11.5,27.5
       parent: 5350
-- proto: SpawnPointHeadOfPersonnel
+- proto: SpawnPointHeadOfService
   entities:
   - uid: 1383
     components:
     - type: Transform
       pos: -15.5,-2.5
       parent: 5350
-- proto: SpawnPointChiefofsecurity
+- proto: SpawnPointChiefOfSecurity
   entities:
   - uid: 9928
     components:
@@ -138458,7 +138458,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: HoP Office
+      id: Hos Office
   - uid: 1293
     components:
     - type: Transform
@@ -138576,7 +138576,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: HoP Line
+      id: Hos Line
   - uid: 1993
     components:
     - type: Transform
@@ -163043,7 +163043,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 45.5,17.5
       parent: 5350
-- proto: WindoorSecureHeadOfPersonnelLocked
+- proto: WindoorSecureHeadOfServiceLocked
   entities:
   - uid: 987
     components:

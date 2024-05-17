@@ -65,10 +65,10 @@
   id: JobERTSecurity
 
 - type: playTimeTracker
-  id: JobHeadOfPersonnel
+  id: JobHeadOfService
 
 - type: playTimeTracker
-  id: JobChiefofsecurity
+  id: JobChiefOfSecurity
 
 - type: playTimeTracker
   id: JobJanitor

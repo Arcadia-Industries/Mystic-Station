@@ -10,13 +10,13 @@
   - Trinkets
 
 - type: roleLoadout
-  id: JobHeadOfPersonnel
+  id: JobHeadOfService
   groups:
-  - HoPHead
-  - HoPNeck
-  - HoPJumpsuit
-  - HoPBackpack
-  - HoPOuterClothing
+  - HosHead
+  - HosNeck
+  - HosJumpsuit
+  - HosBackpack
+  - HosOuterClothing
   - Trinkets
 
 # Civilian
@@ -233,14 +233,14 @@
 
 # Security
 - type: roleLoadout
-  id: JobChiefofsecurity
+  id: JobChiefOfSecurity
   groups:
-  - ChiefofsecurityHead
-  - ChiefofsecurityNeck
-  - ChiefofsecurityJumpsuit
+  - ChiefOfSecurityHead
+  - ChiefOfSecurityNeck
+  - ChiefOfSecurityJumpsuit
   - SecurityBackpack
   - SecurityBelt
-  - ChiefofsecurityOuterClothing
+  - ChiefOfSecurityOuterClothing
   - SecurityShoes
   - Trinkets
 

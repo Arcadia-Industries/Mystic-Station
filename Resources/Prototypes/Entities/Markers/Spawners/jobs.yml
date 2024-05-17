@@ -311,16 +311,16 @@
       - state: director
 
 - type: entity
-  id: SpawnPointHeadOfPersonnel
+  id: SpawnPointHeadOfService
   parent: SpawnPointJobBase
-  name: headofpersonnel
+  name: headOfService
   components:
   - type: SpawnPoint
-    job_id: HeadOfPersonnel
+    job_id: HeadOfService
   - type: Sprite
     layers:
       - state: green
-      - state: hop
+      - state: hos
 
 # Engineering
 
@@ -439,12 +439,12 @@
 # Security
 
 - type: entity
-  id: SpawnPointChiefofsecurity
+  id: SpawnPointChiefOfSecurity
   parent: SpawnPointJobBase
-  name: chiefofsecurity
+  name: chiefOfSecurity
   components:
   - type: SpawnPoint
-    job_id: Chiefofsecurity
+    job_id: ChiefOfSecurity
   - type: Sprite
     layers:
       - state: green

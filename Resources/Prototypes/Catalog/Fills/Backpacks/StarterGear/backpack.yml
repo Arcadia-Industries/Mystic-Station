@@ -96,7 +96,7 @@
 - type: entity
   noSpawn: true
   parent: ClothingBackpack
-  id: ClothingBackpackHOPFilled
+  id: ClothingBackpackHEAD-OF-SERVICEFilled
   components:
   - type: StorageFill
     contents:
@@ -107,7 +107,7 @@
 - type: entity
   noSpawn: true
   parent: ClothingBackpackIan
-  id: ClothingBackpackHOPIanFilled
+  id: ClothingBackpackHEAD-OF-SERVICEIanFilled
   components:
   - type: StorageFill
     contents:

@@ -20,7 +20,7 @@
             - Passenger
           availableJobs:
             Director: [ 1, 1 ]
-            Chiefofsecurity: [ 1, 1 ]
+            ChiefOfSecurity: [ 1, 1 ]
             SecurityOfficer: [ 1, 3 ]
             CargoTechnician: [ 1, 2 ]
             Bartender: [ 1, 1 ]

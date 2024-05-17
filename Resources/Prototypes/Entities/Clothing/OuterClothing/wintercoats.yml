@@ -213,19 +213,19 @@
 
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
-  id: ClothingOuterWinterHoP
-  name: head of personnel's winter coat
+  id: ClothingOuterWinterHos
+  name: head of service's winter coat
   components:
   - type: Sprite
-    sprite: Clothing/OuterClothing/WinterCoats/coathop.rsi
+    sprite: Clothing/OuterClothing/WinterCoats/coathos.rsi
   - type: Clothing
-    sprite: Clothing/OuterClothing/WinterCoats/coathop.rsi
+    sprite: Clothing/OuterClothing/WinterCoats/coathos.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatHoodWinterHOP
+    clothingPrototype: ClothingHeadHatHoodWinterHOS
 
 - type: entity
   parent: [ClothingOuterArmorHoS, ClothingOuterWinterCoatToggleable]
-  id: ClothingOuterWinterHoS
+  id: ClothingOuterWinterCoS
   name: chief of security's armored winter coat
   description: A sturdy, utilitarian winter coat designed to protect a chief of security from any brig-bound threats and hypothermic events.
   components:
@@ -234,11 +234,11 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/WinterCoats/coatcosarmored.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatHoodWinterHOS
+    clothingPrototype: ClothingHeadHatHoodWinterCoS
 
 - type: entity
   parent: ClothingOuterWinterCoatToggleable
-  id: ClothingOuterWinterHoSUnarmored
+  id: ClothingOuterWinterCoSUnarmored
   name: chief of security's winter coat
   description: A sturdy coat, a warm coat, but not an armored coat.
   components:
@@ -247,7 +247,7 @@
   - type: Clothing
     sprite: Clothing/OuterClothing/WinterCoats/coatcos.rsi
   - type: ToggleableClothing
-    clothingPrototype: ClothingHeadHatHoodWinterHOS
+    clothingPrototype: ClothingHeadHatHoodWinterCoS
 
 - type: entity
   parent: ClothingOuterWinterCoatToggleable

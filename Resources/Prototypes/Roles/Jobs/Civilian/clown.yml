@@ -5,7 +5,7 @@
   playTimeTracker: JobClown
   startingGear: ClownGear
   icon: "JobIconClown"
-  supervisors: job-supervisors-hop
+  supervisors: job-supervisors-head-of-service
   access:
   - Theatre
   - Maintenance

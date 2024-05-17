@@ -21,7 +21,7 @@
           availableJobs:
             #service
             Director: [ 1, 1 ]
-            HeadOfPersonnel: [ 1, 1 ]
+            HeadOfService: [ 1, 1 ]
             Bartender: [ 2, 2 ]
             Botanist: [ 2, 3 ]
             Chef: [ 2, 2 ]
@@ -47,7 +47,7 @@
             ResearchAssistant: [ 3, 3 ]
             Borg: [ 2, 2 ]
             #security
-            Chiefofsecurity: [ 1, 1 ]
+            ChiefOfSecurity: [ 1, 1 ]
             Warden: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ]
             Detective: [ 1, 1 ]

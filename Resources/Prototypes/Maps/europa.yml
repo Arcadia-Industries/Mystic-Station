@@ -30,7 +30,7 @@
             Chef: [ 1, 1 ]
             Janitor: [ 2, 2 ]
             Director: [ 1, 1 ]
-            HeadOfPersonnel: [ 1, 1 ]
+            HeadOfService: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 3, 4 ]
@@ -50,7 +50,7 @@
             Scientist: [ 2, 3 ]
             ResearchAssistant: [ 1, 1 ]
             #security
-            Chiefofsecurity: [ 1, 1 ]
+            ChiefOfSecurity: [ 1, 1 ]
             SecurityOfficer: [ 3, 3 ]
             Warden: [ 1, 1 ]
             Lawyer: [ 1, 1 ]

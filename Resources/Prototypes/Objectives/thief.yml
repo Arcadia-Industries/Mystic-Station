@@ -322,7 +322,7 @@
   id: ClothingNeckGoldmedalStealObjective
   components:
   - type: NotJobRequirement
-    job: HeadOfPersonnel
+    job: HeadOfService
   - type: StealCondition
     stealGroup: ClothingNeckGoldmedal
   - type: Objective
@@ -458,7 +458,7 @@
   id: IanStealObjective
   components:
   - type: NotJobRequirement
-    job: HeadOfPersonnel
+    job: HeadOfService
   - type: StealCondition
     stealGroup: AnimalIan
   - type: Objective

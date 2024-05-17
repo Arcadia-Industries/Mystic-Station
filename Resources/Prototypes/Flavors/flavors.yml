@@ -967,7 +967,7 @@
 - type: flavor
   id: hope
   flavorType: Complex
-  description: flavor-complex-hope
+  description: flavor-complex-hose
 
 - type: flavor
   id: chaos

@@ -44,34 +44,34 @@
       - id: ClothingOuterWinterCMO
 
 - type: entity
-  id: DresserHeadOfPersonnelFilled
+  id: DresserHeadOfServiceFilled
   parent: Dresser
-  suffix: Filled, Head Of Personnel
+  suffix: Filled, Head Of Service
   components:
   - type: StorageFill
     contents:
-      - id: ClothingNeckMantleHOP
-      - id: ClothingNeckCloakHop
-      - id: ClothingHeadHatHopcap
-      - id: ClothingOuterWinterHoP
+      - id: ClothingNeckMantleHEAD-OF-SERVICE
+      - id: ClothingNeckCloakHead-Of-Service
+      - id: ClothingHeadHatHead-Of-Servicecap
+      - id: ClothingOuterWinterHos
       - id: ClothingEyesGlasses
 
 - type: entity
-  id: DresserChiefofsecurityFilled
+  id: DresserChiefOfSecurityFilled
   parent: Dresser
   suffix: Filled, Chief Of Security
   components:
   - type: StorageFill
     contents:
-      - id: ClothingNeckMantleHOS
+      - id: ClothingNeckMantleCOS
       - id: ClothingHeadHatBeretHoS
       - id: ClothingHeadHatCoshat
-      - id: ClothingNeckCloakHos
+      - id: ClothingNeckCloakCoS
       - id: ClothingUniformJumpskirtHoSAlt
       - id: ClothingUniformJumpsuitHoSAlt
       - id: ClothingUniformJumpskirtCosformal
       - id: ClothingUniformJumpsuitCosformal
-      - id: ClothingOuterWinterHoS
+      - id: ClothingOuterWinterCoS
 
 - type: entity
   id: DresserQuarterMasterFilled

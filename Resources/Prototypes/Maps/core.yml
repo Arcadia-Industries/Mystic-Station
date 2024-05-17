@@ -27,7 +27,7 @@
             Chef: [ 1, 1 ]
             Janitor: [ 2, 2 ]
             Director: [ 1, 1 ]
-            HeadOfPersonnel: [ 1, 1 ]
+            HeadOfService: [ 1, 1 ]
             Chaplain: [ 1, 1 ]
             Librarian: [ 1, 1 ]
             ServiceWorker: [ 3, 3 ]
@@ -48,7 +48,7 @@
             ResearchAssistant: [ 1, 1 ]
             Borg: [ 1, 2 ]
             #security
-            Chiefofsecurity: [ 1, 1 ]
+            ChiefOfSecurity: [ 1, 1 ]
             SecurityOfficer: [ 4, 4 ]
             Warden: [ 1, 1 ]
             Lawyer: [ 1, 1 ]

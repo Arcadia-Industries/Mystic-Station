@@ -387,14 +387,14 @@
     heldPrefix: pen_centcom
 
 - type: entity
-  name: hop's fountain pen
+  name: head-of-service's fountain pen
   parent: PenEmbeddable
-  id: PenHop
+  id: PenHead-Of-Service
   description: 'A luxurious fountain pen for the hop of the station.'
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
-    state: pen_hop
+    state: pen_hos
 
 - type: entity
   id: BoxFolderBase

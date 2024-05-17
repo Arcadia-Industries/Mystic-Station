@@ -248,12 +248,12 @@
     access: [["Director"]]
 
 - type: entity
-  id: LockableButtonHeadOfPersonnel
-  suffix: HeadOfPersonnel
+  id: LockableButtonHeadOfService
+  suffix: HeadOfService
   parent: LockableButton
   components:
   - type: AccessReader
-    access: [["HeadOfPersonnel"]]
+    access: [["HeadOfService"]]
 
 - type: entity
   id: LockableButtonChiefEngineer
@@ -272,12 +272,12 @@
     access: [["ChiefMedicalOfficer"]]
 
 - type: entity
-  id: LockableButtonChiefofsecurity
-  suffix: Chiefofsecurity
+  id: LockableButtonChiefOfSecurity
+  suffix: ChiefOfSecurity
   parent: LockableButton
   components:
   - type: AccessReader
-    access: [["Chiefofsecurity"]]
+    access: [["ChiefOfSecurity"]]
 
 - type: entity
   id: LockableButtonResearchDirector

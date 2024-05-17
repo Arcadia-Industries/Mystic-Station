@@ -310,14 +310,14 @@
 
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitHoP
-  name: head of personnel's jumpsuit
+  id: ClothingUniformJumpsuitHos
+  name: head of service's jumpsuit
   description: Rather bland and inoffensive. Perfect for vanishing off the face of the universe.
   components:
   - type: Sprite
-    sprite: Clothing/Uniforms/Jumpsuit/hop.rsi
+    sprite: Clothing/Uniforms/Jumpsuit/hos.rsi
   - type: Clothing
-    sprite: Clothing/Uniforms/Jumpsuit/hop.rsi
+    sprite: Clothing/Uniforms/Jumpsuit/hos.rsi
 
 - type: entity
   parent: ClothingUniformBase

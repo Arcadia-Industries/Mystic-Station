@@ -22,7 +22,7 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckCloakHos
+  id: ClothingNeckCloakCoS
   name: chief of security's cloak
   description: An exquisite dark and red cloak fitting for those who can assert dominance over wrongdoers. Take a stab at being civil in prosecution!
   components:
@@ -77,12 +77,12 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckCloakHop
-  name: head of personnel's cloak
+  id: ClothingNeckCloakHos
+  name: head of service's cloak
   description: A blue cloak with red shoulders and gold buttons, proving you are the gatekeeper to any airlock on the station.
   components:
   - type: Sprite
-    sprite: Clothing/Neck/Cloaks/hop.rsi
+    sprite: Clothing/Neck/Cloaks/hos.rsi
   - type: StealTarget
     stealGroup: HeadCloak
 

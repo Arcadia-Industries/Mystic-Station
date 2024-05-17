@@ -98,13 +98,13 @@
       - id: MedalCase
 
 - type: entity
-  id: LockerHeadOfPersonnelFilled
+  id: LockerHeadOfServiceFilled
   suffix: Filled
-  parent: LockerHeadOfPersonnel
+  parent: LockerHeadOfService
   components:
   - type: StorageFill
     contents:
-      - id: HoPIDCard
+      - id: HosIDCard
       - id: ClothingHeadsetCommand
       - id: BoxPDA
       - id: BoxID
@@ -113,11 +113,11 @@
       - id: WeaponDisabler
       - id: CigarGoldCase
         prob: 0.25
-        # Fuck the HoP they don't deserve fucking cigars.
+        # Fuck the Hos they don't deserve fucking cigars.
         # Yes they do fuck you.
       - id: DoorRemoteService
       - id: ClothingNeckGoldmedal
-      - id: RubberStampHop
+      - id: RubberStampHead-Of-Service
       - id: BoxEncryptionKeyPassenger
       - id: BoxEncryptionKeyService
       - id: ClothingBackpackIan
@@ -249,9 +249,9 @@
       - id: EncryptionKeyBinary
 
 - type: entity
-  id: LockerChiefofsecurityFilledHardsuit
+  id: LockerChiefOfSecurityFilledHardsuit
   suffix: Filled, Hardsuit
-  parent: LockerChiefofsecurity
+  parent: LockerChiefOfSecurity
   components:
   - type: StorageFill
     contents:
@@ -267,7 +267,7 @@
       - id: CigarGoldCase
         prob: 0.50
       - id: DoorRemoteSecurity
-      - id: RubberStampHos
+      - id: RubberStampCos
       - id: SecurityTechFabCircuitboard
       - id: JetpackSecurityFilled
       - id: BoxEncryptionKeySecurity
@@ -275,9 +275,9 @@
       - id: BookSecretDocuments
 
 - type: entity
-  id: LockerChiefofsecurityFilled
+  id: LockerChiefOfSecurityFilled
   suffix: Filled
-  parent: LockerChiefofsecurity
+  parent: LockerChiefOfSecurity
   components:
   - type: StorageFill
     contents:
@@ -291,7 +291,7 @@
       - id: CigarGoldCase
         prob: 0.50
       - id: DoorRemoteSecurity
-      - id: RubberStampHos
+      - id: RubberStampCos
       - id: SecurityTechFabCircuitboard
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity

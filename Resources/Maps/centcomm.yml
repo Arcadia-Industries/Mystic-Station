@@ -27509,7 +27509,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerChiefofsecurityFilled
+- proto: LockerChiefOfSecurityFilled
   entities:
   - uid: 3153
     components:
@@ -35501,14 +35501,14 @@ entities:
     - type: Transform
       pos: -9.969621,-28.458797
       parent: 1668
-- proto: ToyFigurineHeadOfPersonnel
+- proto: ToyFigurineHeadOfService
   entities:
   - uid: 6500
     components:
     - type: Transform
       pos: 2.714695,-2.0789247
       parent: 1668
-- proto: ToyFigurineChiefofsecurity
+- proto: ToyFigurineChiefOfSecurity
   entities:
   - uid: 592
     components:

@@ -296,14 +296,14 @@
 
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadHatHopcap
-  name: head of personnel's cap
-  description: A grand, stylish head of personnel's cap.
+  id: ClothingHeadHatHoscap
+  name: head of service's cap
+  description: A grand, stylish head of service's cap.
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hats/hopcap.rsi
+    sprite: Clothing/Head/Hats/hoscap.rsi
   - type: Clothing
-    sprite: Clothing/Head/Hats/hopcap.rsi
+    sprite: Clothing/Head/Hats/hoscap.rsi
   - type: Tag
     tags:
     - ClothMade

@@ -5,7 +5,7 @@
   components:
   - type: Loadout
     prototypes:
-      - HoPGear
+      - HosGear
       - ClownGear
       - MimeGear
       - JanitorGear
@@ -78,7 +78,7 @@
   components:
   - type: Loadout
     prototypes:
-    - HoPGear
+    - HosGear
     - CentcomGear
     - DirectorGear
     - HoSGear

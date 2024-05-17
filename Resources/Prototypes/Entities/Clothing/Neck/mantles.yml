@@ -33,18 +33,18 @@
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckMantleHOP
-  name: head of personnel's mantle
-  description: A good HOP knows that paper pushing is only half the job... petting your dog and looking fashionable is the other half.
+  id: ClothingNeckMantleHOS
+  name: head of service's mantle
+  description: A good HOS knows that paper pushing is only half the job... petting your dog and looking fashionable is the other half.
   components:
   - type: Sprite
-    sprite: Clothing/Neck/mantles/hopmantle.rsi
+    sprite: Clothing/Neck/mantles/hosmantle.rsi
   - type: Clothing
-    sprite: Clothing/Neck/mantles/hopmantle.rsi
+    sprite: Clothing/Neck/mantles/hosmantle.rsi
 
 - type: entity
   parent: ClothingNeckBase
-  id: ClothingNeckMantleHOS
+  id: ClothingNeckMantleCOS
   name: chief of security's mantle
   description: Shootouts with nukies are just another Tuesday for this Cos. This mantle is a symbol of commitment to the station.
   components:

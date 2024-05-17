@@ -15049,7 +15049,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 10.5,-2.5
       parent: 21128
-- proto: AirlockHeadOfPersonnelGlassLocked
+- proto: AirlockHeadOfServiceGlassLocked
   entities:
   - uid: 49
     components:
@@ -15060,7 +15060,7 @@ entities:
     - type: DeviceLinkSink
       links:
       - 3270
-- proto: AirlockHeadOfPersonnelLocked
+- proto: AirlockHeadOfServiceLocked
   entities:
   - uid: 50
     components:
@@ -15074,14 +15074,14 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 27.5,-36.5
       parent: 2
-- proto: AirlockChiefofsecurityGlassLocked
+- proto: AirlockChiefOfSecurityGlassLocked
   entities:
   - uid: 4809
     components:
     - type: Transform
       pos: -12.5,30.5
       parent: 2
-- proto: AirlockChiefofsecurityLocked
+- proto: AirlockChiefOfSecurityLocked
   entities:
   - uid: 4846
     components:
@@ -19369,7 +19369,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: -29.5,27.5
       parent: 2
-- proto: BedsheetHOP
+- proto: Bedsheethos
   entities:
   - uid: 149
     components:
@@ -65108,14 +65108,14 @@ entities:
     - type: Transform
       pos: 66.5,-54.5
       parent: 2
-- proto: DresserHeadOfPersonnelFilled
+- proto: DresserHeadOfServiceFilled
   entities:
   - uid: 4374
     components:
     - type: Transform
       pos: 37.5,-26.5
       parent: 2
-- proto: DresserChiefofsecurityFilled
+- proto: DresserChiefOfSecurityFilled
   entities:
   - uid: 5156
     components:
@@ -98420,7 +98420,7 @@ entities:
     - type: Transform
       pos: 54.5,-32.5
       parent: 2
-- proto: LockerHeadOfPersonnelFilled
+- proto: LockerHeadOfServiceFilled
   entities:
   - uid: 1493
     components:
@@ -98456,7 +98456,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerChiefofsecurityFilled
+- proto: LockerChiefOfSecurityFilled
   entities:
   - uid: 5040
     components:
@@ -111144,7 +111144,7 @@ entities:
   - uid: 3270
     components:
     - type: MetaData
-      desc: Bolts all doors and windoors in the HoP's room.
+      desc: Bolts all doors and windoors in the Hos's room.
       name: Lockdown remote
     - type: Transform
       pos: 40.97135,-23.35855
@@ -115371,14 +115371,14 @@ entities:
     - type: Transform
       pos: -29.5,26.5
       parent: 2
-- proto: SpawnPointHeadOfPersonnel
+- proto: SpawnPointHeadOfService
   entities:
   - uid: 2121
     components:
     - type: Transform
       pos: 36.5,-25.5
       parent: 2
-- proto: SpawnPointChiefofsecurity
+- proto: SpawnPointChiefOfSecurity
   entities:
   - uid: 5674
     components:
@@ -140928,7 +140928,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: -24.5,35.5
       parent: 2
-- proto: WindoorSecureHeadOfPersonnelLocked
+- proto: WindoorSecureHeadOfServiceLocked
   entities:
   - uid: 3516
     components:

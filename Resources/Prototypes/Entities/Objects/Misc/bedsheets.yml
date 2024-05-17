@@ -160,15 +160,15 @@
     sprite: Clothing/Neck/Bedsheets/grey.rsi
 
 - type: entity
-  id: BedsheetHOP
+  id: BedsheetHEAD-OF-SERVICE
   parent: BedsheetBase
-  name: HOP's bedsheet
+  name: HEAD-OF-SERVICE's bedsheet
   description: It's decorated with a key emblem. For those rare moments when you can rest and cuddle with Ian without someone screaming for you over the radio.
   components:
   - type: Sprite
-    state: sheethop
+    state: sheethos
   - type: Clothing
-    sprite: Clothing/Neck/Bedsheets/hop.rsi
+    sprite: Clothing/Neck/Bedsheets/head-of-service.rsi
   - type: StealTarget
     stealGroup: HeadBedsheet
 

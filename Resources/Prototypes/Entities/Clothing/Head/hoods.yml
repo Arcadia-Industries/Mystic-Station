@@ -329,18 +329,18 @@
 
 - type: entity
   parent: ClothingHeadHatHoodWinterBase
-  id: ClothingHeadHatHoodWinterHOP
+  id: ClothingHeadHatHoodWinterHOS
   noSpawn: true
-  name: head of personel's winter coat hood
+  name: head of service's winter coat hood
   components:
   - type: Sprite
-    sprite: Clothing/Head/Hoods/Coat/hoodhop.rsi
+    sprite: Clothing/Head/Hoods/Coat/hoodhos.rsi
   - type: Clothing
-    sprite: Clothing/Head/Hoods/Coat/hoodhop.rsi
+    sprite: Clothing/Head/Hoods/Coat/hoodhos.rsi
 
 - type: entity
   parent: ClothingHeadHatHoodWinterBase
-  id: ClothingHeadHatHoodWinterHOS
+  id: ClothingHeadHatHoodWinterCoS
   noSpawn: true
   name: chief of security's winter coat hood
   components:

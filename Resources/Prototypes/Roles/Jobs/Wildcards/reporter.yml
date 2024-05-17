@@ -5,7 +5,7 @@
   playTimeTracker: JobReporter
   startingGear: ReporterGear
   icon: "JobIconReporter"
-  supervisors: job-supervisors-hop
+  supervisors: job-supervisors-head-of-service
   access:
   - Service
   - Maintenance

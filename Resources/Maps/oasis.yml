@@ -12921,7 +12921,7 @@ entities:
     - type: Transform
       pos: 60.5,10.5
       parent: 2
-- proto: AirlockHeadOfPersonnelLocked
+- proto: AirlockHeadOfServiceLocked
   entities:
   - uid: 4
     components:
@@ -12941,7 +12941,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 43.5,-7.5
       parent: 2
-- proto: AirlockChiefofsecurityGlassLocked
+- proto: AirlockChiefOfSecurityGlassLocked
   entities:
   - uid: 4315
     components:
@@ -12949,7 +12949,7 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 41.5,-37.5
       parent: 2
-- proto: AirlockChiefofsecurityLocked
+- proto: AirlockChiefOfSecurityLocked
   entities:
   - uid: 4306
     components:
@@ -35069,7 +35069,7 @@ entities:
     - type: Transform
       pos: -28.5,-11.5
       parent: 2
-- proto: BedsheetHOP
+- proto: Bedsheethos
   entities:
   - uid: 3503
     components:
@@ -86024,7 +86024,7 @@ entities:
     - type: Transform
       pos: -38.5,-23.5
       parent: 2
-- proto: DresserHeadOfPersonnelFilled
+- proto: DresserHeadOfServiceFilled
   entities:
   - uid: 3516
     components:
@@ -86047,7 +86047,7 @@ entities:
           ents:
           - 3517
           - 3518
-- proto: DresserChiefofsecurityFilled
+- proto: DresserChiefOfSecurityFilled
   entities:
   - uid: 4343
     components:
@@ -87806,12 +87806,12 @@ entities:
   - uid: 3415
     components:
     - type: MetaData
-      name: HoP fax machine
+      name: Hos fax machine
     - type: Transform
       pos: 39.5,-4.5
       parent: 2
     - type: FaxMachine
-      name: HoP
+      name: Hos
   - uid: 5844
     components:
     - type: MetaData
@@ -134153,14 +134153,14 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerHeadOfPersonnelFilled
+- proto: LockerHeadOfServiceFilled
   entities:
   - uid: 3521
     components:
     - type: Transform
       pos: 42.5,-8.5
       parent: 2
-- proto: LockerChiefofsecurityFilled
+- proto: LockerChiefOfSecurityFilled
   entities:
   - uid: 4810
     components:
@@ -154102,14 +154102,14 @@ entities:
     - type: Transform
       pos: 40.5,22.5
       parent: 2
-- proto: SpawnPointHeadOfPersonnel
+- proto: SpawnPointHeadOfService
   entities:
   - uid: 20796
     components:
     - type: Transform
       pos: 23.5,13.5
       parent: 2
-- proto: SpawnPointChiefofsecurity
+- proto: SpawnPointChiefOfSecurity
   entities:
   - uid: 20797
     components:
@@ -155485,7 +155485,7 @@ entities:
       pos: 39.5,-4.5
       parent: 2
     - type: SurveillanceCamera
-      id: HoP's
+      id: Hos's
   - uid: 20882
     components:
     - type: Transform
@@ -179245,7 +179245,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 33.5,49.5
       parent: 2
-- proto: WindoorSecureHeadOfPersonnelLocked
+- proto: WindoorSecureHeadOfServiceLocked
   entities:
   - uid: 3412
     components:

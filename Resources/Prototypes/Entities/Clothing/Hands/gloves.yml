@@ -113,14 +113,14 @@
 
 - type: entity
   parent: ClothingHandsBase
-  id: ClothingHandsGlovesHop
+  id: ClothingHandsGlovesHos
   name: papercut-proof gloves
   description: Perfect for dealing with paperwork and matters with bureaucracy.
   components:
   - type: Sprite
-    sprite: Clothing/Hands/Gloves/hop.rsi
+    sprite: Clothing/Hands/Gloves/hos.rsi
   - type: Clothing
-    sprite: Clothing/Hands/Gloves/hop.rsi
+    sprite: Clothing/Hands/Gloves/hos.rsi
   - type: Fiber
     fiberMaterial: fibers-durathread
     fiberColor: fibers-black

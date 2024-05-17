@@ -7,15 +7,15 @@
   name: id-card-access-level-director
 
 - type: accessLevel
-  id: HeadOfPersonnel
-  name: id-card-access-level-head-of-personnel
+  id: HeadOfService
+  name: id-card-access-level-head-of-service
 
 - type: accessGroup
   id: Command
   tags:
   - Command
   - Director
-  - HeadOfPersonnel
+  - HeadOfService
   - Cryogenics
 
 - type: accessLevel

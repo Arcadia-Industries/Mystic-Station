@@ -1,0 +1,107 @@
+# Professional Hos Time
+- type: loadoutEffectGroup
+  id: ProfessionalHos
+  effects:
+  - !type:JobRequirementLoadoutEffect
+    requirement:
+      !type:RoleTimeRequirement
+      role: JobHeadOfService
+      time: 54000 #15 hrs, special reward for Hos mains
+
+# Jumpsuit
+- type: loadout
+  id: HosJumpsuit
+  equipment: HosJumpsuit
+
+- type: startingGear
+  id: HosJumpsuit
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitHos
+
+- type: loadout
+  id: HosJumpskirt
+  equipment: HosJumpskirt
+
+- type: startingGear
+  id: HosJumpskirt
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtHos
+
+# Head
+- type: loadout
+  id: HosHead
+  equipment: HosHead
+
+- type: startingGear
+  id: HosHead
+  equipment:
+    head: ClothingHeadHatHoscap
+
+# Neck
+- type: loadout
+  id: HosCloak
+  equipment: HosCloak
+
+- type: startingGear
+  id: HosCloak
+  equipment:
+    neck: ClothingNeckCloakHos
+
+- type: loadout
+  id: HosMantle
+  equipment: HosMantle
+
+- type: startingGear
+  id: HosMantle
+  equipment:
+    neck: ClothingNeckMantleHOS
+
+# Back
+- type: loadout
+  id: HosBackpack
+  equipment: HosBackpack
+
+- type: startingGear
+  id: HosBackpack
+  equipment:
+    back: ClothingBackpackHOSFilled
+
+- type: loadout
+  id: HosSatchel
+  equipment: HosSatchel
+
+- type: startingGear
+  id: HosSatchel
+  equipment:
+    back: ClothingBackpackSatchelHOSFilled
+
+- type: loadout
+  id: HosDuffel
+  equipment: HosDuffel
+
+- type: startingGear
+  id: HosDuffel
+  equipment:
+    back: ClothingBackpackDuffelHOSFilled
+
+- type: loadout
+  id: HosBackpackIan
+  equipment: HosBackpackIan
+  effects:
+  - !type:GroupLoadoutEffect
+    proto: ProfessionalHos
+
+- type: startingGear
+  id: HosBackpackIan
+  equipment:
+    back: ClothingBackpackHOSIanFilled
+
+# Outerclothing
+- type: loadout
+  id: HosWintercoat
+  equipment: HosWintercoat
+
+- type: startingGear
+  id: HoSWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterHoS

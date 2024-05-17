@@ -6377,7 +6377,7 @@ entities:
     - type: Transform
       pos: -2.5,-27.5
       parent: 1
-- proto: AirlockHeadOfPersonnelLocked
+- proto: AirlockHeadOfServiceLocked
   entities:
   - uid: 3287
     components:
@@ -6389,7 +6389,7 @@ entities:
     - type: Transform
       pos: -3.5,20.5
       parent: 1
-- proto: AirlockChiefofsecurityLocked
+- proto: AirlockChiefOfSecurityLocked
   entities:
   - uid: 3313
     components:
@@ -7927,7 +7927,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: -10.5,21.5
       parent: 1
-- proto: BedsheetHOP
+- proto: BedsheetHEAD-OF-SERVICE
   entities:
   - uid: 4963
     components:
@@ -27753,7 +27753,7 @@ entities:
     - type: Transform
       pos: -20.496048,14.567978
       parent: 1
-- proto: ClothingNeckMantleHOP
+- proto: ClothingNeckMantleHEAD-OF-SERVICE
   entities:
   - uid: 5927
     components:
@@ -27904,7 +27904,7 @@ entities:
     - type: Physics
       canCollide: False
     - type: InsideEntityStorage
-- proto: ClothingOuterWinterHoP
+- proto: ClothingOuterWinterHos
   entities:
   - uid: 5928
     components:
@@ -29086,7 +29086,7 @@ entities:
     - type: Transform
       pos: 40.5,22.5
       parent: 1
-- proto: DefaultStationBeaconHOPOffice
+- proto: DefaultStationBeaconHEAD-OF-SERVICEOffice
   entities:
   - uid: 12618
     components:
@@ -33708,7 +33708,7 @@ entities:
       pos: -0.5,21.5
       parent: 1
     - type: FaxMachine
-      name: HoP Office
+      name: Hos Office
   - uid: 5329
     components:
     - type: Transform
@@ -56913,7 +56913,7 @@ entities:
         - 0
         - 0
         - 0
-- proto: LockerHeadOfPersonnelFilled
+- proto: LockerHeadOfServiceFilled
   entities:
   - uid: 4965
     components:
@@ -56950,7 +56950,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerChiefofsecurityFilled
+- proto: LockerChiefOfSecurityFilled
   entities:
   - uid: 5374
     components:
@@ -68108,14 +68108,14 @@ entities:
     - type: Transform
       pos: 26.5,5.5
       parent: 1
-- proto: SpawnPointHeadOfPersonnel
+- proto: SpawnPointHeadOfService
   entities:
   - uid: 6045
     components:
     - type: Transform
       pos: -5.5,20.5
       parent: 1
-- proto: SpawnPointChiefofsecurity
+- proto: SpawnPointChiefOfSecurity
   entities:
   - uid: 6044
     components:
@@ -68924,7 +68924,7 @@ entities:
       pos: 0.5,21.5
       parent: 1
     - type: SurveillanceCamera
-      id: HoP Office
+      id: Hos Office
   - uid: 12100
     components:
     - type: Transform
@@ -81367,7 +81367,7 @@ entities:
     - type: Transform
       pos: 12.5,-9.5
       parent: 1
-- proto: WindoorSecureHeadOfPersonnelLocked
+- proto: WindoorSecureHeadOfServiceLocked
   entities:
   - uid: 3289
     components:

@@ -448,15 +448,15 @@
 
 - type: entity
   parent: BasePDA
-  id: HoPPDA
-  name: head of personnel PDA
+  id: HosPDA
+  name: head of service PDA
   description: Looks like it's been chewed on.
   components:
   - type: Pda
-    id: HoPIDCard
-    state: pda-hop
+    id: HosIDCard
+    state: pda-hos
     penSlot:
-      startingItem: PenHop
+      startingItem: PenHos
       priority: -1
       whitelist:
         tags:
@@ -465,7 +465,7 @@
     borderColor: "#789876"
     accentHColor: "#447987"
   - type: Icon
-    state: pda-hop
+    state: pda-hos
 
 - type: entity
   parent: BasePDA

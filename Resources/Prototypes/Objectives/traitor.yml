@@ -214,7 +214,7 @@
     # cos has a gun ce does not, higher difficulty than most
     difficulty: 3
   - type: NotJobRequirement
-    job: Chiefofsecurity
+    job: ChiefOfSecurity
   - type: StealCondition
     stealGroup: BookSecretDocuments
     owner: job-name-cos
@@ -253,7 +253,7 @@
   id: CorgiMeatStealObjective
   components:
   - type: NotJobRequirement
-    job: HeadOfPersonnel
+    job: HeadOfService
   - type: ObjectiveLimit
     limit: 3 # ian only has 2 slices, 3 obj for drama
   - type: StealCondition

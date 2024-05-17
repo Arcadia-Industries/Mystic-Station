@@ -8,11 +8,11 @@ loadout-group-director-neck = Director neck
 loadout-group-director-backpack = Director backpack
 loadout-group-director-outerclothing = Director outer clothing
 
-loadout-group-hop-head = Head of Personnel head
-loadout-group-hop-jumpsuit = Head of Personnel jumpsuit
-loadout-group-hop-neck = Head of Personnel neck
-loadout-group-hop-backpack = Head of Personnel backpack
-loadout-group-hop-outerclothing = Head of Personnel outer clothing
+loadout-group-hos-head = Head of Service head
+loadout-group-hos-jumpsuit = Head of Service jumpsuit
+loadout-group-hos-neck = Head of Service neck
+loadout-group-hos-backpack = Head of Service backpack
+loadout-group-hos-outerclothing = Head of Service outer clothing
 
 # Civilian
 loadout-group-passenger-jumpsuit = Passenger jumpsuit

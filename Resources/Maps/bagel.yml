@@ -12884,7 +12884,7 @@ entities:
     - type: Transform
       pos: -115.5,17.5
       parent: 60
-- proto: AirlockHeadOfPersonnelLocked
+- proto: AirlockHeadOfServiceLocked
   entities:
   - uid: 36
     components:
@@ -12896,7 +12896,7 @@ entities:
   - uid: 1374
     components:
     - type: MetaData
-      name: HoP Office
+      name: Hos Office
     - type: Transform
       pos: 2.5,-29.5
       parent: 60
@@ -12912,7 +12912,7 @@ entities:
     - type: Transform
       pos: 5.5,-33.5
       parent: 60
-- proto: AirlockChiefofsecurityGlassLocked
+- proto: AirlockChiefOfSecurityGlassLocked
   entities:
   - uid: 1729
     components:
@@ -14270,7 +14270,7 @@ entities:
   - uid: 283
     components:
     - type: MetaData
-      name: HoP APC
+      name: Hos APC
     - type: Transform
       rot: 3.141592653589793 rad
       pos: 4.5,-33.5
@@ -15915,7 +15915,7 @@ entities:
     - type: Transform
       pos: 49.5,-27.5
       parent: 60
-- proto: BedsheetHOP
+- proto: Bedsheethos
   entities:
   - uid: 2043
     components:
@@ -67366,14 +67366,14 @@ entities:
     - type: Transform
       pos: -6.5,25.5
       parent: 60
-- proto: DresserHeadOfPersonnelFilled
+- proto: DresserHeadOfServiceFilled
   entities:
   - uid: 13096
     components:
     - type: Transform
       pos: 8.5,-32.5
       parent: 60
-- proto: DresserChiefofsecurityFilled
+- proto: DresserChiefOfSecurityFilled
   entities:
   - uid: 15403
     components:
@@ -68417,7 +68417,7 @@ entities:
       pos: 5.5,-27.5
       parent: 60
     - type: FaxMachine
-      name: HoP Office
+      name: Hos Office
   - uid: 7919
     components:
     - type: Transform
@@ -108955,7 +108955,7 @@ entities:
     - type: Transform
       pos: 3.5,-5.5
       parent: 60
-- proto: LockerHeadOfPersonnelFilled
+- proto: LockerHeadOfServiceFilled
   entities:
   - uid: 6235
     components:
@@ -108992,7 +108992,7 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerChiefofsecurityFilledHardsuit
+- proto: LockerChiefOfSecurityFilledHardsuit
   entities:
   - uid: 5933
     components:
@@ -129514,14 +129514,14 @@ entities:
     - type: Transform
       pos: -26.5,-29.5
       parent: 60
-- proto: SpawnPointHeadOfPersonnel
+- proto: SpawnPointHeadOfService
   entities:
   - uid: 6981
     components:
     - type: Transform
       pos: 7.5,-31.5
       parent: 60
-- proto: SpawnPointChiefofsecurity
+- proto: SpawnPointChiefOfSecurity
   entities:
   - uid: 1731
     components:
@@ -130787,7 +130787,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraCommand
       nameSet: True
-      id: HoP Office
+      id: Hos Office
   - uid: 21083
     components:
     - type: Transform
@@ -131550,7 +131550,7 @@ entities:
       setupAvailableNetworks:
       - SurveillanceCameraGeneral
       nameSet: True
-      id: Main Hall HoP
+      id: Main Hall Hos
   - uid: 24305
     components:
     - type: Transform
@@ -152240,7 +152240,7 @@ entities:
     - type: Transform
       pos: -3.5,17.5
       parent: 60
-- proto: WindoorSecureHeadOfPersonnelLocked
+- proto: WindoorSecureHeadOfServiceLocked
   entities:
   - uid: 1340
     components:

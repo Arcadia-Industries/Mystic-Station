@@ -8245,7 +8245,7 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 0.5,-376.5
       parent: 2
-- proto: AirlockHeadOfPersonnelLocked
+- proto: AirlockHeadOfServiceLocked
   entities:
   - uid: 2229
     components:
@@ -8257,7 +8257,7 @@ entities:
     - type: Transform
       pos: 0.5,-118.5
       parent: 2
-- proto: AirlockChiefofsecurityLocked
+- proto: AirlockChiefOfSecurityLocked
   entities:
   - uid: 10794
     components:
@@ -8387,7 +8387,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: 2.5,-219.5
       parent: 2
-- proto: AirlockMaintHOPLocked
+- proto: AirlockMaintHEAD-OF-SERVICELocked
   entities:
   - uid: 2225
     components:
@@ -11320,7 +11320,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: -4.5,-206.5
       parent: 2
-- proto: BedsheetHOP
+- proto: BedsheetHEAD-OF-SERVICE
   entities:
   - uid: 2221
     components:
@@ -37758,7 +37758,7 @@ entities:
     - type: Transform
       pos: 18.5,-264.5
       parent: 2
-- proto: DefaultStationBeaconHOPOffice
+- proto: DefaultStationBeaconHEAD-OF-SERVICEOffice
   entities:
   - uid: 11499
     components:
@@ -45374,7 +45374,7 @@ entities:
       parent: 2
     - type: DisposalRouter
       tags:
-      - HoP Office
+      - Hos Office
   - uid: 13759
     components:
     - type: Transform
@@ -45950,14 +45950,14 @@ entities:
     - type: Transform
       pos: -5.5,-136.5
       parent: 2
-- proto: DresserHeadOfPersonnelFilled
+- proto: DresserHeadOfServiceFilled
   entities:
   - uid: 2231
     components:
     - type: Transform
       pos: -1.5,-116.5
       parent: 2
-- proto: DresserChiefofsecurityFilled
+- proto: DresserChiefOfSecurityFilled
   entities:
   - uid: 11097
     components:
@@ -46909,7 +46909,7 @@ entities:
       pos: -1.5,-116.5
       parent: 2
     - type: FaxMachine
-      name: Head of Personnel
+      name: Head of Service
   - uid: 10166
     components:
     - type: Transform
@@ -76117,14 +76117,14 @@ entities:
           showEnts: False
           occludes: True
           ent: null
-- proto: LockerHeadOfPersonnelFilled
+- proto: LockerHeadOfServiceFilled
   entities:
   - uid: 2232
     components:
     - type: Transform
       pos: -1.5,-117.5
       parent: 2
-- proto: LockerChiefofsecurityFilled
+- proto: LockerChiefOfSecurityFilled
   entities:
   - uid: 11098
     components:
@@ -76485,7 +76485,7 @@ entities:
       pos: 2.5,-119.5
       parent: 2
     - type: MailingUnit
-      tag: HoP Office
+      tag: Hos Office
   - uid: 13434
     components:
     - type: Transform
@@ -85961,7 +85961,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: -0.5,-107.5
       parent: 2
-- proto: SignDirectionalHop
+- proto: SignDirectionalHead-Of-Service
   entities:
   - uid: 7357
     components:
@@ -87912,14 +87912,14 @@ entities:
     - type: Transform
       pos: -5.5,-73.5
       parent: 2
-- proto: SpawnPointHeadOfPersonnel
+- proto: SpawnPointHeadOfService
   entities:
   - uid: 11972
     components:
     - type: Transform
       pos: -0.5,-116.5
       parent: 2
-- proto: SpawnPointChiefofsecurity
+- proto: SpawnPointChiefOfSecurity
   entities:
   - uid: 12054
     components:
@@ -91439,14 +91439,14 @@ entities:
     - type: Transform
       pos: 25.537968,-317.06403
       parent: 2
-- proto: ToyFigurineHeadOfPersonnel
+- proto: ToyFigurineHeadOfService
   entities:
   - uid: 12185
     components:
     - type: Transform
       pos: 1.7322779,-121.02217
       parent: 2
-- proto: ToyFigurineChiefofsecurity
+- proto: ToyFigurineChiefOfSecurity
   entities:
   - uid: 12186
     components:
@@ -105353,7 +105353,7 @@ entities:
       pos: 0.5,-116.5
       parent: 2
     - type: WarpPoint
-      location: 'Car 04: HoP, Dormatories'
+      location: 'Car 04: Hos, Dormatories'
     - type: BombingTarget
   - uid: 3150
     components:
@@ -106676,7 +106676,7 @@ entities:
       links:
       - 2414
       - 2413
-- proto: WindoorSecureHeadOfPersonnelLocked
+- proto: WindoorSecureHeadOfServiceLocked
   entities:
   - uid: 2238
     components:

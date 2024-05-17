@@ -20,7 +20,7 @@
   - Chaplain
   - Chef
   - Clown
-  - HeadOfPersonnel
+  - HeadOfService
   - Janitor
   - Lawyer
   - Librarian
@@ -41,8 +41,8 @@
   - CentralCommandOfficial
   - ChiefEngineer
   - ChiefMedicalOfficer
-  - HeadOfPersonnel
-  - Chiefofsecurity
+  - HeadOfService
+  - ChiefOfSecurity
   - ResearchDirector
   - Quartermaster
   primary: false
@@ -76,7 +76,7 @@
   color: "#DE3A3A"
   weight: 20
   roles:
-  - Chiefofsecurity
+  - ChiefOfSecurity
   - SecurityCadet
   - SecurityOfficer
   - Detective

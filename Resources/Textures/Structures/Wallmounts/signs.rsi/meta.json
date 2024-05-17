@@ -389,7 +389,7 @@
             ]
         },
         {
-            "name": "direction_hop",
+            "name": "direction_hos",
             "directions": 4,
             "delays": [
                 [

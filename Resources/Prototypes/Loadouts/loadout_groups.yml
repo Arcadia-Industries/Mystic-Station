@@ -61,42 +61,42 @@
   - DirectorWintercoat
 
 - type: loadoutGroup
-  id: HoPHead
-  name: loadout-group-hop-head
+  id: HosHead
+  name: loadout-group-hos-head
   minLimit: 0
   loadouts:
-  - HoPHead
+  - HosHead
 
 - type: loadoutGroup
-  id: HoPJumpsuit
-  name: loadout-group-hop-jumpsuit
+  id: HosJumpsuit
+  name: loadout-group-hos-jumpsuit
   loadouts:
-  - HoPJumpsuit
-  - HoPJumpskirt
+  - HosJumpsuit
+  - HosJumpskirt
 
 - type: loadoutGroup
-  id: HoPNeck
-  name: loadout-group-hop-neck
+  id: HosNeck
+  name: loadout-group-hos-neck
   minLimit: 0
   loadouts:
-  - HoPCloak
-  - HoPMantle
+  - HosCloak
+  - HosMantle
 
 - type: loadoutGroup
-  id: HoPBackpack
-  name: loadout-group-hop-backpack
+  id: HosBackpack
+  name: loadout-group-hos-backpack
   loadouts:
-  - HoPBackpack
-  - HoPSatchel
-  - HoPDuffel
-  - HoPBackpackIan
+  - HosBackpack
+  - HosSatchel
+  - HosDuffel
+  - HosBackpackIan
 
 - type: loadoutGroup
-  id: HoPOuterClothing
-  name: loadout-group-hop-outerclothing
+  id: HosOuterClothing
+  name: loadout-group-hos-outerclothing
   minLimit: 0
   loadouts:
-  - HoPWintercoat
+  - HosWintercoat
 
 # Civilian
 - type: loadoutGroup
@@ -803,38 +803,38 @@
 
 # Security
 - type: loadoutGroup
-  id: ChiefofsecurityHead
+  id: ChiefOfSecurityHead
   name: loadout-group-chief-of-security-head
   minLimit: 0
   loadouts:
-  - ChiefofsecurityHead
-  - ChiefofsecurityBeret
+  - ChiefOfSecurityHead
+  - ChiefOfSecurityBeret
 
 - type: loadoutGroup
-  id: ChiefofsecurityJumpsuit
+  id: ChiefOfSecurityJumpsuit
   name: loadout-group-chief-of-security-jumpsuit
   loadouts:
-  - ChiefofsecurityJumpsuit
-  - ChiefofsecurityJumpskirt
-  - ChiefofsecurityTurtleneck
-  - ChiefofsecurityTurtleneckSkirt
-  - ChiefofsecurityFormalSuit
-  - ChiefofsecurityFormalSkirt
+  - ChiefOfSecurityJumpsuit
+  - ChiefOfSecurityJumpskirt
+  - ChiefOfSecurityTurtleneck
+  - ChiefOfSecurityTurtleneckSkirt
+  - ChiefOfSecurityFormalSuit
+  - ChiefOfSecurityFormalSkirt
 
 - type: loadoutGroup
-  id: ChiefofsecurityNeck
+  id: ChiefOfSecurityNeck
   name: loadout-group-chief-of-security-neck
   minLimit: 0
   loadouts:
-  - ChiefofsecurityCloak
-  - ChiefofsecurityMantle
+  - ChiefOfSecurityCloak
+  - ChiefOfSecurityMantle
 
 - type: loadoutGroup
-  id: ChiefofsecurityOuterClothing
+  id: ChiefOfSecurityOuterClothing
   name: loadout-group-chief-of-security-outerclothing
   loadouts:
-  - ChiefofsecurityCoat
-  - ChiefofsecurityWinterCoat
+  - ChiefOfSecurityCoat
+  - ChiefOfSecurityWinterCoat
 
 - type: loadoutGroup
   id: WardenHead

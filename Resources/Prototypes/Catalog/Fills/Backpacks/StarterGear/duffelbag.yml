@@ -104,7 +104,7 @@
 - type: entity
   noSpawn: true
   parent: ClothingBackpackDuffel
-  id: ClothingBackpackDuffelHOPFilled
+  id: ClothingBackpackDuffelHEAD-OF-SERVICEFilled
   components:
   - type: StorageFill
     contents:

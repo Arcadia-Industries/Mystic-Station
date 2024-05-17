@@ -41,7 +41,7 @@ Should you need it. Some RP-specific documents available on the wiki such as Spa
 
 [color=#a4885c]11.[/color] Act like an actual human being on a space station in a medium-roleplay (MRP) environment. Do not use text speak or emoticons IC, and do not refer to OOC things like admins in-game. Do not threaten players that you are calling the admins on them. Do not use emotes to bypass speech filters or muteness. You are not required to write a backstory or follow procedure to exacts; however, you are expected to at least make an effort to act like your role.
     - This server is a "Roleplay Expected" server. We define this as performing your assigned duties, "doing your job". This means it is important to do what is expected out of your department and not what would be expected out of other departments.
-    - Don’t do other peoples jobs for them. Opt in for the role you intend to play or change your job by visiting the Head of Personnel. Failure to do your basic duties may result in a job ban.
+    - Don’t do other peoples jobs for them. Opt in for the role you intend to play or change your job by visiting the Hos. Failure to do your basic duties may result in a job ban.
 
 [color=#a4885c]12.[/color] Don't be a dick. You are playing a multiplayer game with other people who also want to enjoy the game.
     - [color=#ff0000]The arrivals station, shuttle, and general arrivals docking area are completely off-limits to any hostile activity, including activity by antagonists. Attacking newly spawned players in these areas or damaging/sabotaging these areas is strictly forbidden.[/color]
@@ -74,7 +74,7 @@ Should you need it. Some RP-specific documents available on the wiki such as Spa
     - Head of Staff roles help drive rounds. If you need to leave, please admin-help your role and that you are leaving. There is no need to wait for a reply when admin-helping that you need to disconnect as a head role.
 
 [color=#a4885c]18.[/color] Don't rush for or prepare equipment unrelated to your job for no purpose other then to have it "just in case" (referred to as "Powergaming").
-    - A medical doctor does not need insulated gloves, and the Head of Personnel does not need to give themselves armory access so they can go grab a gun. Have an actual reason for needing these things.
+    - A medical doctor does not need insulated gloves, and the Hos does not need to give themselves armory access so they can go grab a gun. Have an actual reason for needing these things.
     - Don't manufacture weapons, bombs, or death poisons before you know of any reason you would need them.
     - Don't pre-emptively hide antagonist objectives or pre-emptively secure them with higher security then normally required.
     - Don't manufacture or prepare things for the "end of the round" when the shuttle docks with Central Command.

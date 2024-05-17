@@ -73,17 +73,17 @@
     access: [["Director"]]
 
 - type: entity
-  id: LockerHeadOfPersonnel
+  id: LockerHeadOfService
   parent: LockerBaseSecure
-  name: head of personnel's locker
+  name: head of service's locker
   components:
   - type: Appearance
   - type: EntityStorageVisuals
-    stateBaseClosed: hop
-    stateDoorOpen: hop_open
-    stateDoorClosed: hop_door
+    stateBaseClosed: hos
+    stateDoorOpen: hos_open
+    stateDoorClosed: hos_door
   - type: AccessReader
-    access: [["HeadOfPersonnel"]]
+    access: [["HeadOfService"]]
 
 # CE
 - type: entity
@@ -295,7 +295,7 @@
 
 # Cos
 - type: entity
-  id: LockerChiefofsecurity
+  id: LockerChiefOfSecurity
   parent: LockerBaseSecure
   name: chief of security's locker
   components:
@@ -305,7 +305,7 @@
     stateDoorOpen: cos_open
     stateDoorClosed: cos_door
   - type: AccessReader
-    access: [["Chiefofsecurity"]]
+    access: [["ChiefOfSecurity"]]
 
 # Warden
 - type: entity
@@ -458,6 +458,6 @@
   - type: AccessReader
     access: [["Command"]]
   - type: EntityStorageVisuals
-    stateBaseClosed: hop
-    stateDoorOpen: hop_open
+    stateBaseClosed: hos
+    stateDoorOpen: hos_open
     stateDoorClosed: representative_door

@@ -201,7 +201,7 @@
         - id: ClothingOuterHardsuitSecurityRed
         - id: ClothingMaskGasSwat
   - type: AccessReader
-    access: [["Chiefofsecurity"]]
+    access: [["ChiefOfSecurity"]]
 
 #Warden's hardsuit
 - type: entity

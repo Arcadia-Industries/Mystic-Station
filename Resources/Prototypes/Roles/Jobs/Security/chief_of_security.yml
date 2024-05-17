@@ -1,8 +1,8 @@
 - type: job
-  id: Chiefofsecurity
+  id: ChiefOfSecurity
   name: job-name-cos
   description: job-description-cos
-  playTimeTracker: JobChiefofsecurity
+  playTimeTracker: JobChiefOfSecurity
   requirements:
     - !type:RoleTimeRequirement
       role: JobWarden
@@ -17,12 +17,12 @@
       time: 144000 #40 hrs
   weight: 10
   startingGear: HoSGear
-  icon: "JobIconChiefofsecurity"
+  icon: "JobIconChiefOfSecurity"
   requireAdminNotify: true
   supervisors: job-supervisors-director
   canBeAntag: false
   access:
-  - Chiefofsecurity
+  - ChiefOfSecurity
   - Command
   - Brig
   - Security

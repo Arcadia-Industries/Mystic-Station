@@ -132,22 +132,22 @@
     state: stamp-cmo
 
 - type: entity
-  name: head of personnel's rubber stamp
+  name: head of service's rubber stamp
   parent: RubberStampBase
-  id: RubberStampHop
+  id: RubberStampHos
   suffix: DO NOT MAP
   components:
   - type: Stamp
-    stampedName: stamp-component-stamped-name-hop
+    stampedName: stamp-component-stamped-name-hos
     stampedColor: "#6ec0ea"
-    stampState: "paper_stamp-hop"
+    stampState: "paper_stamp-hos"
   - type: Sprite
-    state: stamp-hop
+    state: stamp-hos
 
 - type: entity
   name: chief of security's rubber stamp
   parent: RubberStampBase
-  id: RubberStampHos
+  id: RubberStampCos
   suffix: DO NOT MAP
   components:
   - type: Stamp

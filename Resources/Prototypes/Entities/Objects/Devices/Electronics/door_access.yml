@@ -9,11 +9,11 @@
 
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsHeadOfPersonnel
-  suffix: HeadOfPersonnel, Locked
+  id: DoorElectronicsHeadOfService
+  suffix: HeadOfService, Locked
   components:
   - type: AccessReader
-    access: [["HeadOfPersonnel"]]
+    access: [["HeadOfService"]]
 
 - type: entity
   parent: DoorElectronics
@@ -182,11 +182,11 @@
 # Security
 - type: entity
   parent: DoorElectronics
-  id: DoorElectronicsChiefofsecurity
-  suffix: Chiefofsecurity, Locked
+  id: DoorElectronicsChiefOfSecurity
+  suffix: ChiefOfSecurity, Locked
   components:
   - type: AccessReader
-    access: [["Chiefofsecurity"]]
+    access: [["ChiefOfSecurity"]]
 
 - type: entity
   parent: DoorElectronics

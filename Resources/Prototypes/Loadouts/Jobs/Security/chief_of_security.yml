@@ -1,111 +1,111 @@
 # Jumpsuit
 - type: loadout
-  id: ChiefofsecurityJumpsuit
-  equipment: ChiefofsecurityJumpsuit
+  id: ChiefOfSecurityJumpsuit
+  equipment: ChiefOfSecurityJumpsuit
 
 - type: startingGear
-  id: ChiefofsecurityJumpsuit
+  id: ChiefOfSecurityJumpsuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoS
 
 - type: loadout
-  id: ChiefofsecurityJumpskirt
-  equipment: ChiefofsecurityJumpskirt
+  id: ChiefOfSecurityJumpskirt
+  equipment: ChiefOfSecurityJumpskirt
 
 - type: startingGear
-  id: ChiefofsecurityJumpskirt
+  id: ChiefOfSecurityJumpskirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtHoS
 
 - type: loadout
-  id: ChiefofsecurityTurtleneck
-  equipment: ChiefofsecurityTurtleneck
+  id: ChiefOfSecurityTurtleneck
+  equipment: ChiefOfSecurityTurtleneck
 
 - type: startingGear
-  id: ChiefofsecurityTurtleneck
+  id: ChiefOfSecurityTurtleneck
   equipment:
     jumpsuit: ClothingUniformJumpsuitHoSAlt
 
 - type: loadout
-  id: ChiefofsecurityTurtleneckSkirt
-  equipment: ChiefofsecurityTurtleneckSkirt
+  id: ChiefOfSecurityTurtleneckSkirt
+  equipment: ChiefOfSecurityTurtleneckSkirt
 
 - type: startingGear
-  id: ChiefofsecurityTurtleneckSkirt
+  id: ChiefOfSecurityTurtleneckSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtHoSAlt
 
 - type: loadout
-  id: ChiefofsecurityFormalSuit
-  equipment: ChiefofsecurityFormalSuit
+  id: ChiefOfSecurityFormalSuit
+  equipment: ChiefOfSecurityFormalSuit
 
 - type: startingGear
-  id: ChiefofsecurityFormalSuit
+  id: ChiefOfSecurityFormalSuit
   equipment:
     jumpsuit: ClothingUniformJumpsuitCosformal
 
 - type: loadout
-  id: ChiefofsecurityFormalSkirt
-  equipment: ChiefofsecurityFormalSkirt
+  id: ChiefOfSecurityFormalSkirt
+  equipment: ChiefOfSecurityFormalSkirt
 
 - type: startingGear
-  id: ChiefofsecurityFormalSkirt
+  id: ChiefOfSecurityFormalSkirt
   equipment:
     jumpsuit: ClothingUniformJumpskirtCosformal
 
 # Head
 - type: loadout
-  id: ChiefofsecurityHead
-  equipment: ChiefofsecurityHead
+  id: ChiefOfSecurityHead
+  equipment: ChiefOfSecurityHead
 
 - type: startingGear
-  id: ChiefofsecurityHead
+  id: ChiefOfSecurityHead
   equipment:
     head: ClothingHeadHatCoshat
 
 - type: loadout
-  id: ChiefofsecurityBeret
-  equipment: ChiefofsecurityBeret
+  id: ChiefOfSecurityBeret
+  equipment: ChiefOfSecurityBeret
 
 - type: startingGear
-  id: ChiefofsecurityBeret
+  id: ChiefOfSecurityBeret
   equipment:
     head: ClothingHeadHatBeretHoS
 
 # Neck
 - type: loadout
-  id: ChiefofsecurityCloak
-  equipment: ChiefofsecurityCloak
+  id: ChiefOfSecurityCloak
+  equipment: ChiefOfSecurityCloak
 
 - type: startingGear
-  id: ChiefofsecurityCloak
+  id: ChiefOfSecurityCloak
   equipment:
-    neck: ClothingNeckCloakHos
+    neck: ClothingNeckCloakCoS
 
 - type: loadout
-  id: ChiefofsecurityMantle
-  equipment: ChiefofsecurityMantle
+  id: ChiefOfSecurityMantle
+  equipment: ChiefOfSecurityMantle
 
 - type: startingGear
-  id: ChiefofsecurityMantle
+  id: ChiefOfSecurityMantle
   equipment:
-    neck: ClothingNeckMantleHOS
+    neck: ClothingNeckMantleCOS
 
 # OuterClothing
 - type: loadout
-  id: ChiefofsecurityCoat
-  equipment: ChiefofsecurityCoat
+  id: ChiefOfSecurityCoat
+  equipment: ChiefOfSecurityCoat
 
 - type: startingGear
-  id: ChiefofsecurityCoat
+  id: ChiefOfSecurityCoat
   equipment:
     outerClothing: ClothingOuterCoatcosTrench
 
 - type: loadout
-  id: ChiefofsecurityWinterCoat
-  equipment: ChiefofsecurityWinterCoat
+  id: ChiefOfSecurityWinterCoat
+  equipment: ChiefOfSecurityWinterCoat
 
 - type: startingGear
-  id: ChiefofsecurityWinterCoat
+  id: ChiefOfSecurityWinterCoat
   equipment:
-    outerClothing: ClothingOuterWinterHoS
+    outerClothing: ClothingOuterWinterCoS

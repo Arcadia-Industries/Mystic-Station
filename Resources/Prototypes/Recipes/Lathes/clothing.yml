@@ -260,16 +260,16 @@
     Cloth: 300
 
 - type: latheRecipe
-  id: ClothingUniformJumpsuitHoP
-  result: ClothingUniformJumpsuitHoP
+  id: ClothingUniformJumpsuitHos
+  result: ClothingUniformJumpsuitHos
   completetime: 4
   materials:
     Cloth: 300
     Durathread: 100
 
 - type: latheRecipe
-  id: ClothingUniformJumpskirtHoP
-  result: ClothingUniformJumpskirtHoP
+  id: ClothingUniformJumpskirtHos
+  result: ClothingUniformJumpskirtHos
   completetime: 4
   materials:
     Cloth: 300
@@ -698,16 +698,16 @@
     Durathread: 500
 
 - type: latheRecipe
-  id: ClothingOuterWinterHoP
-  result: ClothingOuterWinterHoP
+  id: ClothingOuterWinterHos
+  result: ClothingOuterWinterHos
   completetime: 3.2
   materials:
     Cloth: 500
     Durathread: 300
 
 - type: latheRecipe
-  id: ClothingOuterWinterHoSUnarmored
-  result: ClothingOuterWinterHoSUnarmored
+  id: ClothingOuterWinterCoSUnarmored
+  result: ClothingOuterWinterCoSUnarmored
   completetime: 3.2
   materials:
     Cloth: 500
@@ -762,16 +762,16 @@
     Durathread: 150
 
 - type: latheRecipe
-  id: ClothingNeckMantleHOP
-  result: ClothingNeckMantleHOP
+  id: ClothingNeckMantleHEAD-OF-SERVICE
+  result: ClothingNeckMantleHEAD-OF-SERVICE
   completetime: 2.8
   materials:
     Cloth: 200
     Durathread: 150
 
 - type: latheRecipe
-  id: ClothingNeckMantleHOS
-  result: ClothingNeckMantleHOS
+  id: ClothingNeckMantleCOS
+  result: ClothingNeckMantleCOS
   completetime: 2.8
   materials:
     Cloth: 200
@@ -1018,8 +1018,8 @@
     Durathread: 50
 
 - type: latheRecipe
-  id: ClothingHeadHatHopcap
-  result: ClothingHeadHatHopcap
+  id: ClothingHeadHatHead-Of-Servicecap
+  result: ClothingHeadHatHead-Of-Servicecap
   completetime: 2
   materials:
     Cloth: 100

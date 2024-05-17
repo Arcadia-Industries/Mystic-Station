@@ -357,7 +357,7 @@
   name: corger #not curger
   parent: FoodBurgerBase
   id: FoodBurgerCorgi
-  description: The Head of Personnel's favorite!
+  description: The Head of Service's favorite!
   components:
   - type: FlavorProfile
     flavors:
@@ -919,4 +919,3 @@
   - type: Tag
     tags:
     - Meat
-    

@@ -33,7 +33,7 @@
       - MobCockroach
 
 - type: entity
-  name: HoP Corgi Spawner
+  name: Hos Corgi Spawner
   id: SpawnMobCorgi
   parent: MarkerBase
   components:
