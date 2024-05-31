@@ -1,0 +1,95 @@
+- type: stack
+  id: ElementShardAnemo
+  name: anemo crystal shard
+  icon: { sprite: _Mystic/Objects/crystalItem.rsi, state: anemoCrystal}
+  spawn: ElementShardAnemo
+  itemSize: 1
+  maxCount: 10
+
+- type: stack
+  id: ElementShardAreno
+  name: anemo crystal shard
+  icon: { sprite: _Mystic/Objects/crystalItem.rsi, state: arenoCrystal}
+  spawn: ElementShardAreno
+  itemSize: 1
+  maxCount: 10
+
+- type: stack
+  id: ElementShardChrono
+  name: chrono crystal shard
+  icon: { sprite: _Mystic/Objects/crystalItem.rsi, state: ChronoCrystal}
+  spawn: ElementShardChrono
+  itemSize: 1
+  maxCount: 10
+
+- type: stack
+  id: ElementShardCryo
+  name: cryo crystal shard
+  icon: { sprite: _Mystic/Objects/crystalItem.rsi, state: CryoCrystal}
+  spawn: ElementShardCryo
+  itemSize: 1
+  maxCount: 10
+
+- type: stack
+  id: ElementShardDendro
+  name: dendro crystal shard
+  icon: { sprite: _Mystic/Objects/crystalItem.rsi, state: DendroCrystal}
+  spawn: ElementShardDendro
+  itemSize: 1
+  maxCount: 10
+
+- type: stack
+  id: ElementShardElectro
+  name: electro crystal shard
+  icon: { sprite: _Mystic/Objects/crystalItem.rsi, state: ElectroCrystal}
+  spawn: ElementShardElectro
+  itemSize: 1
+  maxCount: 10
+
+- type: stack
+  id: ElementShardGeo
+  name: geo crystal shard
+  icon: { sprite: _Mystic/Objects/crystalItem.rsi, state: GeoCrystal}
+  spawn: ElementShardGeo
+  itemSize: 1
+  maxCount: 10
+
+- type: stack
+  id: ElementShardHelio
+  name: helio crystal shard
+  icon: { sprite: _Mystic/Objects/crystalItem.rsi, state: HelioCrystal}
+  spawn: ElementShardHelio
+  itemSize: 1
+  maxCount: 10
+
+- type: stack
+  id: ElementShardHydro
+  name: helio crystal shard
+  icon: { sprite: _Mystic/Objects/crystalItem.rsi, state: HydroCrystal}
+  spawn: ElementShardHydro
+  itemSize: 1
+  maxCount: 10
+
+- type: stack
+  id: ElementShardPondo
+  name: pondo crystal shard
+  icon: { sprite: _Mystic/Objects/crystalItem.rsi, state: PondoCrystal }
+  spawn: ElementShardPondo
+  itemSize: 1
+  maxCount: 10
+
+- type: stack
+  id: ElementShardPyro
+  name: pyro crystal shard
+  icon: { sprite: _Mystic/Objects/crystalItem.rsi, state: PyroCrystal }
+  spawn: ElementShardPyro
+  itemSize: 1
+  maxCount: 10
+
+- type: stack
+  id: ElementShardTenebro
+  name: tenebro crystal shard
+  icon: { sprite: _Mystic/Objects/crystalItem.rsi, state: TenebroCrystal }
+  spawn: ElementShardTenebro
+  itemSize: 1
+  maxCount: 10

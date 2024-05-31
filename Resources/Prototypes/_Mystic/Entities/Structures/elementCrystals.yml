@@ -1,8 +1,7 @@
 - type: entity
-  id: ElementCrystalAnemo
+  id: ElementCrystalBase
   parent: BaseStructure
   name: element crystal
-  suffix: Anemo
   description: A solid crystalline collection of magical energy.
   components:
     - type: Sprite
@@ -50,8 +49,33 @@
               acts: [ "Destruction" ]
 
 - type: entity
+  id: ElementCrystalAnemo
+  parent: ElementCrystalBase
+  suffix: Anemo
+  components:
+  - type: Sprite
+    sprite: _Mystic/Structures/crystalStructure.rsi
+    state: anemoCrystal
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ElementShardAnemo:
+            min: 1
+            max: 3
+
+- type: entity
   id: ElementCrystalAreno
-  parent: ElementCrystalAnemo
+  parent: ElementCrystalBase
   suffix: Areno
   components:
     - type: Sprite
@@ -76,7 +100,7 @@
 
 - type: entity
   id: ElementCrystalChrono
-  parent: ElementCrystalAnemo
+  parent: ElementCrystalBase
   suffix: Chrono
   components:
   - type: Sprite
@@ -101,7 +125,7 @@
 
 - type: entity
   id: ElementCrystalCryo
-  parent: ElementCrystalAnemo
+  parent: ElementCrystalBase
   suffix: Cryo
   components:
   - type: Sprite
@@ -126,7 +150,7 @@
 
 - type: entity
   id: ElementCrystalDendro
-  parent: ElementCrystalAnemo
+  parent: ElementCrystalBase
   suffix: Dendro
   components:
   - type: Sprite
@@ -150,133 +174,8 @@
             max: 3
 
 - type: entity
-  id: ElementCrystalHydro
-  parent: ElementCrystalAnemo
-  suffix: Hydro
-  components:
-  - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
-    state: hydroCrystal
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          ElementShardHydro:
-            min: 1
-            max: 3
-
-- type: entity
-  id: ElementCrystalPondo
-  parent: ElementCrystalAnemo
-  suffix: Pondo
-  components:
-  - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
-    state: pondoCrystal
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          ElementShardPondo:
-            min: 1
-            max: 3
-
-- type: entity
-  id: ElementCrystalPyro
-  parent: ElementCrystalAnemo
-  suffix: Pyro
-  components:
-  - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
-    state: pyroCrystal
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          ElementShardPyro:
-            min: 1
-            max: 3
-
-- type: entity
-  id: ElementCrystalTenebro
-  parent: ElementCrystalAnemo
-  suffix: Tenebro
-  components:
-  - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
-    state: tenebroCrystal
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          ElementShardTenebro:
-            min: 1
-            max: 3
-
-- type: entity
-  id: ElementCrystalHelio
-  parent: ElementCrystalAnemo
-  suffix: Helio
-  components:
-  - type: Sprite
-    sprite: _Mystic/Structures/crystalStructure.rsi
-    state: helioCrystal
-  - type: Destructible
-    thresholds:
-    - trigger:
-        !type:DamageTrigger
-        damage: 50
-      behaviors:
-      - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-      - !type:PlaySoundBehavior
-        sound:
-          collection: GlassBreak
-      - !type:SpawnEntitiesBehavior
-        spawn:
-          ElementShardHelio:
-            min: 1
-            max: 3
-
-- type: entity
   id: ElementCrystalElectro
-  parent: ElementCrystalAnemo
+  parent: ElementCrystalBase
   suffix: Electro
   components:
   - type: Sprite
@@ -301,7 +200,7 @@
 
 - type: entity
   id: ElementCrystalGeo
-  parent: ElementCrystalAnemo
+  parent: ElementCrystalBase
   suffix: Geo
   components:
   - type: Sprite
@@ -321,5 +220,130 @@
       - !type:SpawnEntitiesBehavior
         spawn:
           ElementShardGeo:
+            min: 1
+            max: 3
+
+- type: entity
+  id: ElementCrystalHelio
+  parent: ElementCrystalBase
+  suffix: Helio
+  components:
+  - type: Sprite
+    sprite: _Mystic/Structures/crystalStructure.rsi
+    state: helioCrystal
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ElementShardHelio:
+            min: 1
+            max: 3
+
+- type: entity
+  id: ElementCrystalHydro
+  parent: ElementCrystalBase
+  suffix: Hydro
+  components:
+  - type: Sprite
+    sprite: _Mystic/Structures/crystalStructure.rsi
+    state: hydroCrystal
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ElementShardHydro:
+            min: 1
+            max: 3
+
+- type: entity
+  id: ElementCrystalPondo
+  parent: ElementCrystalBase
+  suffix: Pondo
+  components:
+  - type: Sprite
+    sprite: _Mystic/Structures/crystalStructure.rsi
+    state: pondoCrystal
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ElementShardPondo:
+            min: 1
+            max: 3
+
+- type: entity
+  id: ElementCrystalPyro
+  parent: ElementCrystalBase
+  suffix: Pyro
+  components:
+  - type: Sprite
+    sprite: _Mystic/Structures/crystalStructure.rsi
+    state: pyroCrystal
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ElementShardPyro:
+            min: 1
+            max: 3
+
+- type: entity
+  id: ElementCrystalTenebro
+  parent: ElementCrystalBase
+  suffix: Tenebro
+  components:
+  - type: Sprite
+    sprite: _Mystic/Structures/crystalStructure.rsi
+    state: tenebroCrystal
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          collection: GlassBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ElementShardTenebro:
             min: 1
             max: 3
