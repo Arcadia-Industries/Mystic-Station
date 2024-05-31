@@ -2,15 +2,15 @@
   abstract: true
   parent: BaseItem
   id: ElementShardBase
-  name: Helio Shard
+  name:  unnamed crystal
   description:  A small piece of elemental crystal.
   components:
   - type: Sharp
   - type: Sprite
     layers:
-      - sprite: _Mystic/Objects/crystalItem.rsi
-        state: helioCrystal
-        map: [ "enum.DamageStateVisualLayers.Base" ]
+    - sprite: _Mystic/Objects/crystalItem.rsi
+      state: anemoCrystal
+      map: [ "enum.DamageStateVisualLayers.Base" ]
   - type: MeleeWeapon
     wideAnimationRotation: -22.5
     attackRate: 1.5
@@ -33,66 +33,6 @@
 
 - type: entity
   parent: ElementShardBase
-  id: ElementShardHelio
-  name: helio crystal shard
-  description: A small piece of crystal.
-  components:
-  - type: Sprite
-    layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: helioCrystal
-      map: [ "enum.DamageStateVisualLayers.Base" ]
-
-- type: entity
-  parent: ElementShardBase
-  id: ElementShardHydro
-  name: hydro crystal shard
-  description: A small piece of crystal.
-  components:
-  - type: Sprite
-    layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: hydroCrystal
-      map: [ "enum.DamageStateVisualLayers.Base" ]
-
-- type: entity
-  parent: ElementShardBase
-  id: ElementShardPondo
-  name: pondo crystal shard
-  description: A small piece of crystal.
-  components:
-  - type: Sprite
-    layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: pondoCrystal
-      map: [ "enum.DamageStateVisualLayers.Base" ]
-
-- type: entity
-  parent: ElementShardBase
-  id: ElementShardPyro
-  name: pyro crystal shard
-  description: A small piece of crystal.
-  components:
-  - type: Sprite
-    layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: pyroCrystal
-      map: [ "enum.DamageStateVisualLayers.Base" ]
-
-- type: entity
-  parent: ElementShardBase
-  id: ElementShardTenebro
-  name: tenebro crystal shard
-  description: A small piece of crystal.
-  components:
-  - type: Sprite
-    layers:
-    - sprite: _Mystic/Objects/crystalItem.rsi
-      state: tenebroCrystal
-      map: [ "enum.DamageStateVisualLayers.Base" ]
-
-- type: entity
-  parent: ElementShardBase
   id: ElementShardAnemo
   name: anemo crystal shard
   description: A small piece of crystal.
@@ -102,6 +42,9 @@
     - sprite: _Mystic/Objects/crystalItem.rsi
       state: anemoCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Stack
+    count: 1
+    stackType: ElementShardAnemo
 
 - type: entity
   parent: ElementShardBase
@@ -114,6 +57,9 @@
     - sprite: _Mystic/Objects/crystalItem.rsi
       state: arenoCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Stack
+    count: 1
+    stackType: ElementShardAreno
 
 - type: entity
   parent: ElementShardBase
@@ -126,6 +72,9 @@
     - sprite: _Mystic/Objects/crystalItem.rsi
       state: chronoCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Stack
+    count: 1
+    stackType: ElementShardChrono
 
 - type: entity
   parent: ElementShardBase
@@ -138,6 +87,9 @@
     - sprite: _Mystic/Objects/crystalItem.rsi
       state: cryoCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Stack
+    count: 1
+    stackType: ElementShardCryo
 
 - type: entity
   parent: ElementShardBase
@@ -150,6 +102,9 @@
     - sprite: _Mystic/Objects/crystalItem.rsi
       state: dendroCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Stack
+    count: 1
+    stackType: ElementShardDendro
 
 - type: entity
   parent: ElementShardBase
@@ -162,11 +117,14 @@
     - sprite: _Mystic/Objects/crystalItem.rsi
       state: electroCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Stack
+    count: 1
+    stackType: ElementShardElectro
 
 - type: entity
   parent: ElementShardBase
   id: ElementShardGeo
-  name: Geo crystal shard
+  name: geo crystal shard
   description: A small piece of crystal.
   components:
   - type: Sprite
@@ -174,6 +132,99 @@
     - sprite: _Mystic/Objects/crystalItem.rsi
       state: geoCrystal
       map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Stack
+    count: 1
+    stackType: ElementShardGeo
+
+#- type: entity
+#  parent: ElementShardBase
+#  id: ElementShardHelio
+#  name: helio crystal shard
+#  description: A small piece of crystal.
+#  components:
+#  - type: Sprite
+#    layers:
+#    - sprite: _Mystic/Objects/crystalItem.rsi
+#      state: helioCrystal
+#      map: [ "enum.DamageStateVisualLayers.Base" ]
+#  - type: Stack
+#    count: 1
+#    stackType: ElementShardHelio
+
+- type: entity
+  parent: ElementShardBase
+  id: ElementShardHelio
+  name: helio crystal shard
+  description: A small piece of crystal.
+  components:
+  - type: Sprite
+    layers:
+    - sprite: _Mystic/Objects/crystalItem.rsi
+      state: helioCrystal
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Stack
+    count: 1
+    stackType: ElementShardHelio
+
+- type: entity
+  parent: ElementShardBase
+  id: ElementShardHydro
+  name: hydro crystal shard
+  description: A small piece of crystal.
+  components:
+  - type: Sprite
+    layers:
+    - sprite: _Mystic/Objects/crystalItem.rsi
+      state: hydroCrystal
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Stack
+    count: 1
+    stackType: ElementShardHydro
+
+- type: entity
+  parent: ElementShardBase
+  id: ElementShardPondo
+  name: pondo crystal shard
+  description: A small piece of crystal.
+  components:
+  - type: Sprite
+    layers:
+    - sprite: _Mystic/Objects/crystalItem.rsi
+      state: pondoCrystal
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Stack
+    count: 1
+    stackType: ElementShardHydro
+
+- type: entity
+  parent: ElementShardBase
+  id: ElementShardPyro
+  name: pyro crystal shard
+  description: A small piece of crystal.
+  components:
+  - type: Sprite
+    layers:
+    - sprite: _Mystic/Objects/crystalItem.rsi
+      state: pyroCrystal
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Stack
+    count: 1
+    stackType: ElementShardPyro
+
+- type: entity
+  parent: ElementShardBase
+  id: ElementShardTenebro
+  name: tenebro crystal shard
+  description: A small piece of crystal.
+  components:
+  - type: Sprite
+    layers:
+    - sprite: _Mystic/Objects/crystalItem.rsi
+      state: tenebroCrystal
+      map: [ "enum.DamageStateVisualLayers.Base" ]
+  - type: Stack
+    count: 1
+    stackType: ElementShardTenebro
 
 - type: entity
   parent: ElementShardBase
