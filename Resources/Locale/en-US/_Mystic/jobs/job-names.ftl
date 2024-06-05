@@ -1,7 +1,6 @@
 job-name-warden = Warden
 job-name-security = Security Officer
 job-name-cadet = Security Cadet
-job-name-hos = Head of Security
 job-name-detective = Detective
 job-name-brigmedic = Brigmedic
 job-name-borg = Cyborg
@@ -46,6 +45,11 @@ job-name-ertjanitor = ERT Janitor
 job-name-boxer = Boxer
 job-name-zookeeper = Zookeeper
 job-name-visitor = Visitor
+
+# job-name-hos = Head of Security
+job-name-scientist = Scientist
+job-name-research-assistant = Research Assistant
+job-name-rd = Research Director
 
 # Role timers - Make these alphabetical or I cut you
 JobAtmosphericTechnician = Atmospheric Technician
