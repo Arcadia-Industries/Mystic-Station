@@ -7,7 +7,7 @@
   - Quartermaster
 
 - type: department
-  id: Civilian
+  id: Service
   description: department-mystic-Service-description
   color: "#9FED58"
   weight: -10

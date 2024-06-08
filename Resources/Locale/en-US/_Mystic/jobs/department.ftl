@@ -7,10 +7,10 @@
 # department-Science = Science
 # department-Specific = Station specific
 
-department-mystic-Arcaneology = Arcaneology
-department-mystic-Command = Command
-department-mystic-Engineering = Engineering
-department-mystic-Logistics = Logistics
-department-mystic-Medical = Medical
-department-mystic-Security = Security
-department-mystic-Service = Service
+department-Arcaneology = Arcaneology
+department-Command = Command
+department-Engineering = Engineering
+department-Logistics = Logistics
+department-Medical = Medical
+department-Security = Security
+department-Service = Service

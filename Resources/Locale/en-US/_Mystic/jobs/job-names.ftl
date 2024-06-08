@@ -51,7 +51,7 @@ job-name-visitor = Visitor
 # job-name-salvagespec = Salvage specialist
 # job-name-cargotech = Cargo Technician
 
-job-name-cso = Chief of Security
+job-name-cso = Chief Security Officer
 job-name-director = Director
 job-name-fledgling = Mystic Fledgling
 job-name-sl = Service Leader
