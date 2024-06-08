@@ -1,0 +1,36 @@
+- type: job
+  id: MasterArcanist
+  name: job-name-ma
+  description: job-description-ma
+  playTimeTracker: JobMasterArcanist
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Arcaneology
+      time: 36000 #10 hrs
+    - !type:OverallPlaytimeRequirement
+      time: 144000 #40 hrs
+  weight: 10
+  startingGear: MasterArcanistGear
+  icon: "JobIconResearchDirector"
+  requireAdminNotify: true
+  supervisors: job-supervisors-director
+  canBeAntag: false
+  access:
+  - Research
+  - Command
+  - Maintenance
+  - ResearchDirector
+  - Brig
+  - Cryogenics
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+  - !type:AddComponentSpecial
+    components:
+      - type: CommandStaff
+
+- type: startingGear
+  id: MasterArcanistGear
+  equipment:
+    id: RnDPDA
+    ears: ClothingHeadsetRD

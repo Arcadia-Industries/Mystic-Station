@@ -1,0 +1,25 @@
+﻿- type: job
+  id: MysticFledgling
+  name: job-name-fledgling
+  description: job-description-fledgling
+  playTimeTracker: JobMysticFledgling
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Arcaneology
+      time: 54000 #15 hrs
+      inverted: true # stop playing intern if you're good at science!
+  startingGear: FledglingGear
+  icon: "JobIconResearchAssistant"
+  supervisors: job-supervisors-arcaneology
+  canBeAntag: false
+  access:
+  - Research
+  - Maintenance
+
+- type: startingGear
+  id: FledglingGear
+  equipment:
+    shoes: ClothingShoesColorWhite
+    id: ResearchAssistantPDA
+    ears: ClothingHeadsetScience
+    pocket2: BookScientistsGuidebook
