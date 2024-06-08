@@ -1,0 +1,21 @@
+- type: job
+  id: MysticResearcher
+  name: job-name-researcher
+  description: job-description-researcher
+  playTimeTracker: JobMysticResearcher
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Arcaneology
+      time: 14400 #4 hrs
+  startingGear: ResearcherGear
+  icon: "JobIconScientist"
+  supervisors: job-supervisors-ma
+  access:
+  - Research
+  - Maintenance
+
+- type: startingGear
+  id: ResearcherGear
+  equipment:
+    ears: ClothingHeadsetScience
+

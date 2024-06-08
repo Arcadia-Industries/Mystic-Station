@@ -16,11 +16,11 @@
 - type: playTimeTracker
   id: JobBotanist
 
-- type: playTimeTracker
-  id: JobCaptain
+# - type: playTimeTracker
+#  id: JobCaptain
 
-- type: playTimeTracker
-  id: JobCargoTechnician
+# - type: playTimeTracker
+#  id: JobCargoTechnician
 
 - type: playTimeTracker
   id: JobCentralCommandOfficial
@@ -64,11 +64,11 @@
 - type: playTimeTracker
   id: JobERTSecurity
 
-- type: playTimeTracker
-  id: JobHeadOfPersonnel
+# - type: playTimeTracker
+#  id: JobHeadOfPersonnel
 
-- type: playTimeTracker
-  id: JobHeadOfSecurity
+# - type: playTimeTracker
+#  id: JobHeadOfSecurity
 
 - type: playTimeTracker
   id: JobJanitor
@@ -106,17 +106,17 @@
 - type: playTimeTracker
   id: JobReporter
 
-- type: playTimeTracker
-  id: JobResearchAssistant
+# - type: playTimeTracker
+#  id: JobResearchAssistant
 
-- type: playTimeTracker
-  id: JobResearchDirector
+# - type: playTimeTracker
+#  id: JobResearchDirector
 
-- type: playTimeTracker
-  id: JobSalvageSpecialist
+# - type: playTimeTracker
+#  id: JobSalvageSpecialist
 
-- type: playTimeTracker
-  id: JobScientist
+# - type: playTimeTracker
+#  id: JobScientist
 
 - type: playTimeTracker
   id: JobSecurityCadet
@@ -144,3 +144,29 @@
 
 - type: playTimeTracker
   id: JobZookeeper
+
+#Mystic Roles
+#Alphabetical pwetty pwease
+- type: playTimeTracker
+  id: JobChiefSecurityOfficer
+
+- type: playTimeTracker
+  id: JobDirector
+
+- type: playTimeTracker
+  id: JobMasterArcanist
+
+- type: playTimeTracker
+  id: JobMysticFledgling
+
+- type: playTimeTracker
+  id: JobMysticResearcher
+
+- type: playTimeTracker
+  id: JobLogisticsSpecialist
+
+- type: playTimeTracker
+  id: JobOtherspaceExplorer
+
+- type: playTimeTracker
+  id: JobServiceLeader
