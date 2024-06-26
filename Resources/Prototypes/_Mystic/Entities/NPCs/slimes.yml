@@ -1,0 +1,520 @@
+﻿- type: entity
+  name: small anemo slime
+  id: SmallElementSlimeAnemo
+  parent: BaseMobAdultSlimes
+  description: a small slime full of the power of anemo! How cute!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: anemoSlime
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: anemoSlime
+      Dead:
+        Base: anemoSlime-dead
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/punch3.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Blunt: 5
+  - type: MeleeThrowOnHit
+    unanchorOnHit: true
+    enabled: true
+    lifetime: 0.15
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  name: small areno slime
+  id: SmallElementSlimeAreno
+  parent: BaseMobAdultSlimes
+  description: a small slime full of the power of areno! How cute!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: arenoSlime
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: arenoSlime
+      Dead:
+        Base: arenoSlime-dead
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/punch3.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Blunt: 5
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  name: small chrono slime
+  id: SmallElementSlimeChrono
+  parent: BaseMobAdultSlimes
+  description: a small slime full of the power of chrono! How cute!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: chronoSlime
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: chronoSlime
+      Dead:
+        Base: chronoSlime-dead
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/punch3.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Blunt: 5
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  name: small cryo slime
+  id: SmallElementSlimeCryo
+  parent: BaseMobAdultSlimes
+  description: a small slime full of the power of cryo! How cute!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: cryoSlime
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: cryoSlime
+      Dead:
+        Base: cryoSlime-dead
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/punch3.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Cold: 5
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  name: small dendro slime
+  id: SmallElementSlimeDendro
+  parent: BaseMobAdultSlimes
+  description: a small slime full of the power of dendro! How cute!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: dendroSlime
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: dendroSlime
+      Dead:
+        Base: dendroSlime-dead
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/punch3.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Poison: 2
+        Blunt: 3
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  name: small electro slime
+  id: SmallElementSlimeElectro
+  parent: BaseMobAdultSlimes
+  description: a small slime full of the power of electro! How cute!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: electroSlime
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: electroSlime
+      Dead:
+        Base: electroSlime-dead
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/punch3.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Shock: 5
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  name: small geo slime
+  id: SmallElementSlimeGeo
+  parent: BaseMobAdultSlimes
+  description: a small slime full of the power of geo! How cute!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: geoSlime
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: geoSlime
+      Dead:
+        Base: geoSlime-dead
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/punch3.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Blunt: 7
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  name: small helio slime
+  id: SmallElementSlimeHelio
+  parent: BaseMobAdultSlimes
+  description: a small slime full of the power of helio! How cute!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: helioSlime
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: helioSlime
+      Dead:
+        Base: helioSlime-dead
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/punch3.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Blunt: 5
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  name: small hydro slime
+  id: SmallElementSlimeHydro
+  parent: BaseMobAdultSlimes
+  description: a small slime full of the power of hydro! How cute!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: hydroSlime
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: hydroSlime
+      Dead:
+        Base: hydroSlime-dead
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/punch3.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Piercing: 5
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  name: small pondo slime
+  id: SmallElementSlimePondo
+  parent: BaseMobAdultSlimes
+  description: a small slime full of the power of pondo! How cute!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: pondoSlime
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: pondoSlime
+      Dead:
+        Base: pondoSlime-dead
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/punch3.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Blunt: 5
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  name: small pyro slime
+  id: SmallElementSlimePyro
+  parent: BaseMobAdultSlimes
+  description: a small slime full of the power of pyro! How cute!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: pyroSlime
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: pyroSlime
+      Dead:
+        Base: pyroSlime-dead
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/punch3.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Heat: 5
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
+
+- type: entity
+  name: small tenebro slime
+  id: SmallElementSlimeTenebro
+  parent: BaseMobAdultSlimes
+  description: a small slime full of the power of tenebro! How cute!
+  components:
+  - type: Sprite
+    drawdepth: Mobs
+    sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+    layers:
+    - map: [ "enum.DamageStateVisualLayers.Base" ]
+      state: tenebroSlime
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      60: Dead
+  - type: DamageStateVisuals
+    states:
+      Alive:
+        Base: tenebroSlime
+      Dead:
+        Base: tenebroSlime-dead
+  - type: MeleeWeapon
+    altDisarm: false
+    soundHit:
+      path: /Audio/Weapons/punch3.ogg
+    angle: 0
+    animation: WeaponArcPunch
+    damage:
+      types:
+        Blunt: 5
+  - type: MultiHandedItem
+  - type: Item
+    size: Large
+  - type: NPCRetaliation
+  - type: FactionException
+  - type: NpcFactionMember
+    factions:
+    - Passive
+  - type: HTN
+    rootTask:
+      task: SimpleHostileCompound
