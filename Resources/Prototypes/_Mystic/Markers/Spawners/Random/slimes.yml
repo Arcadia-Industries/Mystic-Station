@@ -1,0 +1,192 @@
+﻿- type: entity
+  id: SmallAnemoSpawner
+  name: small slime spawner
+  suffix: Anemo
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: anemoSlime
+  - type: RandomSpawner
+    prototypes:
+      - SmallElementSlimeAnemo
+
+- type: entity
+  id: SmallArenoSpawner
+  name: small slime spawner
+  suffix: Areno
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: arenoSlime
+  - type: RandomSpawner
+    prototypes:
+    - SmallElementSlimeAreno
+
+- type: entity
+  id: SmallChronoSpawner
+  name: small slime spawner
+  suffix: Chrono
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: chronoSlime
+  - type: RandomSpawner
+    prototypes:
+    - SmallElementSlimeChrono
+
+- type: entity
+  id: SmallCryoSpawner
+  name: small slime spawner
+  suffix: Cryo
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: cryoSlime
+  - type: RandomSpawner
+    prototypes:
+    - SmallElementSlimeCryo
+
+- type: entity
+  id: SmallDendroSpawner
+  name: small slime spawner
+  suffix: Dendro
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: dendroSlime
+  - type: RandomSpawner
+    prototypes:
+    - SmallElementSlimeDendro
+
+- type: entity
+  id: SmallElectroSpawner
+  name: small slime spawner
+  suffix: Electro
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: electroSlime
+  - type: RandomSpawner
+    prototypes:
+    - SmallElementSlimeElectro
+
+- type: entity
+  id: SmallGeoSpawner
+  name: small slime spawner
+  suffix: Geo
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: geoSlime
+  - type: RandomSpawner
+    prototypes:
+    - SmallElementSlimeGeo
+
+- type: entity
+  id: SmallHelioSpawner
+  name: small slime spawner
+  suffix: Helio
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: helioSlime
+  - type: RandomSpawner
+    prototypes:
+    - SmallElementSlimeHelio
+
+- type: entity
+  id: SmallHydroSpawner
+  name: small slime spawner
+  suffix: Hydro
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: hydroSlime
+  - type: RandomSpawner
+    prototypes:
+    - SmallElementSlimeHydro
+
+- type: entity
+  id: SmallPondoSpawner
+  name: small slime spawner
+  suffix: Pondo
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: pondoSlime
+  - type: RandomSpawner
+    prototypes:
+    - SmallElementSlimePondo
+
+- type: entity
+  id: SmallPyroSpawner
+  name: small slime spawner
+  suffix: Pyro
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: pyroSlime
+  - type: RandomSpawner
+    prototypes:
+    - SmallElementSlimePyro
+
+- type: entity
+  id: SmallTenebroSpawner
+  name: small slime spawner
+  suffix: Tenebro
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: tenebroSlime
+  - type: RandomSpawner
+    prototypes:
+    - SmallElementSlimeTenebro
+
+- type: entity
+  id: SmallRandomSpawner
+  name: small slime spawner
+  suffix: Random
+  components:
+  - type: Sprite
+    layers:
+    - state: red
+    - sprite: _Mystic/Mobs/elementSlimes/smallelementslimes.rsi
+      state: anemoSlime
+  - type: RandomSpawner
+    prototypes:
+    - SmallElementSlimeAnemo
+    - SmallElementSlimeAreno
+    - SmallElementSlimeChrono
+    - SmallElementSlimeCryo
+    - SmallElementSlimeDendro
+    - SmallElementSlimeElectro
+    - SmallElementSlimeGeo
+    - SmallElementSlimeHelio
+    - SmallElementSlimeHydro
+    - SmallElementSlimePondo
+    - SmallElementSlimePyro
+    - SmallElementSlimeTenebro
