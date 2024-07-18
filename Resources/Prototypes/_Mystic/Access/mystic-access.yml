@@ -1,0 +1,62 @@
+# Command
+- type: accessLevel
+  id: Director
+  name: id-card-access-level-director
+
+  # Engineering
+- type: accessLevel
+  id: OS-Technician
+  name: id-card-access-level-otherspace-tech
+
+  # Security
+- type: accessLevel
+  id: ChiefSecurityOfficer
+  name: id-card-access-level-otherspace-marine
+
+  # Arcaneology
+- type: accessLevel
+  id: Archivist
+  name: id-card-access-level-archivist
+- type: accessLevel
+  id: Divinologist
+  name: id-card-access-level-divinologist
+- type: accessLevel
+  id: MasterArcanist
+  name: id-card-access-level-ma
+- type: accessLevel
+  id: MysticFledgling
+  name: id-card-access-level-fledgling
+- type: accessLevel
+  id: MysticResearcher
+  name: id-card-access-level-researcher
+- type: accessLevel
+  id: OtherspaceArcanaut
+  name: id-card-access-level-otherspace-arcanaut
+
+  # Logistics
+- type: accessLevel
+  id: LogisticsSpecialist
+  name: id-card-access-level-logispec
+
+  # Medical
+- type: accessLevel
+  id: OtherspaceParamedic
+  name: id-card-access-level-otherspace-paramedic
+  # Service
+- type: accessLevel
+  id: ServiceLeader
+  name: id-card-access-level-sl
+
+- type: accessLevel
+  id: ResearchDirector
+  name: id-card-access-level-research-director
+
+- type: accessLevel
+  id: Research
+  name: id-card-access-level-research
+
+- type: accessGroup
+  id: Research
+  tags:
+  - ResearchDirector
+  - Research
