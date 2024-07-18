@@ -9,8 +9,7 @@ id-card-access-level-otherspace-marine = OS Marine
 id-card-access-level-archivist = Archivist
 id-card-access-level-divinologist = Divinologist
 id-card-access-level-ma = Master Arcanist
-id-card-access-level-fledgling = Mystic Fledgling
-id-card-access-level-researcher = Mystic Researcher
+id-card-access-level-arcaneology = Arcaneology
 id-card-access-level-otherspace-arcanaut = OS Arcanaut
 
 # Logistics

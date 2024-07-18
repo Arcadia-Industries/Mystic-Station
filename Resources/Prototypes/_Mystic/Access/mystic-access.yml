@@ -3,15 +3,45 @@
   id: Director
   name: id-card-access-level-director
 
+- type: accessGroup
+  id: Command
+  tags:
+  - Command
+  - Director
+  - Cryogenics
+
   # Engineering
 - type: accessLevel
   id: OS-Technician
   name: id-card-access-level-otherspace-tech
 
+- type: accessGroup
+  id: Engineering
+  tags:
+  - ChiefEngineer
+  - Engineering
+  - Atmospherics
+  - OS-Technician
+
   # Security
 - type: accessLevel
   id: ChiefSecurityOfficer
   name: id-card-access-level-otherspace-marine
+
+- type: accessLevel
+  id: OS-Marine
+  name: id-card-access-level-otherspace-marine
+
+- type: accessGroup
+  id: Security
+  tags:
+  - ChiefSecurityOfficer
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  - Cryogenics
+  - OtherspaceMarine
 
   # Arcaneology
 - type: accessLevel
@@ -24,39 +54,58 @@
   id: MasterArcanist
   name: id-card-access-level-ma
 - type: accessLevel
-  id: MysticFledgling
-  name: id-card-access-level-fledgling
-- type: accessLevel
   id: MysticResearcher
-  name: id-card-access-level-researcher
+  name: id-card-access-level-arcaneology
 - type: accessLevel
-  id: OtherspaceArcanaut
+  id: OS-Arcanaut
   name: id-card-access-level-otherspace-arcanaut
+
+- type: accessGroup
+  id: Arcaneology
+  tags:
+  - Archivist
+  - Divinologist
+  - MasterArcanist
+  - MysticResearcher
+  - OtherspaceArcanaut
 
   # Logistics
 - type: accessLevel
-  id: LogisticsSpecialist
+  id: Logistics
   name: id-card-access-level-logispec
+
+- type: accessGroup
+  id: Logistics
+  tags:
+  - Logistics
+  - Quartermaster
 
   # Medical
 - type: accessLevel
-  id: OtherspaceParamedic
+  id: OS-Paramedic
   name: id-card-access-level-otherspace-paramedic
+
+- type: accessGroup
+  id: Medical
+  tags:
+  - ChiefMedicalOfficer
+  - Medical
+  - Chemistry
+  - OS-Paramedic
+
   # Service
 - type: accessLevel
   id: ServiceLeader
   name: id-card-access-level-sl
 
-- type: accessLevel
-  id: ResearchDirector
-  name: id-card-access-level-research-director
-
-- type: accessLevel
-  id: Research
-  name: id-card-access-level-research
-
 - type: accessGroup
-  id: Research
+  id: Service
   tags:
-  - ResearchDirector
-  - Research
+  - ServiceLeader
+  - Bar
+  - Kitchen
+  - Hydroponics
+  - Service
+  - Janitor
+  - Theatre
+  - Lawyer
