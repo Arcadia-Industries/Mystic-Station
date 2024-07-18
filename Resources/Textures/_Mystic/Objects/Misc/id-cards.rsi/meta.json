@@ -33,6 +33,15 @@
     },
     {
       "name": "id-service-leader"
+    },
+    {
+      "name": "default"
+    },
+    {
+      "name": "silver"
+    },
+    {
+      "name": "gold"
     }
   ]
 }
