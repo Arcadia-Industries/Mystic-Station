@@ -1,5 +1,5 @@
 # Command
-id-card-access-level-director = Captain
+id-card-access-level-director = Director
 # Engineering
 id-card-access-level-otherspace-tech = OS Technician
 # Security

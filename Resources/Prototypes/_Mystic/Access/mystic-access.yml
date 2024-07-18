@@ -26,7 +26,7 @@
   # Security
 - type: accessLevel
   id: ChiefSecurityOfficer
-  name: id-card-access-level-otherspace-marine
+  name: id-card-access-level-cso
 
 - type: accessLevel
   id: OS-Marine
@@ -47,15 +47,19 @@
 - type: accessLevel
   id: Archivist
   name: id-card-access-level-archivist
+
 - type: accessLevel
   id: Divinologist
   name: id-card-access-level-divinologist
+
 - type: accessLevel
   id: MasterArcanist
   name: id-card-access-level-ma
+
 - type: accessLevel
   id: MysticResearcher
   name: id-card-access-level-arcaneology
+
 - type: accessLevel
   id: OS-Arcanaut
   name: id-card-access-level-otherspace-arcanaut
