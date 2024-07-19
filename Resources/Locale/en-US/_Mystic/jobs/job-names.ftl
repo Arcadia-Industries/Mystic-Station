@@ -51,14 +51,19 @@ job-name-visitor = Visitor
 # job-name-salvagespec = Salvage specialist
 # job-name-cargotech = Cargo Technician
 
+job-name-archivist = Archivist
 job-name-cso = Chief Security Officer
 job-name-director = Director
+job-name-divinologist = Divinologist
 job-name-fledgling = Mystic Fledgling
-job-name-sl = Service Leader
 job-name-logispec = Logistics Specialist
 job-name-ma = Master Arcanist
-job-name-explorer = Otherspace Explorer
 job-name-researcher = Mystic Researcher
+job-name-os-arcanaut = Otherspace Arcanaut
+job-name-os-marine = Otherspace Marine
+job-name-os-paramedic = Otherspace Paramedic
+job-name-os-tech = Otherspace Technician
+job-name-sl = Service Leader
 
 # Role timers - Make these alphabetical or I cut you
 JobAtmosphericTechnician = Atmospheric Technician
@@ -115,11 +120,16 @@ JobZookeeper = Zookeeper
 # JobSalvageSpecialist = Salvage Specialist
 # JobScientist = Scientist
 
+JobArchivist = Archivist
 JobChiefSecurityOfficer = Chief of Security
 JobDirector = Director
+JobDivinologist = Divinologist
 JobFledgling = Mystic Fledgling
-JobHeadOfService = Head of Service
 JobLogisticsSpecialist = Logistics Specialist
 JobMasterArcanist = Master Arcanist
-JobOtherspaceExplorer = Otherspace Explorer
 JobMysticResearcher = Mystic Researcher
+JobOSArcanaut = Otherspace Arcanaut
+JobOSTech = Otherspace Technician
+JobOSMarine = Otherspace Marine
+JobOSParamedic = Otherspace Paramedic
+JobServiceLeader = ServiceLeader

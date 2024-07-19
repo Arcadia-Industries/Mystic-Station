@@ -11,11 +11,10 @@
   icon: "JobIconScientist"
   supervisors: job-supervisors-ma
   access:
-  - Research
   - Maintenance
+  - MysticResearcher
 
 - type: startingGear
   id: ResearcherGear
   equipment:
     ears: ClothingHeadsetScience
-

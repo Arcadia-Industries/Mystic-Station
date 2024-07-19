@@ -1,0 +1,29 @@
+- type: job
+  id: OS-Tech
+  name: job-name-os-tech
+  description: job-description-os-tech
+  playTimeTracker: JobOSTech
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 14400 #4 hrs
+  startingGear: OS-TechGear
+  icon: "JobIconStationEngineer"
+  supervisors: job-supervisors-ce
+  access:
+  - Maintenance
+  - Engineering
+  - OS-Tech
+  - External
+  extendedAccess:
+  - Atmospherics
+
+- type: startingGear
+  id: OS-TechGear
+  equipment:
+    eyes: ClothingEyesGlassesMeson
+    belt: ClothingBeltUtilityEngineering
+    ears: ClothingHeadsetEngineering
+  #storage:
+    #back:
+    #- Stuff

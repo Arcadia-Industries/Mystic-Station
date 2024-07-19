@@ -15,8 +15,7 @@
   supervisors: job-supervisors-director
   canBeAntag: false
   access:
-  - Cargo
-  - Salvage
+  - Logistics
   - Quartermaster
   - Maintenance
   - Command

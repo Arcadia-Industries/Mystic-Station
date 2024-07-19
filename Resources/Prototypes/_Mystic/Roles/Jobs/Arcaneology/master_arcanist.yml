@@ -16,10 +16,10 @@
   supervisors: job-supervisors-director
   canBeAntag: false
   access:
-  - Research
+  - MysticResearcher
   - Command
   - Maintenance
-  - ResearchDirector
+  - MasterArcanist
   - Brig
   - Cryogenics
   special:

@@ -1,0 +1,20 @@
+- type: job
+  id: OS-Arcanaut
+  name: job-name-os-arcanaut
+  description: job-description-os-arcanaut
+  playTimeTracker: JobOSArcanaut
+  icon: "JobIconShaftMiner"
+  startingGear: OS-ArcanautGear
+  supervisors: job-supervisors-ma
+  access:
+  - OS-Arcanaut
+  - MysticResearcher
+  - Maintenance
+  - External
+
+- type: startingGear
+  id: OS-ArcanautGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+    id: SalvagePDA
+    ears: ClothingHeadsetCargo

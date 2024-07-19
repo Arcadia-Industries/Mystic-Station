@@ -7,10 +7,8 @@
   icon: "JobIconCargoTechnician"
   supervisors: job-supervisors-qm
   access:
-  - Cargo
+  - Logistics
   - Maintenance
-  extendedAccess:
-  - Salvage
 
 - type: startingGear
   id: LogisticsSpecialistGear

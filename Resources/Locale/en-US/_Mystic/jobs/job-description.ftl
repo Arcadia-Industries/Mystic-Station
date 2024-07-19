@@ -48,11 +48,16 @@ job-description-zookeeper = Put on a joyful display of cute animals and space ca
 #job-description-hop = Handle access reassignment fairly using your ID console, manage the service department, and keep Ian safe.
 #job-description-hos = Manage your security force and keep them efficient, quell dissent, and keep the other heads of staff safe.
 
+job-description-archivist = Study the recovered texts, find coin, knowledge, or strength in them.
 job-description-cso = Manage your security force and keep them efficient, quell dissent, and keep the other heads of staff safe.
 job-description-director = Keep the station running, delegate work to the other heads of staff, and exert your will.
+job-description-divinologist = Divinologist
 job-description-fledgling = Learn the basics of Arcaneology
 job-description-sl = Handle access reassignment fairly using your ID console, manage the service department, and keep Ian safe.
 job-description-logispec = Produce sellable parts, sell those parts, buy goods, gamble.
 job-description-ma = Manage the Arcaneology department, unlock the secrets of otherspace and infuse them with technology.
-job-description-explorer = Explore the planets of Otherspace, fight monsters, extract material, survive.
 job-description-researcher = Research the magic of Otherspace, unlock new technologies, and improve the station.
+job-description-os-arcanaut = Explore the planets of Otherspace, gather resources, support the rest of the team
+job-description-os-marine = Explore the planets of Otherspace, fight the biggest monsters, and get killed by friendly fire.
+job-description-os-paramedic = Explore the planets of Otherspace, treat the wounded if they arent medi-vac'd to the shuttle
+job-description-os-tech = Explore the planets of Otherspace, dismantle the ruins you find, and create cheap FOBs.
