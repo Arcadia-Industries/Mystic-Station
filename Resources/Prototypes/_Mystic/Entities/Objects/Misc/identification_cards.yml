@@ -48,14 +48,14 @@
     stealGroup: CaptainIDCard
 
 # Engineering
-# - type: entity
-#  parent: IDCardStandardMystic
-#  id: OS-TechnicianCard
-#  name: OS-Technician card
-#  components:
-#  - type: Sprite
-#    layers:
-#    - state: default
-#    - state: id-otherspace-technician
-#  - type: PresetIdCard
-#    job: OS-Technician
+- type: entity
+  parent: IDCardStandardMystic
+  id: OS-TechnicianCard
+  name: OS-Technician card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: id-otherspace-technician
+  - type: PresetIdCard
+    job: OS-Technician

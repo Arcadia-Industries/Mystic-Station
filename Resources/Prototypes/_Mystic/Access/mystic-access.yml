@@ -10,10 +10,50 @@
   - Director
   - Cryogenics
 
+- type: accessGroup
+  id: AllAccess
+  tags:
+  - EmergencyShuttleRepealAll
+  - Director
+  - ServiceLeader
+  - ChiefEngineer
+  - ChiefMedicalOfficer
+  - ChiefSecurityOfficer
+  - MasterArcanist
+  - Command
+  - Cryogenics
+  - Security
+  - Detective
+  - Armory
+  - Brig
+  - Lawyer
+  - Engineering
+  - Medical
+  - Quartermaster
+  - Salvage
+  - Logistics
+  - Arcaneology
+  - Service
+  - Maintenance
+  - External
+  - Janitor
+  - Theatre
+  - Bar
+  - Chemistry
+  - Kitchen
+  - Divinologist
+  - Hydroponics
+  - Atmospherics
+  - Archivist
+  - OS-Arcanaut
+  - OS-Marine
+  - OS-Paramedic
+  - OS-Tech
+
   # Engineering
 - type: accessLevel
-  id: OS-Technician
-  name: id-card-access-level-otherspace-tech
+  id: OS-Tech
+  name: id-card-access-level-os-tech
 
 - type: accessGroup
   id: Engineering
@@ -21,7 +61,7 @@
   - ChiefEngineer
   - Engineering
   - Atmospherics
-  - OS-Technician
+  - OS-Tech
 
   # Security
 - type: accessLevel
@@ -30,7 +70,7 @@
 
 - type: accessLevel
   id: OS-Marine
-  name: id-card-access-level-otherspace-marine
+  name: id-card-access-level-os-marine
 
 - type: accessGroup
   id: Security
@@ -57,12 +97,12 @@
   name: id-card-access-level-ma
 
 - type: accessLevel
-  id: MysticResearcher
+  id: Arcaneology
   name: id-card-access-level-arcaneology
 
 - type: accessLevel
   id: OS-Arcanaut
-  name: id-card-access-level-otherspace-arcanaut
+  name: id-card-access-level-os-arcanaut
 
 - type: accessGroup
   id: Arcaneology
@@ -70,8 +110,8 @@
   - Archivist
   - Divinologist
   - MasterArcanist
-  - MysticResearcher
-  - OtherspaceArcanaut
+  - Arcaneology
+  - OS-Arcanaut
 
   # Logistics
 - type: accessLevel
@@ -87,7 +127,7 @@
   # Medical
 - type: accessLevel
   id: OS-Paramedic
-  name: id-card-access-level-otherspace-paramedic
+  name: id-card-access-level-os-paramedic
 
 - type: accessGroup
   id: Medical
