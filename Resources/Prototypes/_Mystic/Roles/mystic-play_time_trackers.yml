@@ -171,6 +171,9 @@
 - type: playTimeTracker
   id: JobLogisticsSpecialist
 
+- type: playTimeTracker
+  id: JobMysticQuartermaster
+
 - type: playtimeTracker
   id: JobOSArcanaut
 

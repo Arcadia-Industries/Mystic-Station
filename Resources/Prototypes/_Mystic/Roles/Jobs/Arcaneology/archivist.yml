@@ -8,7 +8,7 @@
   supervisors: job-supervisors-ma
   access:
   - Archivist
-  - MysticResearcher
+  - Arcaneology
   - Maintenance
 
 - type: startingGear

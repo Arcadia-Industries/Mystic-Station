@@ -13,7 +13,7 @@
   supervisors: job-supervisors-arcaneology
   canBeAntag: false
   access:
-  - MysticResearcher
+  - Arcaneology
   - Maintenance
 
 - type: startingGear

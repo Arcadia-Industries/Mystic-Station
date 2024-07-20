@@ -16,7 +16,7 @@ id-card-access-level-arcaneology = Arcaneology
 id-card-access-level-os-arcanaut = OS Arcanaut
 
 # Logistics
-id-card-access-level-logispec = Logistics Specialist
+id-card-access-level-logispec = Logistics
 
 # Medical
 id-card-access-level-os-paramedic = OS Paramedic

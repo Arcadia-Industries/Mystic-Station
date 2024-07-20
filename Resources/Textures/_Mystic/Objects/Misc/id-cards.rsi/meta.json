@@ -42,6 +42,26 @@
     },
     {
       "name": "gold"
+    },
+    {
+      "name": "gold-inhand-right",
+      "directions": 4
+    },
+    {
+       "name": "default-inhand-left",
+       "directions": 4
+    },
+    {
+       "name": "default-inhand-right",
+       "directions": 4
+    },
+    {
+        "name": "silver-inhand-left",
+        "directions": 4
+    },
+    {
+        "name": "silver-inhand-right",
+        "directions": 4
     }
   ]
 }

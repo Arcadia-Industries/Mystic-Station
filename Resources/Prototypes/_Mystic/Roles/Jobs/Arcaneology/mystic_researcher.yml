@@ -12,7 +12,7 @@
   supervisors: job-supervisors-ma
   access:
   - Maintenance
-  - MysticResearcher
+  - Arcaneology
 
 - type: startingGear
   id: ResearcherGear

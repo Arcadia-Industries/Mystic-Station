@@ -14,6 +14,7 @@
   supervisors: job-supervisors-cmo
   access:
   - Medical
+  - OS-Paramedic
   - Maintenance
   extendedAccess:
   - Chemistry

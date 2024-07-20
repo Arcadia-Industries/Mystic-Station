@@ -1,8 +1,8 @@
 - type: job
-  id: Quartermaster
+  id: MysticQuartermaster
   name: job-name-qm
   description: job-description-qm
-  playTimeTracker: JobQuartermaster
+  playTimeTracker: JobMysticQuartermaster
   requirements:
     - !type:RoleTimeRequirement
       role: JobLogisticsSpecialist
