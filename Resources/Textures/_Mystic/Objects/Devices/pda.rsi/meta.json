@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Made by AjexRose for Mystic Station",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "pda-divinologist"
+    },
+    {
+      "name": "pda-os-arcanaut"
+    },
+    {
+      "name": "pda-os-marine"
+    },
+    {
+      "name": "pda-os-paramedic"
+    },
+    {
+      "name": "pda-os-tech"
+    },
+    {
+      "name": "pda-archivist"
+    },
+    {
+      "name": "equipped-BELT"
+    },
+    {
+      "name": "equipped-IDCARD"
+    },
+    {
+      "name": "id_overlay"
+    },
+    {
+      "name": "inhand-left"
+    },
+    {
+      "name": "inhand-right"
+    },
+    {
+      "name": "insert_overlay"
+    },
+    {
+      "name": "light_overlay"
+    }
+  ]
+}

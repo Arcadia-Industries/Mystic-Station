@@ -51,7 +51,7 @@
 - type: entity
   parent: IDCardStandardMystic
   id: OS-TechIDCard
-  name: OS-Technician card
+  name: OS-Technician ID card
   components:
   - type: Sprite
     layers:
@@ -78,7 +78,7 @@
 - type: entity
   parent: IDCardStandardMystic
   id: OS-MarineIDCard
-  name: OS-Marine card
+  name: OS-Marine ID card
   components:
   - type: Sprite
     layers:
@@ -106,7 +106,7 @@
   name: mystic researcher ID card
   components:
   - type: PresetIdCard
-    job: MysticFledgling
+    job: MysticResearcher
   - type: Sprite
     layers:
     - state: default

@@ -1,0 +1,251 @@
+# Command
+- type: entity
+  parent: CaptainPDA
+  id: DirectorPDA
+  name: Director PDA
+  description: Surprisingly no different from your PDA.
+  components:
+  - type: Pda
+    id: DirectorIDCard
+    state: pda-captain
+    penSlot:
+      startingItem: PenCap
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#7C5D00"
+  - type: Icon
+    state: pda-captain
+
+# Engineering
+- type: entity
+  parent: BasePDA
+  id: OSTechPDA
+  name: OS-Technician PDA
+  description: Rugged and well-worn.
+  components:
+  - type: Sprite
+    sprite: _Mystic/Objects/Devices/pda.rsi
+  - type: Pda
+    id: OS-TechIDCard
+    state: pda-os-tech
+  - type: PdaBorderColor
+    borderColor: "#333333"
+    accentHColor: "#949137"
+    accentVColor: "#949137"
+  - type: Icon
+    sprite: _Mystic/Objects/Devices/pda.rsi
+    state: pda-os-tech
+
+#Security
+- type: entity
+  parent: BasePDA
+  id: CSOPDA
+  name: chief security officer PDA
+  description: Whosoever bears this PDA is the law.
+  components:
+  - type: Pda
+    id: CSOIDCard
+    state: pda-hos
+  - type: PdaBorderColor
+    borderColor: "#A32D26"
+    accentHColor: "#447987"
+  - type: Icon
+    state: pda-hos
+
+- type: entity
+  parent: BasePDA
+  id: OSMarinePDA
+  name: OS-Marine PDA
+  description: Rugged and well-worn.
+  components:
+  - type: Sprite
+    sprite: _Mystic/Objects/Devices/pda.rsi
+  - type: Pda
+    id: OS-MarineIDCard
+    state: pda-os-marine
+  - type: PdaBorderColor
+    borderColor: "#333333"
+    accentHColor: "#A32D26"
+    accentVColor: "#A32D26"
+  - type: Icon
+    sprite: _Mystic/Objects/Devices/pda.rsi
+    state: pda-os-marine
+
+#Arcaneology
+- type: entity
+  parent: BasePDA
+  id: ArchivistPDA
+  name: archivist PDA
+  description: A PDA with an additional side module for reading results and translating. Fancy.
+  components:
+  - type: Sprite
+    sprite: _Mystic/Objects/Devices/pda.rsi
+  - type: Pda
+    id: ArchivistIDCard
+    state: pda-archivist
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentHColor: "#8900c9"
+    accentVColor: "#8900c9"
+  - type: Icon
+    sprite: _Mystic/Objects/Devices/pda.rsi
+    state: pda-archivist
+
+- type: entity
+  parent: BasePDA
+  id: DivinologistPDA
+  name: divinologist PDA
+  description: A PDA with small golden runes, each embueing minor protection against something you yet realize.
+  components:
+  - type: Sprite
+    sprite: _Mystic/Objects/Devices/pda.rsi
+  - type: Pda
+    id: DivinologistIDCard
+    state: pda-divinologist
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentHColor: "#949137"
+    accentVColor: "#8900c9"
+  - type: Icon
+    sprite: _Mystic/Objects/Devices/pda.rsi
+    state: pda-divinologist
+
+- type: entity
+  parent: BasePDA
+  id: MysticFledglingPDA
+  name: mystic fledgling PDA
+  description: Why isn't it purple?
+  components:
+  - type: Pda
+    id: MysticFledglingIDCard
+    state: pda-internsci
+  - type: PdaBorderColor
+    borderColor: "#717059"
+    accentVColor: "#8900c9"
+  - type: Icon
+    state: pda-internsci
+
+- type: entity
+  parent: BasePDA
+  id: MysticResearcherPDA
+  name: mystic researcher PDA
+  description: It's covered with an unknown crystalline sheen.
+  components:
+  - type: Pda
+    id: MysticResearcherIDCard
+    state: pda-science
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentVColor: "#8900c9"
+  - type: Icon
+    state: pda-science
+
+- type: entity
+  parent: BasePDA
+  id: MasterArcanistPDA
+  name: master arcanist PDA
+  description: It appears surprisingly ordinary.
+  components:
+  - type: Pda
+    id: MasterArcanistIDCard
+    state: pda-rd
+  - type: PdaBorderColor
+    borderColor: "#d7d7d0"
+    accentHColor: "#447987"
+    accentVColor: "#8900c9"
+  - type: Icon
+    state: pda-rd
+
+- type: entity
+  parent: BasePDA
+  id: OSArcanautPDA
+  name: OS-Arcanaut PDA
+  description: Rugged and well-worn.
+  components:
+  - type: Sprite
+    sprite: _Mystic/Objects/Devices/pda.rsi
+  - type: Pda
+    id: OSArcanautIDCard
+    state: pda-os-arcanaut
+  - type: PdaBorderColor
+    borderColor: "#333333"
+    accentHColor: "#8900c9"
+    accentVColor: "#8900c9"
+  - type: Icon
+    sprite: _Mystic/Objects/Devices/pda.rsi
+    state: pda-os-arcanaut
+
+#Logistics
+- type: entity
+  parent: BasePDA
+  id: LogisticsPDA
+  name: logistics PDA
+  description: PDA for the guys that make gizmos to order pizza
+  components:
+  - type: Pda
+    id: LogisticsIDCard
+    state: pda-cargo
+  - type: PdaBorderColor
+    borderColor: "#e39751"
+  - type: Icon
+    state: pda-cargo
+
+- type: entity
+  parent: BasePDA
+  id: MysticQuartermasterPDA
+  name: logistics quartermaster PDA
+  description: PDA for the guy that tells others how to make gizmos to order guns.
+  components:
+  - type: Pda
+    id: MysticQuartermasterIDCard
+    state: pda-qm
+  - type: PdaBorderColor
+    borderColor: "#e39751"
+    accentVColor: "#a23e3e"
+  - type: Icon
+    state: pda-qm
+
+# Medical
+- type: entity
+  parent: ParamedicPDA
+  id: OSParamedicPDA
+  name: OS-Paramedic PDA
+  description: Rugged and well-worn.
+  components:
+  - type: Sprite
+    sprite: _Mystic/Objects/Devices/pda.rsi
+  - type: Pda
+    id: OSParamedicIDCard
+    state: pda-os-paramedic
+  - type: PdaBorderColor
+    borderColor: "#333333"
+    accentHColor: "#2a4b5b"
+    accentVColor: "#2a4b5b"
+  - type: Icon
+    sprite: _Mystic/Objects/Devices/pda.rsi
+    state: pda-os-paramedic
+
+# Service
+- type: entity
+  parent: BasePDA
+  id: SLPDA
+  name: service leader PDA
+  description: Looks like it's been chewed on.
+  components:
+  - type: Pda
+    id: SLIDCard
+    state: pda-hop
+    penSlot:
+      startingItem: PenHop
+      priority: -1
+      whitelist:
+        tags:
+        - Write
+  - type: PdaBorderColor
+    borderColor: "#789876"
+    accentHColor: "#447987"
+  - type: Icon
+    state: pda-hop
