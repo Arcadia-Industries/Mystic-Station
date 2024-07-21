@@ -8,7 +8,7 @@
       department: Arcaneology
       time: 14400 #4 hrs
   startingGear: ResearcherGear
-  icon: "JobIconScientist"
+  icon: "JobIconMysticResearcher"
   supervisors: job-supervisors-ma
   access:
   - Maintenance
@@ -18,3 +18,4 @@
   id: ResearcherGear
   equipment:
     ears: ClothingHeadsetScience
+    id: MysticResearcher

@@ -4,11 +4,11 @@
   description: job-description-divinologist
   playTimeTracker: JobDivinologist
   startingGear: ChaplainGear
-  icon: "JobIconChaplain"
+  icon: "JobIconDivinologist"
   supervisors: job-supervisors-ma
   access:
   - Divinologist
-  - MysticResearcher
+  - Arcaneology
   - Maintenance
   special:
   - !type:AddComponentSpecial
@@ -19,7 +19,7 @@
   id: ChaplainGear
   equipment:
     shoes: ClothingShoesColorBlack
-    id: ChaplainPDA
+    id: DivinologistPDA
     ears: ClothingHeadsetService
   storage:
     back:

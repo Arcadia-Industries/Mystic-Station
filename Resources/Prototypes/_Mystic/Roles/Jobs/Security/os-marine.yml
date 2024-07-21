@@ -8,7 +8,7 @@
       department: Security
       time: 36000 #10 hrs
   startingGear: OS-MarineGear
-  icon: "JobIconSecurityOfficer"
+  icon: "JobIconOS-Marine"
   supervisors: job-supervisors-cso
   canBeAntag: false
   access:
@@ -26,6 +26,7 @@
     eyes: ClothingEyesGlassesSecurity
     ears: ClothingHeadsetSecurity
     pocket1: WeaponPistolMk58
+    id: OSMarinePDA
   storage:
     back:
     - Flash

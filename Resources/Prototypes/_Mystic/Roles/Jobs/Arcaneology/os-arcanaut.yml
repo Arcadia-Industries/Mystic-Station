@@ -3,7 +3,7 @@
   name: job-name-os-arcanaut
   description: job-description-os-arcanaut
   playTimeTracker: JobOSArcanaut
-  icon: "JobIconShaftMiner"
+  icon: "JobIconOS-Arcanaut"
   startingGear: OS-ArcanautGear
   supervisors: job-supervisors-ma
   access:
@@ -16,5 +16,5 @@
   id: OS-ArcanautGear
   equipment:
     jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
-    id: SalvagePDA
+    id: OSArcanautPDA
     ears: ClothingHeadsetCargo

@@ -22,7 +22,7 @@
   supervisors: job-supervisors-director
   canBeAntag: false
   access:
-  - HeadOfSecurity
+  - ChiefSecurityOfficer
   - Command
   - Brig
   - Security
@@ -43,7 +43,7 @@
   id: CSOGear
   equipment:
     eyes: ClothingEyesGlassesSecurity
-    id: HoSPDA
+    id: CSOPDA
     gloves: ClothingHandsGlovesCombat
     ears: ClothingHeadsetAltSecurity
     pocket1: WeaponPistolMk58

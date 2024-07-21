@@ -18,7 +18,7 @@
       time: 36000 # 10 hours
   weight: 20
   startingGear: SLGear
-  icon: "JobIconHeadOfPersonnel"
+  icon: "JobIconServiceLeader"
   requireAdminNotify: true
   supervisors: job-supervisors-director
   canBeAntag: false
@@ -44,7 +44,7 @@
   id: SLGear
   equipment:
     shoes: ClothingShoesColorBrown
-    id: HoPPDA
+    id: SLPDA
     gloves: ClothingHandsGlovesHop
     ears: ClothingHeadsetAltCommand
     belt: BoxFolderClipboard

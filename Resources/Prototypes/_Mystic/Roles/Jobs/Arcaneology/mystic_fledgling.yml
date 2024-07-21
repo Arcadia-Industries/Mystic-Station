@@ -20,6 +20,6 @@
   id: FledglingGear
   equipment:
     shoes: ClothingShoesColorWhite
-    id: ResearchAssistantPDA
+    id: MysticFledglingPDA
     ears: ClothingHeadsetScience
     pocket2: BookScientistsGuidebook

@@ -4,7 +4,7 @@
   description: job-description-archivist
   playTimeTracker: JobArchivist
   startingGear: ArchivistGear
-  icon: "JobIconLibrarian"
+  icon: "JobIconArchivist"
   supervisors: job-supervisors-ma
   access:
   - Archivist
@@ -15,7 +15,7 @@
   id: ArchivistGear
   equipment:
     shoes: ClothingShoesBootsLaceup
-    id: LibrarianPDA
+    id: ArchivistPDA
     ears: ClothingHeadsetService
     pocket1: d10Dice
     pocket2: HandLabeler # for making named bestsellers

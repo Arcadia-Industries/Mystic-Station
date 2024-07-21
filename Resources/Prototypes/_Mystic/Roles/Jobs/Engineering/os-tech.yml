@@ -8,7 +8,7 @@
       department: Engineering
       time: 14400 #4 hrs
   startingGear: OS-TechGear
-  icon: "JobIconStationEngineer"
+  icon: "JobIconOS-Tech"
   supervisors: job-supervisors-ce
   access:
   - Maintenance
@@ -24,6 +24,7 @@
     eyes: ClothingEyesGlassesMeson
     belt: ClothingBeltUtilityEngineering
     ears: ClothingHeadsetEngineering
+    id: OSTechPDA
   #storage:
     #back:
     #- Stuff
