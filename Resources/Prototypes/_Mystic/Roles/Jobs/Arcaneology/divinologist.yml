@@ -3,7 +3,7 @@
   name: job-name-divinologist
   description: job-description-divinologist
   playTimeTracker: JobDivinologist
-  startingGear: ChaplainGear
+  startingGear: DivinologistGear
   icon: "JobIconDivinologist"
   supervisors: job-supervisors-ma
   access:
@@ -16,7 +16,7 @@
     - type: BibleUser #Lets them heal with bibles
 
 - type: startingGear
-  id: ChaplainGear
+  id: DivinologistGear
   equipment:
     shoes: ClothingShoesColorBlack
     id: DivinologistPDA

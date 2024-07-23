@@ -147,7 +147,7 @@
 
 #Mystic Roles
 #Alphabetical pwetty pwease
-- type: playtimeTracker
+- type: playTimeTracker
   id: JobArchivist
 
 - type: playTimeTracker
@@ -156,7 +156,7 @@
 - type: playTimeTracker
   id: JobDirector
 
-- type: playtimeTracker
+- type: playTimeTracker
   id: JobDivinologist
 
 - type: playTimeTracker
@@ -174,16 +174,16 @@
 - type: playTimeTracker
   id: JobMysticQuartermaster
 
-- type: playtimeTracker
+- type: playTimeTracker
   id: JobOSArcanaut
 
-- type: playtimeTracker
+- type: playTimeTracker
   id: JobOSMarine
 
-- type: playtimeTracker
+- type: playTimeTracker
   id: JobOSParamedic
 
-- type: playtimeTracker
+- type: playTimeTracker
   id: JobOSTech
 
 - type: playTimeTracker
