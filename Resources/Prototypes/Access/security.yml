@@ -1,6 +1,6 @@
-- type: accessLevel
-  id: HeadOfSecurity
-  name: id-card-access-level-head-of-security
+#- type: accessLevel
+#  id: HeadOfSecurity
+#  name: id-card-access-level-head-of-security
 
 - type: accessLevel
   id: Security

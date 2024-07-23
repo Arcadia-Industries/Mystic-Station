@@ -1,0 +1,27 @@
+- type: job
+  id: Divinologist
+  name: job-name-divinologist
+  description: job-description-divinologist
+  playTimeTracker: JobDivinologist
+  startingGear: DivinologistGear
+  icon: "JobIconDivinologist"
+  supervisors: job-supervisors-ma
+  access:
+  - Divinologist
+  - Arcaneology
+  - Maintenance
+  special:
+  - !type:AddComponentSpecial
+    components:
+    - type: BibleUser #Lets them heal with bibles
+
+- type: startingGear
+  id: DivinologistGear
+  equipment:
+    shoes: ClothingShoesColorBlack
+    id: DivinologistPDA
+    ears: ClothingHeadsetService
+  storage:
+    back:
+    - Bible
+    - RubberStampChaplain

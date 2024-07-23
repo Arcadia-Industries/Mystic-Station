@@ -22,23 +22,23 @@
   id: Theatre
   name: id-card-access-level-theatre
 
-- type: accessLevel
-  id: Chapel
-  name: id-card-access-level-chapel
+# - type: accessLevel
+#  id: Chapel
+#  name: id-card-access-level-chapel
 
 - type: accessLevel
   id: Lawyer
   name: id-card-access-level-lawyer
 
-- type: accessGroup
-  id: Service
-  tags:
-  - HeadOfPersonnel
-  - Bar
-  - Kitchen
-  - Hydroponics
-  - Service
-  - Janitor
-  - Theatre
-  - Chapel
-  - Lawyer
+#- type: accessGroup
+#  id: Service
+#  tags:
+#  - HeadOfPersonnel
+#  - Bar
+#  - Kitchen
+#  - Hydroponics
+#  - Service
+#  - Janitor
+#  - Theatre
+#  - Chapel
+#  - Lawyer

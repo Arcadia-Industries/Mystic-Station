@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Original from Space Station 14, modified by AjexRose for Mystic Station",
+  "size": {
+    "x": 8,
+    "y": 8
+  },
+  "states": [
+    {
+      "name": "Archivist"
+    },
+    {
+      "name": "Divinologist"
+    },
+    {
+      "name": "MasterArcanist"
+    },
+    {
+      "name": "MysticResearcher"
+    },
+    {
+      "name": "OtherspaceArcanaut"
+    },
+    {
+      "name": "OtherspaceMarine"
+    },
+    {
+      "name": "OtherspaceParamedic"
+    },
+    {
+      "name": "OtherspaceTechnician"
+    },
+    {
+      "name": "ServiceLeader"
+    }
+  ]
+}

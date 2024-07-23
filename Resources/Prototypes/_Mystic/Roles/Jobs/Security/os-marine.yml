@@ -1,0 +1,33 @@
+- type: job
+  id: OS-Marine
+  name: job-name-os-marine
+  description: job-description-os-marine
+  playTimeTracker: JobOSMarine
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 36000 #10 hrs
+  startingGear: OS-MarineGear
+  icon: "JobIconOS-Marine"
+  supervisors: job-supervisors-cso
+  canBeAntag: false
+  access:
+  - Security
+  - Brig
+  - Maintenance
+  - OS-Marine
+  special:
+  - !type:AddImplantSpecial
+    implants: [ MindShieldImplant ]
+
+- type: startingGear
+  id: OS-MarineGear
+  equipment:
+    eyes: ClothingEyesGlassesSecurity
+    ears: ClothingHeadsetSecurity
+    pocket1: WeaponPistolMk58
+    id: OSMarinePDA
+  storage:
+    back:
+    - Flash
+    - MagazinePistol

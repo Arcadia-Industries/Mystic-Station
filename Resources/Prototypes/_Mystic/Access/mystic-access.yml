@@ -1,0 +1,155 @@
+# Command
+- type: accessLevel
+  id: Director
+  name: id-card-access-level-director
+
+- type: accessGroup
+  id: Command
+  tags:
+  - Command
+  - Director
+  - Cryogenics
+
+- type: accessGroup
+  id: AllAccess
+  tags:
+  - EmergencyShuttleRepealAll
+  - Director
+  - ServiceLeader
+  - ChiefEngineer
+  - ChiefMedicalOfficer
+  - ChiefSecurityOfficer
+  - MasterArcanist
+  - Command
+  - Cryogenics
+  - Security
+  - Detective
+  - Armory
+  - Brig
+  - Lawyer
+  - Engineering
+  - Medical
+  - Quartermaster
+  - Salvage
+  - Logistics
+  - Arcaneology
+  - Service
+  - Maintenance
+  - External
+  - Janitor
+  - Theatre
+  - Bar
+  - Chemistry
+  - Kitchen
+  - Divinologist
+  - Hydroponics
+  - Atmospherics
+  - Archivist
+  - OS-Arcanaut
+  - OS-Marine
+  - OS-Paramedic
+  - OS-Tech
+
+  # Engineering
+- type: accessLevel
+  id: OS-Tech
+  name: id-card-access-level-os-tech
+
+- type: accessGroup
+  id: Engineering
+  tags:
+  - ChiefEngineer
+  - Engineering
+  - Atmospherics
+  - OS-Tech
+
+  # Security
+- type: accessLevel
+  id: ChiefSecurityOfficer
+  name: id-card-access-level-cso
+
+- type: accessLevel
+  id: OS-Marine
+  name: id-card-access-level-os-marine
+
+- type: accessGroup
+  id: Security
+  tags:
+  - ChiefSecurityOfficer
+  - Security
+  - Armory
+  - Brig
+  - Detective
+  - Cryogenics
+  - OS-Marine
+
+# Arcaneology
+- type: accessLevel
+  id: Archivist
+  name: id-card-access-level-archivist
+
+- type: accessLevel
+  id: Divinologist
+  name: id-card-access-level-divinologist
+
+- type: accessLevel
+  id: MasterArcanist
+  name: id-card-access-level-ma
+
+- type: accessLevel
+  id: Arcaneology
+  name: id-card-access-level-arcaneology
+
+- type: accessLevel
+  id: OS-Arcanaut
+  name: id-card-access-level-os-arcanaut
+
+- type: accessGroup
+  id: Arcaneology
+  tags:
+  - Archivist
+  - Divinologist
+  - MasterArcanist
+  - Arcaneology
+  - OS-Arcanaut
+
+  # Logistics
+- type: accessLevel
+  id: Logistics
+  name: id-card-access-level-logispec
+
+- type: accessGroup
+  id: Logistics
+  tags:
+  - Logistics
+  - Quartermaster
+
+  # Medical
+- type: accessLevel
+  id: OS-Paramedic
+  name: id-card-access-level-os-paramedic
+
+- type: accessGroup
+  id: Medical
+  tags:
+  - ChiefMedicalOfficer
+  - Medical
+  - Chemistry
+  - OS-Paramedic
+
+  # Service
+- type: accessLevel
+  id: ServiceLeader
+  name: id-card-access-level-sl
+
+- type: accessGroup
+  id: Service
+  tags:
+  - ServiceLeader
+  - Bar
+  - Kitchen
+  - Hydroponics
+  - Service
+  - Janitor
+  - Theatre
+  - Lawyer

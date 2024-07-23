@@ -1,0 +1,69 @@
+# Command
+
+# Engineering
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconOS-Tech
+  icon:
+    sprite: /Textures/_Mystic/Interface/Misc/job_icons.rsi
+    state: OtherspaceTechnician
+
+# Security
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconOS-Marine
+  icon:
+    sprite: /Textures/_Mystic/Interface/Misc/job_icons.rsi
+    state: OtherspaceMarine
+
+# Arcaneology
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconArchivist
+  icon:
+    sprite: /Textures/_Mystic/Interface/Misc/job_icons.rsi
+    state: Archivist
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconDivinologist
+  icon:
+    sprite: /Textures/_Mystic/Interface/Misc/job_icons.rsi
+    state: Divinologist
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconMysticResearcher
+  icon:
+    sprite: /Textures/_Mystic/Interface/Misc/job_icons.rsi
+    state: MysticResearcher
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconMasterArcanist
+  icon:
+    sprite: /Textures/_Mystic/Interface/Misc/job_icons.rsi
+    state: MasterArcanist
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconOS-Arcanaut
+  icon:
+    sprite: /Textures/_Mystic/Interface/Misc/job_icons.rsi
+    state: OtherspaceArcanaut
+
+# Medical
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconOS-Paramedic
+  icon:
+    sprite: /Textures/_Mystic/Interface/Misc/job_icons.rsi
+    state: OtherspaceParamedic
+
+# Service
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconServiceLeader
+  icon:
+    sprite: /Textures/_Mystic/Interface/Misc/job_icons.rsi
+    state: ServiceLeader

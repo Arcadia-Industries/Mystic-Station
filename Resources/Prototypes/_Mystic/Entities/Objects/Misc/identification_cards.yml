@@ -1,0 +1,216 @@
+- type: entity
+  parent: Clothing
+  id: IDCardStandardMystic
+  name: identification card
+  description: A card necessary to access various areas aboard the station.
+  abstract: true
+  components:
+  - type: Sprite
+    sprite: _Mystic\Objects\Misc\id-cards.rsi
+  - type: Clothing
+    slots:
+    - idcard
+    sprite: _Mystic\Objects\Misc\id-cards.rsi
+  - type: Item
+    size: Small
+    heldPrefix: default
+    storedRotation: -90
+  - type: Access
+  - type: IdCard
+  - type: StationRecordKeyStorage
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - WhitelistChameleon
+  - type: StealTarget
+    stealGroup: IDCard
+
+# Command
+- type: entity
+  parent: CaptainIDCard
+  id: DirectorIDCard
+  name: director ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: gold
+    - state: idcaptain
+  - type: Item
+    heldPrefix: gold
+  - type: PresetIdCard
+    job: Director
+  - type: Tag
+    tags:
+    - DoorBumpOpener
+    - WhitelistChameleon
+    - HighRiskItem
+  - type: StealTarget
+    stealGroup: CaptainIDCard
+
+# Engineering
+- type: entity
+  parent: IDCardStandardMystic
+  id: OS-TechIDCard
+  name: OS-Technician ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: id-otherspace-technician
+  - type: PresetIdCard
+    job: OS-Tech
+
+# Security
+- type: entity
+  parent: IDCardStandard
+  id: CSOIDCard
+  name: chief security officer ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: idheadofsecurity
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: ChiefSecurityOfficer
+
+- type: entity
+  parent: IDCardStandardMystic
+  id: OS-MarineIDCard
+  name: OS-Marine ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: id-otherspace-marine
+  - type: PresetIdCard
+    job: OS-Marine
+
+#Arcaneology
+- type: entity
+  parent: PassengerIDCard
+  id: MysticFledglingIDCard
+  name: mystic fledgling ID card
+  components:
+  - type: PresetIdCard
+    job: MysticFledgling
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idintern-sci
+
+- type: entity
+  parent: IDCardStandardMystic
+  id: MysticResearcherIDCard
+  name: mystic researcher ID card
+  components:
+  - type: PresetIdCard
+    job: MysticResearcher
+  - type: Sprite
+    layers:
+    - state: default
+    - state: id-mystic-researcher
+
+- type: entity
+  parent: IDCardStandardMystic
+  id: MasterArcanistIDCard
+  name: master arcanist ID card
+  components:
+  - type: PresetIdCard
+    job: MasterArcanist
+  - type: Sprite
+    layers:
+    - state: default
+    - state: id-master-arcanist
+
+- type: entity
+  parent: IDCardStandardMystic
+  id: OSArcanautIDCard
+  name: OS-Arcanaut ID card
+  components:
+  - type: PresetIdCard
+    job: OS-Arcanaut
+  - type: Sprite
+    layers:
+    - state: default
+    - state: id-otherspace-arcanaut
+
+- type: entity
+  parent: IDCardStandardMystic
+  id: ArchivistIDCard
+  name: archivist ID card
+  components:
+  - type: PresetIdCard
+    job: Archivist
+  - type: Sprite
+    layers:
+    - state: default
+    - state: id-archivist
+
+- type: entity
+  parent: IDCardStandardMystic
+  id: DivinologistIDCard
+  name: divinologist ID card
+  components:
+  - type: PresetIdCard
+    job: Divinologist
+  - type: Sprite
+    layers:
+    - state: default
+    - state: id-divinologist
+
+# Logistics
+- type: entity
+  parent: CargoIDCard
+  id: LogisticsIDCard
+  name: logistics specialist ID card
+  components:
+  - type: PresetIdCard
+    job: LogisticsSpecialist
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idcargotechnician
+
+- type: entity
+  parent: QuartermasterIDCard
+  id: MysticQuartermasterIDCard
+  name: logistics quartermaster ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: idquartermaster
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: MysticQuartermaster
+
+# Medical
+- type: entity
+  parent: IDCardStandardMystic
+  id: OSParamedicIDCard
+  name: OS-Paramedic ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: id-otherspace-paramedic
+  - type: PresetIdCard
+    job: OS-Paramedic
+
+# Service
+- type: entity
+  parent: IDCardStandardMystic
+  id: SLIDCard
+  name: service leader ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: id-service-leader
+  - type: Item
+    heldPrefix: silver
+  - type: PresetIdCard
+    job: ServiceLeader

@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "license": "CC-BY-SA-3.0",
+  "copyright": "Original from Space Station 14, modified by AjexRose for Mystic Station",
+  "size": {
+    "x": 32,
+    "y": 32
+  },
+  "states": [
+    {
+      "name": "id-archivist"
+    },
+    {
+      "name": "id-divinologist"
+    },
+    {
+      "name": "id-master-arcanist"
+    },
+    {
+      "name": "id-mystic-researcher"
+    },
+    {
+      "name": "id-otherspace-arcanaut"
+    },
+    {
+      "name": "id-otherspace-marine"
+    },
+    {
+      "name": "id-otherspace-paramedic"
+    },
+    {
+      "name": "id-otherspace-technician"
+    },
+    {
+      "name": "id-service-leader"
+    },
+    {
+      "name": "default"
+    },
+    {
+      "name": "silver"
+    },
+    {
+      "name": "gold"
+    },
+    {
+      "name": "gold-inhand-right",
+      "directions": 4
+    },
+    {
+      "name": "gold-inhand-left",
+      "directions": 4
+    },
+    {
+       "name": "default-inhand-left",
+       "directions": 4
+    },
+    {
+       "name": "default-inhand-right",
+       "directions": 4
+    },
+    {
+        "name": "silver-inhand-left",
+        "directions": 4
+    },
+    {
+        "name": "silver-inhand-right",
+        "directions": 4
+    }
+  ]
+}

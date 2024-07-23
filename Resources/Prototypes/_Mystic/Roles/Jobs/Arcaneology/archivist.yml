@@ -1,0 +1,24 @@
+- type: job
+  id: Archivist
+  name: job-name-archivist
+  description: job-description-archivist
+  playTimeTracker: JobArchivist
+  startingGear: ArchivistGear
+  icon: "JobIconArchivist"
+  supervisors: job-supervisors-ma
+  access:
+  - Archivist
+  - Arcaneology
+  - Maintenance
+
+- type: startingGear
+  id: ArchivistGear
+  equipment:
+    shoes: ClothingShoesBootsLaceup
+    id: ArchivistPDA
+    ears: ClothingHeadsetService
+    pocket1: d10Dice
+    pocket2: HandLabeler # for making named bestsellers
+  storage:
+    back:
+    - BookRandom

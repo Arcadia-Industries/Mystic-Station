@@ -1,0 +1,30 @@
+- type: job
+  id: OS-Paramedic
+  name: job-name-os-paramedic
+  description: job-description-os-paramedic
+  playTimeTracker: JobOSParamedic
+  requirements:
+    - !type:RoleTimeRequirement
+      role: JobMedicalDoctor
+      time: 14400 #4 hrs
+    - !type:OverallPlaytimeRequirement
+      time: 54000 # 15 hrs
+  startingGear: OS-ParamedicGear
+  icon: "JobIconOS-Paramedic"
+  supervisors: job-supervisors-cmo
+  access:
+  - Medical
+  - OS-Paramedic
+  - Maintenance
+  extendedAccess:
+  - Chemistry
+
+- type: startingGear
+  id: OS-ParamedicGear
+  equipment:
+    id: OS-ParamedicPDA
+    ears: ClothingHeadsetMedical
+    belt: ClothingBeltMedicalEMTFilled
+  storage:
+    back:
+    - EmergencyRollerBedSpawnFolded
