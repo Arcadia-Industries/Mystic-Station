@@ -16,10 +16,12 @@
   - Borg
   - Botanist
   - Boxer
+  - Chaplain
   - Chef
   - Clown
   - Janitor
   - Lawyer
+  - Librarian
   - Mime
   - Musician
   - Passenger
@@ -52,7 +54,6 @@
   roles:
   - AtmosphericTechnician
   - ChiefEngineer
-  - OS-Tech
   - StationEngineer
   - TechnicalAssistant
 
@@ -65,7 +66,6 @@
   - ChiefMedicalOfficer
   - MedicalDoctor
   - MedicalIntern
-  - OS-Paramedic
   - Psychologist
   - Paramedic
 
@@ -79,7 +79,6 @@
   - SecurityCadet
   - SecurityOfficer
   - Detective
-  - OS-Marine
   - Warden
 
 - type: department
@@ -87,12 +86,10 @@
   description: department-mystic-Arcaneology-description
   color: "#D381C9"
   roles:
-  - Archivist
-  - Divinologist
   - MasterArcanist
   - MysticFledgling
   - MysticResearcher
-  - OS-Arcanaut
+  - OtherspaceExplorer
 
 - type: department
   id: Specific

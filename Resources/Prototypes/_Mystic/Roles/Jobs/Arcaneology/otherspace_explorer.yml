@@ -1,0 +1,26 @@
+- type: job
+  id: OtherspaceExplorer
+  name: job-name-explorer
+  description: job-description-explorer
+  playTimeTracker: JobOtherspaceExplorer
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Arcaneology
+      time: 10800 # 3 hrs
+    - !type:OverallPlaytimeRequirement
+      time: 36000 #10 hrs
+  icon: "JobIconShaftMiner"
+  startingGear: OtherspaceExplorerGear
+  supervisors: job-supervisors-ma
+  access:
+  - Cargo
+  - Salvage
+  - Maintenance
+  - External
+
+- type: startingGear
+  id: OtherspaceExplorerGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSalvageSpecialist
+    id: SalvagePDA
+    ears: ClothingHeadsetCargo

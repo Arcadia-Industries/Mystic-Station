@@ -1,8 +1,8 @@
 - type: job
-  id: MysticQuartermaster
+  id: Quartermaster
   name: job-name-qm
   description: job-description-qm
-  playTimeTracker: JobMysticQuartermaster
+  playTimeTracker: JobQuartermaster
   requirements:
     - !type:RoleTimeRequirement
       role: JobLogisticsSpecialist
@@ -10,12 +10,13 @@
     - !type:OverallPlaytimeRequirement
       time: 72000 #20 hrs
   weight: 10
-  startingGear: MysticQuartermasterGear
+  startingGear: QuartermasterGear
   icon: "JobIconQuarterMaster"
   supervisors: job-supervisors-director
   canBeAntag: false
   access:
-  - Logistics
+  - Cargo
+  - Salvage
   - Quartermaster
   - Maintenance
   - Command
@@ -29,9 +30,9 @@
       - type: CommandStaff
 
 - type: startingGear
-  id: MysticQuartermasterGear
+  id: QuartermasterGear
   equipment:
-    id: MysticQuartermasterPDA
+    id: QuartermasterPDA
     ears: ClothingHeadsetQM
     belt: BoxFolderClipboard
     pocket1: AppraisalTool

@@ -38,5 +38,5 @@
     shoes: ClothingShoesBootsLaceup
     eyes: ClothingEyesGlassesSunglasses
     gloves: ClothingHandsGlovesCaptain
-    id: DirectorPDA
+    id: CaptainPDA
     ears: ClothingHeadsetAltCommand

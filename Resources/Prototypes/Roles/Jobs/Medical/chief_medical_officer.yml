@@ -31,7 +31,6 @@
   - ChiefMedicalOfficer
   - Brig
   - Cryogenics
-  - OS-Paramedic #Mystic
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]

@@ -13,13 +13,13 @@
   supervisors: job-supervisors-arcaneology
   canBeAntag: false
   access:
-  - Arcaneology
+  - Research
   - Maintenance
 
 - type: startingGear
   id: FledglingGear
   equipment:
     shoes: ClothingShoesColorWhite
-    id: MysticFledglingPDA
+    id: ResearchAssistantPDA
     ears: ClothingHeadsetScience
     pocket2: BookScientistsGuidebook
