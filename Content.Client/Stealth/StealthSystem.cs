@@ -11,6 +11,8 @@ namespace Content.Client.Stealth;
 public sealed class StealthSystem : SharedStealthSystem
 {
     [Dependency] private readonly IPrototypeManager _protoMan = default!;
+    [Dependency] private readonly SharedTransformSystem _transformSystem = default!;
+    [Dependency] private readonly SpriteSystem _sprite = default!;
 
     private ShaderInstance _shader = default!;
 
@@ -39,7 +41,7 @@ public sealed class StealthSystem : SharedStealthSystem
         if (!Resolve(uid, ref component, ref sprite, false))
             return;
 
-        sprite.Color = Color.White;
+        _sprite.SetColor((uid, sprite), Color.White);
         sprite.PostShader = enabled ? _shader : null;
         sprite.GetScreenTexture = enabled;
         sprite.RaiseShaderEvent = enabled;
@@ -81,7 +83,7 @@ public sealed class StealthSystem : SharedStealthSystem
         if (!parent.IsValid())
             return; // should never happen, but lets not kill the client.
         var parentXform = Transform(parent);
-        var reference = args.Viewport.WorldToLocal(parentXform.WorldPosition);
+        var reference = args.Viewport.WorldToLocal(_transformSystem.GetWorldPosition(parentXform));
         reference.X = -reference.X;
         var visibility = GetVisibility(uid, component);
 
@@ -92,6 +94,6 @@ public sealed class StealthSystem : SharedStealthSystem
         _shader.SetParameter("visibility", visibility);
 
         visibility = MathF.Max(0, visibility);
-        args.Sprite.Color = new Color(visibility, visibility, 1, 1);
+        _sprite.SetColor((uid, args.Sprite), new Color(visibility, visibility, 1, 1));
     }
 }

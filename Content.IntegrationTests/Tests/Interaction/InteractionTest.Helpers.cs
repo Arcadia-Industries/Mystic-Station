@@ -62,7 +62,10 @@ public abstract partial class InteractionTest
 
         // Please someone purge async construction code
         Task<bool> task = default!;
-        await Server.WaitPost(() => task = SConstruction.TryStartItemConstruction(prototype, SEntMan.GetEntity(Player)));
+        await Server.WaitPost(() =>
+        {
+            task = SConstruction.TryStartItemConstruction(prototype, SEntMan.GetEntity(Player));
+        });
 
         Task? tickTask = null;
         while (!task.IsCompleted)
@@ -91,7 +94,7 @@ public abstract partial class InteractionTest
         Target = NetEntity.Invalid;
         await Server.WaitPost(() =>
         {
-            Target = SEntMan.GetNetEntity(SEntMan.SpawnEntity(prototype, SEntMan.GetCoordinates(TargetCoords)));
+            Target = SEntMan.GetNetEntity(SEntMan.SpawnAtPosition(prototype, SEntMan.GetCoordinates(TargetCoords)));
         });
 
         await RunTicks(5);
@@ -117,18 +120,18 @@ public abstract partial class InteractionTest
     /// </summary>
     protected async Task DeleteHeldEntity()
     {
-        if (Hands.ActiveHandEntity is { } held)
+        if (HandSys.GetActiveItem((ToServer(Player), Hands)) is { } held)
         {
             await Server.WaitPost(() =>
             {
-                Assert.That(HandSys.TryDrop(SEntMan.GetEntity(Player), null, false, true, Hands));
+                Assert.That(HandSys.TryDrop((SEntMan.GetEntity(Player), Hands), null, false, true));
                 SEntMan.DeleteEntity(held);
                 SLogger.Debug($"Deleting held entity");
             });
         }
 
         await RunTicks(1);
-        Assert.That(Hands.ActiveHandEntity, Is.Null);
+        Assert.That(HandSys.GetActiveItem((ToServer(Player), Hands)), Is.Null);
     }
 
     /// <summary>
@@ -149,7 +152,7 @@ public abstract partial class InteractionTest
     /// <param name="enableToggleable">Whether or not to automatically enable any toggleable items</param>
     protected async Task<NetEntity> PlaceInHands(EntitySpecifier entity, bool enableToggleable = true)
     {
-        if (Hands.ActiveHand == null)
+        if (Hands.ActiveHandId == null)
         {
             Assert.Fail("No active hand");
             return default;
@@ -166,17 +169,17 @@ public abstract partial class InteractionTest
         {
             var playerEnt = SEntMan.GetEntity(Player);
 
-            Assert.That(HandSys.TryPickup(playerEnt, item, Hands.ActiveHand, false, false, Hands));
+            Assert.That(HandSys.TryPickup(playerEnt, item, Hands.ActiveHandId, false, false, false, Hands));
 
             // turn on welders
             if (enableToggleable && SEntMan.TryGetComponent(item, out itemToggle) && !itemToggle.Activated)
             {
-                Assert.That(ItemToggleSys.TryActivate(item, playerEnt, itemToggle: itemToggle));
+                Assert.That(ItemToggleSys.TryActivate((item, itemToggle), user: playerEnt));
             }
         });
 
         await RunTicks(1);
-        Assert.That(Hands.ActiveHandEntity, Is.EqualTo(item));
+        Assert.That(HandSys.GetActiveItem((ToServer(Player), Hands)), Is.EqualTo(item));
         if (enableToggleable && itemToggle != null)
             Assert.That(itemToggle.Activated);
 
@@ -190,7 +193,7 @@ public abstract partial class InteractionTest
     {
         entity ??= Target;
 
-        if (Hands.ActiveHand == null)
+        if (Hands.ActiveHandId == null)
         {
             Assert.Fail("No active hand");
             return;
@@ -209,11 +212,11 @@ public abstract partial class InteractionTest
 
         await Server.WaitPost(() =>
         {
-            Assert.That(HandSys.TryPickup(SEntMan.GetEntity(Player), uid.Value, Hands.ActiveHand, false, false, Hands, item));
+            Assert.That(HandSys.TryPickup(ToServer(Player), uid.Value, Hands.ActiveHandId, false, false, false, Hands, item));
         });
 
         await RunTicks(1);
-        Assert.That(Hands.ActiveHandEntity, Is.EqualTo(uid));
+        Assert.That(HandSys.GetActiveItem((ToServer(Player), Hands)), Is.EqualTo(uid));
     }
 
     /// <summary>
@@ -221,7 +224,7 @@ public abstract partial class InteractionTest
     /// </summary>
     protected async Task Drop()
     {
-        if (Hands.ActiveHandEntity == null)
+        if (HandSys.GetActiveItem((ToServer(Player), Hands)) == null)
         {
             Assert.Fail("Not holding any entity to drop");
             return;
@@ -229,11 +232,11 @@ public abstract partial class InteractionTest
 
         await Server.WaitPost(() =>
         {
-            Assert.That(HandSys.TryDrop(SEntMan.GetEntity(Player), handsComp: Hands));
+            Assert.That(HandSys.TryDrop((ToServer(Player), Hands)));
         });
 
         await RunTicks(1);
-        Assert.That(Hands.ActiveHandEntity, Is.Null);
+        Assert.That(HandSys.GetActiveItem((ToServer(Player), Hands)), Is.Null);
     }
 
     #region Interact
@@ -243,7 +246,7 @@ public abstract partial class InteractionTest
     /// </summary>
     protected async Task UseInHand()
     {
-        if (Hands.ActiveHandEntity is not { } target)
+        if (HandSys.GetActiveItem((ToServer(Player), Hands)) is not { } target)
         {
             Assert.Fail("Not holding any entity");
             return;
@@ -571,11 +574,11 @@ public abstract partial class InteractionTest
 
         var tile = Tile.Empty;
         var serverCoords = SEntMan.GetCoordinates(coords ?? TargetCoords);
-        var pos = serverCoords.ToMap(SEntMan, Transform);
+        var pos = Transform.ToMapCoordinates(serverCoords);
         await Server.WaitPost(() =>
         {
-            if (MapMan.TryFindGridAt(pos, out _, out var grid))
-                tile = grid.GetTileRef(serverCoords).Tile;
+            if (MapMan.TryFindGridAt(pos, out var gridUid, out var grid))
+                tile = MapSystem.GetTileRef(gridUid, grid, serverCoords).Tile;
         });
 
         Assert.That(tile.TypeId, Is.EqualTo(targetTile.TypeId));
@@ -757,33 +760,41 @@ public abstract partial class InteractionTest
     /// <summary>
     /// Set the tile at the target position to some prototype.
     /// </summary>
-    protected async Task SetTile(string? proto, NetCoordinates? coords = null, MapGridComponent? grid = null)
+    protected async Task SetTile(string? proto, NetCoordinates? coords = null, Entity<MapGridComponent>? grid = null)
     {
         var tile = proto == null
             ? Tile.Empty
             : new Tile(TileMan[proto].TileId);
 
-        var pos = SEntMan.GetCoordinates(coords ?? TargetCoords).ToMap(SEntMan, Transform);
+        var pos = Transform.ToMapCoordinates(SEntMan.GetCoordinates(coords ?? TargetCoords));
 
+        EntityUid gridUid;
+        MapGridComponent? gridComp;
         await Server.WaitPost(() =>
         {
-            if (grid != null || MapMan.TryFindGridAt(pos, out var gridUid, out grid))
+            if (grid is { } gridEnt)
             {
-                grid.SetTile(SEntMan.GetCoordinates(coords ?? TargetCoords), tile);
+                MapSystem.SetTile(gridEnt, SEntMan.GetCoordinates(coords ?? TargetCoords), tile);
+                return;
+            }
+            else if (MapMan.TryFindGridAt(pos, out var gUid, out var gComp))
+            {
+                MapSystem.SetTile(gUid, gComp, SEntMan.GetCoordinates(coords ?? TargetCoords), tile);
                 return;
             }
 
             if (proto == null)
                 return;
 
-            var gridEnt = MapMan.CreateGridEntity(MapData.MapId);
+            gridEnt = MapMan.CreateGridEntity(MapData.MapId);
             grid = gridEnt;
             gridUid = gridEnt;
+            gridComp = gridEnt.Comp;
             var gridXform = SEntMan.GetComponent<TransformComponent>(gridUid);
-            Transform.SetWorldPosition(gridXform, pos.Position);
-            grid.SetTile(SEntMan.GetCoordinates(coords ?? TargetCoords), tile);
+            Transform.SetWorldPosition((gridUid, gridXform), pos.Position);
+            MapSystem.SetTile((gridUid, gridComp), SEntMan.GetCoordinates(coords ?? TargetCoords), tile);
 
-            if (!MapMan.TryFindGridAt(pos, out _, out grid))
+            if (!MapMan.TryFindGridAt(pos, out _, out _))
                 Assert.Fail("Failed to create grid?");
         });
         await AssertTile(proto, coords);
@@ -1199,11 +1210,12 @@ public abstract partial class InteractionTest
         BoundKeyFunction key,
         BoundKeyState state,
         NetCoordinates? coordinates = null,
-        NetEntity? cursorEntity = null)
+        NetEntity? cursorEntity = null,
+        ScreenCoordinates? screenCoordinates = null)
     {
         var coords = coordinates ?? TargetCoords;
         var target = cursorEntity ?? Target ?? default;
-        ScreenCoordinates screen = default;
+        var screen = screenCoordinates ?? default;
 
         var funcId = InputManager.NetworkBindMap.KeyFunctionID(key);
         var message = new ClientFullInputCmdMessage(CTiming.CurTick, CTiming.TickFraction, funcId)

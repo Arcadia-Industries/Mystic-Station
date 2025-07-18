@@ -5,6 +5,7 @@ using Content.Shared.Hands.EntitySystems;
 using Content.Shared.Input;
 using Content.Shared.Inventory;
 using Content.Shared.Popups;
+using Content.Shared.Stacks;
 using Content.Shared.Storage;
 using Content.Shared.Storage.EntitySystems;
 using Content.Shared.Whitelist;
@@ -62,11 +63,14 @@ public sealed class SmartEquipSystem : EntitySystem
         if (playerSession.AttachedEntity is not { Valid: true } uid || !Exists(uid))
             return;
 
-        if (!_actionBlocker.CanInteract(uid, null))
+        // early out if we don't have any hands or a valid inventory slot
+        if (!TryComp<HandsComponent>(uid, out var hands) || hands.ActiveHandId == null)
             return;
 
-        // early out if we don't have any hands or a valid inventory slot
-        if (!TryComp<HandsComponent>(uid, out var hands) || hands.ActiveHand == null)
+        var handItem = _hands.GetActiveItem((uid, hands));
+
+        // can the user interact, and is the item interactable? e.g. virtual items
+        if (!_actionBlocker.CanInteract(uid, handItem))
             return;
 
         if (!TryComp<InventoryComponent>(uid, out var inventory) || !_inventory.HasSlot(uid, equipmentSlot, inventory))
@@ -75,10 +79,8 @@ public sealed class SmartEquipSystem : EntitySystem
             return;
         }
 
-        var handItem = hands.ActiveHand.HeldEntity;
-
         // early out if we have an item and cant drop it at all
-        if (handItem != null && !_hands.CanDropHeld(uid, hands.ActiveHand))
+        if (handItem != null && !_hands.CanDropHeld(uid, hands.ActiveHandId))
         {
             _popup.PopupClient(Loc.GetString("smart-equip-cant-drop"), uid, uid);
             return;
@@ -119,7 +121,7 @@ public sealed class SmartEquipSystem : EntitySystem
                 return;
             }
 
-            _hands.TryDrop(uid, hands.ActiveHand, handsComp: hands);
+            _hands.TryDrop((uid, hands), hands.ActiveHandId!);
             _inventory.TryEquip(uid, handItem.Value, equipmentSlot, predicted: true, checkDoafter:true);
             return;
         }
@@ -147,11 +149,16 @@ public sealed class SmartEquipSystem : EntitySystem
                 return;
             }
 
-            _hands.TryDrop(uid, hands.ActiveHand, handsComp: hands);
+            _hands.TryDrop((uid, hands), hands.ActiveHandId!);
             _storage.Insert(slotItem, handItem.Value, out var stacked, out _);
 
-            if (stacked != null)
-                _hands.TryPickup(uid, stacked.Value, handsComp: hands);
+            // if the hand item stacked with the things in inventory, but there's no more space left for the rest
+            // of the stack, place the stack back in hand rather than dropping it on the floor
+            if (stacked != null && !_storage.CanInsert(slotItem, handItem.Value, out _))
+            {
+                if (TryComp<StackComponent>(handItem.Value, out var handStack) && handStack.Count > 0)
+                    _hands.TryPickup(uid, handItem.Value, handsComp: hands);
+            }
 
             return;
         }

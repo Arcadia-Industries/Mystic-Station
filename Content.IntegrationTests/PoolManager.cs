@@ -23,8 +23,6 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
 using Robust.UnitTesting;
 
-[assembly: LevelOfParallelism(3)]
-
 namespace Content.IntegrationTests;
 
 /// <summary>
@@ -184,24 +182,29 @@ public static partial class PoolManager
     /// </summary>
     /// <param name="poolSettings">See <see cref="PoolSettings"/></param>
     /// <returns></returns>
-    public static async Task<TestPair> GetServerClient(PoolSettings? poolSettings = null)
+    public static async Task<TestPair> GetServerClient(
+        PoolSettings? poolSettings = null,
+        ITestContextLike? testContext = null)
     {
-        return await GetServerClientPair(poolSettings ?? new PoolSettings());
+        return await GetServerClientPair(
+            poolSettings ?? new PoolSettings(),
+            testContext ?? new NUnitTestContextWrap(TestContext.CurrentContext, TestContext.Out));
     }
 
-    private static string GetDefaultTestName(TestContext testContext)
+    private static string GetDefaultTestName(ITestContextLike testContext)
     {
-        return testContext.Test.FullName.Replace("Content.IntegrationTests.Tests.", "");
+        return testContext.FullName.Replace("Content.IntegrationTests.Tests.", "");
     }
 
-    private static async Task<TestPair> GetServerClientPair(PoolSettings poolSettings)
+    private static async Task<TestPair> GetServerClientPair(
+        PoolSettings poolSettings,
+        ITestContextLike testContext)
     {
         if (!_initialized)
             throw new InvalidOperationException($"Pool manager has not been initialized");
 
         // Trust issues with the AsyncLocal that backs this.
-        var testContext = TestContext.CurrentContext;
-        var testOut = TestContext.Out;
+        var testOut = testContext.Out;
 
         DieIfPoolFailure();
         var currentTestName = poolSettings.TestName ?? GetDefaultTestName(testContext);
@@ -252,7 +255,7 @@ public static partial class PoolManager
         }
         finally
         {
-            if (pair != null && pair.TestHistory.Count > 1)
+            if (pair != null && pair.TestHistory.Count > 0)
             {
                 await testOut.WriteLineAsync($"{nameof(GetServerClientPair)}: Pair {pair.Id} Test History Start");
                 for (var i = 0; i < pair.TestHistory.Count; i++)
@@ -268,12 +271,14 @@ public static partial class PoolManager
         var poolRetrieveTime = poolRetrieveTimeWatch.Elapsed;
         await testOut.WriteLineAsync(
             $"{nameof(GetServerClientPair)}: Retrieving pair {pair.Id} from pool took {poolRetrieveTime.TotalMilliseconds} ms");
-        await testOut.WriteLineAsync(
-            $"{nameof(GetServerClientPair)}: Returning pair {pair.Id}");
 
         pair.ClearModifiedCvars();
         pair.Settings = poolSettings;
         pair.TestHistory.Add(currentTestName);
+        pair.SetupSeed();
+        await testOut.WriteLineAsync(
+            $"{nameof(GetServerClientPair)}: Returning pair {pair.Id} with client/server seeds: {pair.ClientSeed}/{pair.ServerSeed}");
+
         pair.Watch.Restart();
         return pair;
     }

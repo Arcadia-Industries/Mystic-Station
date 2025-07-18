@@ -1,11 +1,11 @@
 using System.Numerics;
-using Content.Server.Body.Components;
 using Content.Server.Botany.Components;
 using Content.Server.Fluids.EntitySystems;
 using Content.Server.Materials;
 using Content.Server.Power.Components;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Audio;
+using Content.Shared.Body.Components;
 using Content.Shared.CCVar;
 using Content.Shared.Chemistry.Components;
 using Content.Shared.Climbing.Events;
@@ -24,12 +24,12 @@ using Content.Shared.Mobs.Components;
 using Content.Shared.Mobs.Systems;
 using Content.Shared.Nutrition.Components;
 using Content.Shared.Popups;
+using Content.Shared.Power;
 using Content.Shared.Throwing;
 using Robust.Server.Player;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
 using Robust.Shared.Physics.Components;
-using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 
 namespace Content.Server.Medical.BiomassReclaimer
@@ -106,11 +106,11 @@ namespace Content.Server.Medical.BiomassReclaimer
             SubscribeLocalEvent<BiomassReclaimerComponent, AfterInteractUsingEvent>(OnAfterInteractUsing);
             SubscribeLocalEvent<BiomassReclaimerComponent, ClimbedOnEvent>(OnClimbedOn);
             SubscribeLocalEvent<BiomassReclaimerComponent, PowerChangedEvent>(OnPowerChanged);
-            SubscribeLocalEvent<BiomassReclaimerComponent, SuicideEvent>(OnSuicide);
+            SubscribeLocalEvent<BiomassReclaimerComponent, SuicideByEnvironmentEvent>(OnSuicideByEnvironment);
             SubscribeLocalEvent<BiomassReclaimerComponent, ReclaimerDoAfterEvent>(OnDoAfter);
         }
 
-        private void OnSuicide(Entity<BiomassReclaimerComponent> ent, ref SuicideEvent args)
+        private void OnSuicideByEnvironment(Entity<BiomassReclaimerComponent> ent, ref SuicideByEnvironmentEvent args)
         {
             if (args.Handled)
                 return;
@@ -123,7 +123,7 @@ namespace Content.Server.Medical.BiomassReclaimer
 
             _popup.PopupEntity(Loc.GetString("biomass-reclaimer-suicide-others", ("victim", args.Victim)), ent, PopupType.LargeCaution);
             StartProcessing(args.Victim, ent);
-            args.SetHandled(SuicideKind.Blunt);
+            args.Handled = true;
         }
 
         private void OnInit(EntityUid uid, ActiveBiomassReclaimerComponent component, ComponentInit args)
@@ -169,7 +169,7 @@ namespace Content.Server.Medical.BiomassReclaimer
             _doAfterSystem.TryStartDoAfter(new DoAfterArgs(EntityManager, args.User, delay, new ReclaimerDoAfterEvent(), reclaimer, target: args.Target, used: args.Used)
             {
                 NeedHand = true,
-                BreakOnMove = true
+                BreakOnMove = true,
             });
         }
 
@@ -181,7 +181,7 @@ namespace Content.Server.Medical.BiomassReclaimer
                 _throwing.TryThrow(args.Climber, direction, 0.5f);
                 return;
             }
-            _adminLogger.Add(LogType.Action, LogImpact.Extreme, $"{ToPrettyString(args.Instigator):player} used a biomass reclaimer to gib {ToPrettyString(args.Climber):target} in {ToPrettyString(reclaimer):reclaimer}");
+            _adminLogger.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(args.Instigator):player} used a biomass reclaimer to gib {ToPrettyString(args.Climber):target} in {ToPrettyString(reclaimer):reclaimer}");
 
             StartProcessing(args.Climber, reclaimer);
         }
@@ -194,7 +194,7 @@ namespace Content.Server.Medical.BiomassReclaimer
             if (args.Args.Used == null || args.Args.Target == null || !HasComp<BiomassReclaimerComponent>(args.Args.Target.Value))
                 return;
 
-            _adminLogger.Add(LogType.Action, LogImpact.Extreme, $"{ToPrettyString(args.Args.User):player} used a biomass reclaimer to gib {ToPrettyString(args.Args.Target.Value):target} in {ToPrettyString(reclaimer):reclaimer}");
+            _adminLogger.Add(LogType.Action, LogImpact.High, $"{ToPrettyString(args.Args.User):player} used a biomass reclaimer to gib {ToPrettyString(args.Args.Target.Value):target} in {ToPrettyString(reclaimer):reclaimer}");
             StartProcessing(args.Args.Used.Value, reclaimer);
 
             args.Handled = true;

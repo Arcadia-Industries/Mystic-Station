@@ -77,7 +77,7 @@ public abstract partial class InteractionTest
             StackComponent? stack = null;
             await server.WaitPost(() =>
             {
-                entProto.TryGetComponent(factory.GetComponentName(typeof(StackComponent)), out stack);
+                entProto.TryGetComponent(factory.GetComponentName<StackComponent>(), out stack);
             });
 
             if (stack != null)
@@ -107,14 +107,14 @@ public abstract partial class InteractionTest
         StackComponent? stack = null;
         await Server.WaitPost(() =>
         {
-            entProto.TryGetComponent(Factory.GetComponentName(typeof(StackComponent)), out stack);
+            entProto.TryGetComponent(Factory.GetComponentName<StackComponent>(), out stack);
         });
 
         if (stack != null)
             return await SpawnEntity((stack.StackTypeId, spec.Quantity), coords);
 
         Assert.That(spec.Quantity, Is.EqualTo(1), "SpawnEntity only supports returning a singular entity");
-        await Server.WaitPost(() => uid = SEntMan.SpawnEntity(spec.Prototype, coords));
+        await Server.WaitPost(() => uid = SEntMan.SpawnAtPosition(spec.Prototype, coords));
         return uid;
     }
 
